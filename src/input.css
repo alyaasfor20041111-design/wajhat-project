@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* --- إعدادات الخطوط (Fonts) الصحيحة --- */
+  --font-heading: 'Alexandria', sans-serif;
+  --font-sans: 'IBM Plex Sans Arabic', sans-serif; 
+
+  /* --- الألوان الأساسية (للأزرار والعناصر البارزة) --- */
+  --color-primary: #F93A3A;        /* لون الزر الأساسي والأيقونات */
+  --color-primary-hover: #E61C1C;  /* لون الزر عند المرور عليه */
+
+  /* --- العناوين والنصوص --- */
+  --color-heading: #480707;        /* لون العناوين الرئيسية الغامق */
+  --color-text: #851717;           /* لون النصوص والفقرات الفرعية */
+  --color-muted: #A01414;          /* النصوص الخافتة أو الثانوية */
+
+  /* --- الكاردات والخلفيات --- */
+  --color-card-bg: #FFFFFF;        /* خلفية الكاردات البيضاء */
+  --color-card-tint: #FFF1F1;      /* خلفية الكاردات الملونة أو التفعيل */
+  --color-bg-main: #FAFAFA;        /* خلفية الموقع العامة */
+}
