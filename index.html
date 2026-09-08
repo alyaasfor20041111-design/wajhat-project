@@ -16,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">    
 
     <link rel="stylesheet" href="./dist/assets/css/style.css">
     <link rel="icon" type="image/svg+xml" href="./dist/assets/images/image.png">
@@ -23,43 +24,43 @@
 
 <body>
 
-  <header class="w-full bg-card-bg border-b border-card-tint shadow-sm sticky top-0 z-50" dir="rtl">
+  <header class="w-full bg-card-bg/95 backdrop-blur-sm border-b border-card-tint shadow-sm sticky top-0 z-50" dir="rtl">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
 
            <!-- 1. الشعار (Logo) -->
             <div class="flex items-center gap-3">
-                <a href="#" class="flex items-center">
+                <a href="#" class="flex items-center rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
                     <img src="./dist/assets/images/logo.png" alt="شعار وجهة"
-                        class="w-15 h-15  ">
+                        class="w-15 h-15 object-contain">
                 </a>
             </div>
 
             <!-- 2. روابط التنقل (Navigation Links) -->
             <nav class="hidden md:flex items-center gap-8 font-sans">
-                <a href="#" class="text-text font-medium hover:text-primary transition-colors">الرئيسية</a>
-                <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
-                <a href="#" class="text-text font-medium hover:text-primary transition-colors">من نحن</a>
-                <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
-                <a href="#" class="text-text font-medium hover:text-primary transition-colors">الحجز</a>
-                <a href="#" class="text-text font-medium hover:text-primary transition-colors">كيف نعمل</a>
-                <a href="#" class="text-text font-medium hover:text-primary transition-colors">اتصل بنا</a>
+                <a href="#" class="relative text-text font-medium hover:text-primary transition-colors duration-200 after:content-[''] after:absolute after:-bottom-1.5 after:inset-x-0 after:h-0.5 after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-center">الرئيسية</a>
+                <a href="#" class="relative text-text font-medium hover:text-primary transition-colors duration-200 after:content-[''] after:absolute after:-bottom-1.5 after:inset-x-0 after:h-0.5 after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-center">الخدمات</a>
+                <a href="#" class="relative text-text font-medium hover:text-primary transition-colors duration-200 after:content-[''] after:absolute after:-bottom-1.5 after:inset-x-0 after:h-0.5 after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-center">من نحن</a>
+                <a href="#" class="relative text-text font-medium hover:text-primary transition-colors duration-200 after:content-[''] after:absolute after:-bottom-1.5 after:inset-x-0 after:h-0.5 after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-center">الخدمات</a>
+                <a href="#" class="relative text-text font-medium hover:text-primary transition-colors duration-200 after:content-[''] after:absolute after:-bottom-1.5 after:inset-x-0 after:h-0.5 after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-center">الحجز</a>
+                <a href="#" class="relative text-text font-medium hover:text-primary transition-colors duration-200 after:content-[''] after:absolute after:-bottom-1.5 after:inset-x-0 after:h-0.5 after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-center">كيف نعمل</a>
+                <a href="#" class="relative text-text font-medium hover:text-primary transition-colors duration-200 after:content-[''] after:absolute after:-bottom-1.5 after:inset-x-0 after:h-0.5 after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-center">اتصل بنا</a>
             </nav>
 
             <!-- 3. أزرار الإجراءات (Actions & Auth) -->
             <div class="flex items-center gap-4 font-sans">
                 <!-- زر تسجيل الدخول -->
-                <a href="#" class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-heading hover:text-primary transition-colors">
+                <a href="#" class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-heading hover:text-primary transition-colors duration-200 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
                     تسجيل الدخول
                 </a>
 
                 <!-- زر إنشاء حساب -->
-                <a href="#" class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-primary hover:bg-primary-hover rounded-xl shadow-sm transition-all duration-200">
+                <a href="#" class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-primary hover:bg-primary-hover rounded-xl shadow-sm hover:shadow-md shadow-primary/20 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-hover">
                     حساب جديد
                 </a>
 
                 <!-- زر القائمة للجوال (Mobile Menu Toggle) -->
-                <button type="button" class="md:hidden p-2 rounded-lg text-heading hover:bg-card-tint focus:outline-none">
+                <button type="button" aria-label="فتح القائمة" class="md:hidden p-2 rounded-lg text-heading hover:bg-card-tint transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -69,7 +70,6 @@
         </div>
     </div>
 </header>
-
 
 
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
