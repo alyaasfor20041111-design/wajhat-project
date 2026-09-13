@@ -87,6 +87,7 @@
     --color-zinc-300: oklch(87.1% 0.006 286.286);
     --color-zinc-400: oklch(70.5% 0.015 286.067);
     --color-zinc-500: oklch(55.2% 0.016 285.938);
+    --color-zinc-600: oklch(44.2% 0.017 285.786);
     --color-zinc-700: oklch(37% 0.013 285.805);
     --color-zinc-800: oklch(27.4% 0.006 286.033);
     --color-zinc-900: oklch(21% 0.006 285.885);
@@ -480,6 +481,9 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .m-0 {
+    margin: 0px;
+  }
   .mx-6 {
     margin-inline: calc(var(--spacing) * 6);
   }
@@ -655,6 +659,13 @@
     text-shadow: none !important;
     filter: none !important;
   }
+  .apexcharts-canvas .apexcharts-legend-series {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+    margin-bottom: 0.25rem !important;
+    display: flex !important;
+    align-items: center !important;
+  }
   .apexcharts-canvas .apexcharts-tooltip {
     background-color: primary !important;
     color: var(--color-body) !important;
@@ -702,6 +713,10 @@
   }
   .dark .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-text-y-value {
     color: white !important;
+  }
+  :is([dir=rtl]) .apexcharts-tooltip .apexcharts-tooltip-marker {
+    margin-right: 0px !important;
+    margin-left: 0.375rem !important;
   }
   .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-title {
     padding-top: 0.5rem !important;
@@ -857,6 +872,12 @@
   .h-56 {
     height: calc(var(--spacing) * 56);
   }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
+  .h-72 {
+    height: calc(var(--spacing) * 72);
+  }
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
@@ -871,6 +892,12 @@
   }
   .max-h-\[360px\] {
     max-height: 360px;
+  }
+  .min-h-\[320px\] {
+    min-height: 320px;
+  }
+  .min-h-\[350px\] {
+    min-height: 350px;
   }
   .w-2 {
     width: calc(var(--spacing) * 2);
@@ -1039,6 +1066,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
   .justify-start {
     justify-content: flex-start;
   }
@@ -1132,6 +1162,10 @@
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
+  }
+  .rounded-l-3xl {
+    border-top-left-radius: var(--radius-3xl);
+    border-bottom-left-radius: var(--radius-3xl);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -1293,6 +1327,30 @@
       border-color: color-mix(in oklab, var(--color-sky-500) 20%, transparent);
     }
   }
+  .border-white {
+    border-color: var(--color-white);
+  }
+  .border-white\/10 {
+    border-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .border-white\/30 {
+    border-color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+  .border-white\/40 {
+    border-color: color-mix(in srgb, #fff 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 40%, transparent);
+    }
+  }
+  .border-zinc-100 {
+    border-color: var(--color-zinc-100);
+  }
   .apexcharts-canvas .apexcharts-tooltip-series-group.apexcharts-active .apexcharts-tooltip-y-group {
     padding: 0 !important;
   }
@@ -1421,8 +1479,17 @@
       background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
     }
   }
+  .bg-white\/40 {
+    background-color: color-mix(in srgb, #fff 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 40%, transparent);
+    }
+  }
   .bg-zinc-100 {
     background-color: var(--color-zinc-100);
+  }
+  .bg-zinc-200 {
+    background-color: var(--color-zinc-200);
   }
   .dark .selectedCell {
     background-color: var(--color-neutral-secondary-medium);
@@ -1439,12 +1506,42 @@
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-gradient-to-t {
+    --tw-gradient-position: to top in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
   .bg-gradient-to-tr {
     --tw-gradient-position: to top right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .from-\[\#B81C1C\]\/60 {
+    --tw-gradient-from: color-mix(in oklab, #B81C1C 60%, transparent);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-\[\#F93A3A\] {
+    --tw-gradient-from: #F93A3A;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
   .from-bg-main {
     --tw-gradient-from: var(--color-bg-main);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-black {
+    --tw-gradient-from: var(--color-black);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-black\/40 {
+    --tw-gradient-from: color-mix(in srgb, #000 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-black) 40%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-black\/50 {
+    --tw-gradient-from: color-mix(in srgb, #000 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-black) 50%, transparent);
+    }
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .from-primary {
@@ -1457,6 +1554,11 @@
       --tw-gradient-from: color-mix(in oklab, var(--color-primary) 10%, transparent);
     }
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .via-\[\#B81C1C\] {
+    --tw-gradient-via: #B81C1C;
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
   .via-card-bg {
     --tw-gradient-via: var(--color-card-bg);
@@ -1484,12 +1586,33 @@
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
+  .via-primary\/90 {
+    --tw-gradient-via: color-mix(in srgb, #F93A3A 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-via: color-mix(in oklab, var(--color-primary) 90%, transparent);
+    }
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-transparent {
+    --tw-gradient-via: transparent;
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .to-\[\#480707\] {
+    --tw-gradient-to: #480707;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
   .to-bg-main {
     --tw-gradient-to: var(--color-bg-main);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-emerald-700 {
     --tw-gradient-to: var(--color-emerald-700);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-emerald-900 {
+    --tw-gradient-to: var(--color-emerald-900);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-primary-hover {
@@ -1570,6 +1693,21 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .object-center {
+    object-position: center;
+  }
+  .object-left {
+    object-position: left;
+  }
+  .apexcharts-canvas .apexcharts-legend {
+    padding: 0 !important;
+  }
+  .apexcharts-canvas .apexcharts-tooltip-series-group.apexcharts-active .apexcharts-tooltip-y-group {
+    padding: 0 !important;
+  }
+  .p-0 {
+    padding: 0px;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -1758,6 +1896,16 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .apexcharts-canvas .apexcharts-datalabels .apexcharts-text.apexcharts-pie-label {
+    font-size: 0.75rem,[object Object] !important;
+    font-weight: 600 !important;
+    text-shadow: none !important;
+    filter: none !important;
+  }
+  .apexcharts-canvas .apexcharts-xaxistooltip-text {
+    font-weight: 400 !important;
+    font-size: 0.875rem !important;
+  }
   .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-text-y-label {
     color: var(--color-body) !important;
     font-size: 0.875rem !important;
@@ -1817,6 +1965,9 @@
   .tracking-wider {
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
+  }
+  .text-\[\#F93A3A\] {
+    color: #F93A3A;
   }
   .text-amber-400 {
     color: var(--color-amber-400);
@@ -1893,6 +2044,12 @@
       color: color-mix(in oklab, var(--color-white) 95%, transparent);
     }
   }
+  .text-zinc-600 {
+    color: var(--color-zinc-600);
+  }
+  .text-zinc-900 {
+    color: var(--color-zinc-900);
+  }
   .uppercase {
     text-transform: uppercase;
   }
@@ -1904,6 +2061,9 @@
   }
   .opacity-40 {
     opacity: 40%;
+  }
+  .opacity-80 {
+    opacity: 80%;
   }
   .opacity-100 {
     opacity: 100%;
@@ -1939,6 +2099,12 @@
   .ring-2 {
     --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[\#F93A3A\]\/20 {
+    --tw-shadow-color: color-mix(in srgb, #F93A3A 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, #F93A3A 20%, transparent) var(--tw-shadow-alpha), transparent);
+    }
   }
   .shadow-amber-600 {
     --tw-shadow-color: oklch(66.6% 0.179 58.318);
@@ -2078,6 +2244,11 @@
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-opacity {
+    transition-property: opacity;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
@@ -2243,6 +2414,9 @@
         background-color: color-mix(in oklab, var(--color-primary) 10%, transparent);
       }
     }
+    .hover\:bg-white:hover {
+      background-color: var(--color-white);
+    }
     .hover\:text-emerald-500:hover {
       color: var(--color-emerald-500);
     }
@@ -2291,6 +2465,9 @@
     .sm\:col-span-1 {
       grid-column: span 1 / span 1;
     }
+    .sm\:col-span-2 {
+      grid-column: span 2 / span 2;
+    }
     .sm\:flex {
       display: flex;
     }
@@ -2306,8 +2483,14 @@
     .sm\:h-32 {
       height: calc(var(--spacing) * 32);
     }
+    .sm\:h-52 {
+      height: calc(var(--spacing) * 52);
+    }
     .sm\:h-56 {
       height: calc(var(--spacing) * 56);
+    }
+    .sm\:h-80 {
+      height: calc(var(--spacing) * 80);
     }
     .sm\:w-28 {
       width: calc(var(--spacing) * 28);
@@ -2338,6 +2521,9 @@
     }
     .sm\:p-10 {
       padding: calc(var(--spacing) * 10);
+    }
+    .sm\:p-12 {
+      padding: calc(var(--spacing) * 12);
     }
     .sm\:px-6 {
       padding-inline: calc(var(--spacing) * 6);
@@ -2389,6 +2575,9 @@
     }
   }
   @media (width >= 64rem) {
+    .lg\:col-span-1 {
+      grid-column: span 1 / span 1;
+    }
     .lg\:col-span-2 {
       grid-column: span 2 / span 2;
     }
@@ -2410,6 +2599,18 @@
     .lg\:hidden {
       display: none;
     }
+    .lg\:h-\[450px\] {
+      height: 450px;
+    }
+    .lg\:h-full {
+      height: 100%;
+    }
+    .lg\:min-h-\[400px\] {
+      min-height: 400px;
+    }
+    .lg\:min-h-\[450px\] {
+      min-height: 450px;
+    }
     .lg\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
@@ -2428,8 +2629,25 @@
     .lg\:gap-16 {
       gap: calc(var(--spacing) * 16);
     }
+    .lg\:rounded-3xl {
+      border-radius: var(--radius-3xl);
+    }
+    .lg\:rounded-r-none {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .lg\:p-6 {
+      padding: calc(var(--spacing) * 6);
+    }
+    .lg\:p-16 {
+      padding: calc(var(--spacing) * 16);
+    }
     .lg\:px-8 {
       padding-inline: calc(var(--spacing) * 8);
+    }
+    .lg\:text-4xl {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
     .lg\:text-sm {
       font-size: var(--text-sm);
@@ -2566,6 +2784,15 @@
   }
   .dark\:text-blue-400:where(.dark, .dark *) {
     color: var(--color-blue-400);
+  }
+  .dark\:text-primary:where(.dark, .dark *) {
+    color: var(--color-primary);
+  }
+  .dark\:text-primary\/80:where(.dark, .dark *) {
+    color: color-mix(in srgb, #F93A3A 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-primary) 80%, transparent);
+    }
   }
   .dark\:text-purple-400:where(.dark, .dark *) {
     color: var(--color-purple-400);

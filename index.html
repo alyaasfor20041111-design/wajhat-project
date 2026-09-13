@@ -1231,7 +1231,7 @@
     </section>
 
     <!-- ================= How It Works Section ================= -->
-    <section class="py-16 bg-bg-main dark:bg-zinc-950 transition-colors font-heading overflow-hidden" dir="rtl">
+    <section class="py-16 bg-bg-main dark:bg-zinc-950 transition-colors font-heading overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 lg:px-8">
 
             <div class="text-center max-w-xl mx-auto mb-16">
@@ -1245,7 +1245,7 @@
                 <!-- شبكة الخطوات -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 mt-10 gap-8 relative z-10">
 
-               
+
                     <div class="flex flex-col items-center text-center group">
                         <div class="relative mb-6">
                             <div
@@ -1266,7 +1266,7 @@
                             تناسب احتياجاتك بدقة.</p>
                     </div>
 
-                
+
                     <div class="flex flex-col items-center text-center group">
                         <div class="relative mb-6">
                             <div
@@ -1290,7 +1290,7 @@
                             المثالية المفضلة.</p>
                     </div>
 
-                   
+
                     <div class="flex flex-col items-center text-center group">
                         <div class="relative mb-6">
                             <div
@@ -1312,7 +1312,7 @@
                             الاستلام المناسب.</p>
                     </div>
 
-               
+
                     <div class="flex flex-col items-center text-center group">
                         <div class="relative mb-6">
                             <div
@@ -1334,14 +1334,14 @@
                             سهولة وأمان تام.</p>
                     </div>
 
-            
+
                     <div class="flex flex-col items-center text-center group">
                         <div class="relative mb-6">
                             <div
                                 class="absolute inset-0 rounded-full border border-rose-500/20 scale-125 group-hover:scale-110 transition-transform duration-500">
                             </div>
                             <div
-                                class="w-24 h-24 rounded-full bg-rose-600 text-white flex items-center justify-center shadow-lg shadow-rose-600/30 relative z-10 group-hover:scale-105 transition-transform duration-300">
+                                class="w-24 h-24 rounded-full bg-primary text-white flex items-center justify-center shadow-lg shadow-rose-600/30 relative z-10 group-hover:scale-105 transition-transform duration-300">
                                 <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -1350,7 +1350,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <span class="text-xs font-bold text-rose-600 dark:text-rose-400 mb-1">05</span>
+                        <span class="text-xs font-bold text-primary dark:text-primary mb-1">05</span>
                         <h3 class="text-base font-bold text-heading dark:text-white mb-2">استمتع برحلتك</h3>
                         <p class="text-xs text-muted dark:text-zinc-400 leading-relaxed max-w-[200px]">انطلق في الطريق
                             واستمتع بالقيادة.</p>
@@ -1362,7 +1362,159 @@
         </div>
     </section>
 
+    <!-- ================= Testimonials Section ================= -->
+    <section class="py-16 bg-bg-main dark:bg-zinc-950 transition-colors font-heading overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
 
+            <div
+                class="relative rounded-3xl bg-gradient-to-br from-[#F93A3A] via-[#B81C1C] to-[#480707] text-white overflow-hidden shadow-2xl shadow-[#F93A3A]/20">
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+
+                    <!-- القسم الأيمن:    -->
+                    <div class="lg:col-span-7 p-8 sm:p-12 lg:p-16 flex flex-col justify-center relative z-10">
+
+
+                        <div class="text-white/80 mb-4">
+                            <svg class="w-10 h-10 fill-current opacity-80" viewBox="0 0 24 24">
+                                <path
+                                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.999v10h-9.999z" />
+                            </svg>
+                        </div>
+
+                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black mb-4">ماذا يقول عملاؤنا</h2>
+
+                        <!-- نص الرأي -->
+                        <p id="testimonial-text"
+                            class="text-sm sm:text-base text-white/95 leading-relaxed mb-8 max-w-xl transition-opacity duration-300">
+                            "المنصة جعلت رحلتي سهلة وممتعة للغاية، السيارة كانت نظيفة تماماً، العملية سلسة، وخدمة
+                            العملاء كانت استثنائية بكل ما تحمله الكلمة من معنى."
+                        </p>
+
+                        <!-- معلومات العميل -->
+                        <div class="flex items-center gap-4 mb-8">
+                            <img id="testimonial-img" src="./dist/assets/images/featuress/feature3.jpg"
+                                alt="صورة العميل"
+                                class="w-12 h-12 rounded-full object-cover border-2 border-white/40 shadow-md transition-opacity duration-300" />
+                            <div>
+                                <h4 id="testimonial-name" class="font-bold text-sm sm:text-base">سارة جونسون</h4>
+                                <p id="testimonial-role" class="text-xs text-white/80">عميلة دائمة</p>
+                            </div>
+                        </div>
+
+                        <!-- مؤشرات التنقل (4 نقاط للـ 4 آراء) -->
+                        <div id="testimonial-dots" class="flex items-center gap-2">
+                            <span data-index="0"
+                                class="w-6 h-2 rounded-full bg-white transition-all cursor-pointer"></span>
+                            <span data-index="1"
+                                class="w-2 h-2 rounded-full bg-white/40 hover:bg-white transition-all cursor-pointer"></span>
+                            <span data-index="2"
+                                class="w-2 h-2 rounded-full bg-white/40 hover:bg-white transition-all cursor-pointer"></span>
+                            <span data-index="3"
+                                class="w-2 h-2 rounded-full bg-white/40 hover:bg-white transition-all cursor-pointer"></span>
+                        </div>
+
+                    </div>
+
+                    <!-- القسم الأيسر: صورة السيارة والعميلة -->
+                    <div
+                        class="lg:col-span-5 relative h-72 sm:h-80 lg:h-full min-h-[350px] lg:min-h-[450px] overflow-hidden flex items-center justify-end">
+                        <img id="testimonial-car-img" src="./dist/assets/images/featuress/feature3.jpg"
+                            alt="صورة السيارة"
+                            class="absolute inset-0 w-full h-full object-cover object-center rounded-l-3xl lg:rounded-r-none transition-opacity duration-300" />
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= Expert Team Section ================= -->
+    <section class="py-16 bg-bg-main dark:bg-zinc-950 transition-colors font-heading overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 text-center">
+
+
+            <div class="mb-12">
+                <h2 class="text-3xl sm:text-4xl font-black text-heading dark:text-white mb-3">فريق الخبراء</h2>
+                <p class="text-sm sm:text-base text-muted dark:text-zinc-400">
+                    نخبة من المتخصصين المحترفين لدعم رحلتك وتلبية كافة احتياجاتك
+                </p>
+            </div>
+
+            <!-- شبكة الأعضاء  -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+
+           
+                <div
+                    class="bg-white dark:bg-zinc-900 rounded-2xl shadow-md border border-zinc-100 dark:border-zinc-800 flex flex-col items-center text-center transition-all hover:shadow-xl hover:-translate-y-1 overflow-hidden">
+                    <div class="w-full h-48 sm:h-52 bg-zinc-200 m-0 p-0">
+                        <img src="./dist/assets/images/featuress/feature1.jpg" alt="جيمس أندرسون"
+                            class="w-full h-full object-cover object-center block" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-base text-zinc-900 dark:text-white mb-1">جيمس أندرسون</h3>
+                        <p class="text-xs text-[#F93A3A] font-semibold">المؤسس والرئيس التنفيذي</p>
+                    </div>
+                </div>
+
+               
+                <div
+                    class="bg-white dark:bg-zinc-900 rounded-2xl shadow-md border border-zinc-100 dark:border-zinc-800 flex flex-col items-center text-center transition-all hover:shadow-xl hover:-translate-y-1 overflow-hidden">
+                    <div class="w-full h-48 sm:h-52 bg-zinc-200 m-0 p-0">
+                        <img src="./dist/assets/images/featuress/feature1.jpg" alt="صوفيا مارتينيز"
+                            class="w-full h-full object-cover object-center block" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-base text-zinc-900 dark:text-white mb-1">صوفيا مارتينيز</h3>
+                        <p class="text-xs text-[#F93A3A] font-semibold">مديرة العمليات</p>
+                    </div>
+                </div>
+
+                
+                <div
+                    class="bg-white dark:bg-zinc-900 rounded-2xl shadow-md border border-zinc-100 dark:border-zinc-800 flex flex-col items-center text-center transition-all hover:shadow-xl hover:-translate-y-1 overflow-hidden">
+                    <div class="w-full h-48 sm:h-52 bg-zinc-200 m-0 p-0">
+                        <img src="./dist/assets/images/featuress/feature1.jpg" alt="دانيال طومسون"
+                            class="w-full h-full object-cover object-center block" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-base text-zinc-900 dark:text-white mb-1">دانيال طومسون</h3>
+                        <p class="text-xs text-[#F93A3A] font-semibold">مدير الأسطول</p>
+                    </div>
+                </div>
+
+         
+                <div
+                    class="bg-white dark:bg-zinc-900 rounded-2xl shadow-md border border-zinc-100 dark:border-zinc-800 flex flex-col items-center text-center transition-all hover:shadow-xl hover:-translate-y-1 overflow-hidden">
+                    <div class="w-full h-48 sm:h-52 bg-zinc-200 m-0 p-0">
+                        <img src="./dist/assets/images/featuress/feature1.jpg" alt="أوليفيا هاريس"
+                            class="w-full h-full object-cover object-center block" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-base text-zinc-900 dark:text-white mb-1">أوليفيا هاريس</h3>
+                        <p class="text-xs text-[#F93A3A] font-semibold">خدمة العملاء</p>
+                    </div>
+                </div>
+
+               
+                <div
+                    class="bg-white dark:bg-zinc-900 rounded-2xl shadow-md border border-zinc-100 dark:border-zinc-800 flex flex-col items-center text-center transition-all hover:shadow-xl hover:-translate-y-1 overflow-hidden sm:col-span-2 lg:col-span-1">
+                    <div class="w-full h-48 sm:h-52 bg-zinc-200 m-0 p-0">
+                        <img src="./dist/assets/images/featuress/feature1.jpg" alt="مايكل براون"
+                            class="w-full h-full object-cover object-center block" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-base text-zinc-900 dark:text-white mb-1">مايكل براون</h3>
+                        <p class="text-xs text-[#F93A3A] font-semibold">رئيس التسويق</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
 
 
@@ -1548,7 +1700,7 @@
     <script src="./dist/js/Darkmode.js"></script>
     <script src="./dist/js/mobile-sidebar.js"></script>
     <script src="./dist/js/Filter.js"></script>
-    <script src="./dist/js/testimonials.js"></script>
+    <script src="./dist/js/testimonial.js"></script>
 </body>
 
 </html>
