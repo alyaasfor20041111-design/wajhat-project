@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كيف يعمل الموقع - وجهة</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../dist/assets/css/all.min.css">
+    <link rel="stylesheet" href="../../dist/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="icon" type="image/svg+xml" href="../../dist/assets/images/image.png">
+
+
+</head>
+
+<body>
+
+    <header class="w-full bg-card-bg border-b border-card-tint shadow-sm sticky top-0 z-50" dir="rtl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- 1. الشعار (Logo) -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="flex items-center">
+                        <img src="../../dist/assets/images/logo.png" alt="شعار وجهة" class="w-15 h-15  ">
+                    </a>
+                </div>
+
+                <!-- 2. روابط التنقل (Navigation Links) -->
+                <nav class="hidden md:flex items-center gap-8 font-sans">
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الرئيسية</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">من نحن</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الحجز</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">كيف نعمل</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">اتصل بنا</a>
+                </nav>
+
+                <!-- 3. أزرار الإجراءات (Actions & Auth) -->
+                <div class="flex items-center gap-4 font-sans">
+                    <!-- زر تسجيل الدخول -->
+                    <a href="#"
+                        class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-heading hover:text-primary transition-colors">
+                        تسجيل الدخول
+                    </a>
+
+                    <!-- زر إنشاء حساب -->
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold
+                         text-white bg-primary hover:bg-primary-hover rounded-xl shadow-sm transition-all duration-200">
+                        حساب جديد
+                    </a>
+
+                    <!-- زر القائمة للجوال (Mobile Menu Toggle) -->
+                    <button type="button"
+                        class="md:hidden p-2 rounded-lg text-heading hover:bg-card-tint focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Work Page Header Start -->
+    <section class="py-[60px] bg-no-repeat bg-[length:100%_100%] md:bg-cover bg-bottom" style="background-image: url('../../dist/assets/images/working/work-header.jpeg');
+   ">
+        <div class="max-w-7xl mx-auto work-page-header flex justify-between bottom-origin">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-heading mb-7 text-center">رحلتك القادمة تبدأ بضغطة زر
+                </h1>
+                <p class="mb-5 font-bold text-lg  md:text-xl text-muted w-[70%] text-center">
+                    نؤمن أن استئجار سيارة يجب أن يكون ممتعاً وسهلاً تماماً كقيادتها، لذلك نقدم لك نظاماً ذكياً يربطك
+                    بأفضل السيارات المتاحة في السوق بأعلى معايير الأمان والشفافية. نضمن لك تجربة حجز واضحة بدون أي رسوم
+                    خفية، مع دعم فني يرافقك طوال الطريق لتستمتع برحلة مريحة ومطمنة من البداية وحتى النهاية.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Work Page Header End -->
+
+    <!-- Steps Section Start -->
+    <section class=" py-[0px] md:py-[10px]">
+        <div class="flex justify-center  md:items-center p-3 md:p-0  relative flex-col">
+            <img src="../../dist/assets/images/working/c1.jpg"
+                class="absolute inset-0 w-full h-full object-cover opacity-50 md:hidden" alt="">
+            <div>
+                <div
+                    class=" bg-card-tint mb-2 mt-2  md:mt-0 md:mb-0  md:bg-transparent 
+                     right-origin md:absolute md:top-0 md:right-[19%]  rounded-md text-white p-2">
+                    <div
+                        class="step flex flex-row-reverse md:justify-center justify-around
+                         md:items-end items-center
+                         transition-transform duration-500 ease-in-out
+                          hover:scale-105 hover:-translate-y-2">
+                        <div
+                            class="step-icon md:w-[80px] md:h-[80px] w-[70px] h-[70px]
+                       rounded-full shadow-lg shadow-red-100 bg-primary hover:bg-primary-hover flex items-center justify-center">
+                            <i class="fas fa-car text-white text-4xl"></i>
+                        </div>
+
+                        <div class="step-info flex md:flex-col flex-row md:gap-0 gap-2 
+                        md:items-center items-start w-[180px]">
+                            <span class="text-heading font-bold text-xl">1</span>
+                            <h3 class="md:text-lg text-xl text-heading font-bold text-center">اختر الخدمة</h3>
+                            <p class="text-muted md:text-center hidden md:block">تصفح خدماتنا واختر نوع التأجير الذي يناسب احتياجاتك</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- second -->
+                <div class="right-origin bg-card-tint mb-2 md:mb-0   md:bg-transparent
+                  md:absolute md:top-1/2 md:-translate-y-1/2 md:right-[16.5%]  rounded-md text-white p-2">
+                    <div
+                        class="step flex flex-row-reverse md:justify-center justify-around
+                         md:items-end items-center transition-transform duration-500 ease-in-out hover:scale-105 hover:-translate-y-2">
+                        <div
+                            class="step-icon md:w-[80px] md:h-[80px] w-[70px] h-[70px]
+                       rounded-full shadow-lg shadow-red-100 bg-primary hover:bg-primary-hover flex items-center justify-center">
+                            <i class="fas fa-car text-white text-4xl"></i>
+                        </div>
+
+                          <div class="step-info flex md:flex-col flex-row md:gap-0 gap-2 
+                        md:items-center items-start w-[180px]">
+                            <span class="text-heading font-bold text-xl">2</span>
+                            <h3 class="text-lg text-heading font-bold text-center">اختر السيارة</h3>
+                            <p class="text-muted md:text-center hidden md:block">اختر من مجموعة واسعة من السيارات المناسبة لك</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- third -->
+                <div class="right-origin bg-card-tint mb-2 md:mb-0 
+             md:bg-transparent  md:absolute md:bottom-0 md:right-[20%] 
+              rounded-md text-white p-2">
+                    <div class="step flex flex-row-reverse md:justify-center justify-around
+                         md:items-end items-center
+                transition-transform duration-500 ease-in-out hover:scale-[103%] hover:-translate-y-2">
+                        <div
+                            class="step-icon relative md:w-[80px] md:h-[80px] w-[70px] h-[70px]
+                       rounded-full shadow-lg shadow-red-100 bg-primary hover:bg-primary-hover flex items-center justify-center">
+                            <i class=" fa-solid fa-calendar-days absolute top-[25%] left-[28%] text-white text-4xl"></i>
+                            <i
+                                class="  fa-solid fa-location-dot absolute bottom-[15%] right-[19%] text-red-50 text-2xl"></i>
+                        </div>
+
+                          <div class="step-info flex md:flex-col flex-row md:gap-0 gap-2 
+                        md:items-center items-start w-[180px]">
+                            <span class="text-heading font-bold text-xl">3</span>
+                            <h3 class="text-lg text-heading font-bold text-center">حدد التاريخ والموقع</h3>
+                            <p class="text-muted md:text-center hidden md:block">أدخل تاريخ الاستلام والتسليم والموقع المناسب لك</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- fourth -->
+                <div class="right-origin md:left-origin bg-card-tint mb-2 md:mb-0  
+            md:bg-transparent  md:absolute md:bottom-[10%] md:left-[17.5%] 
+             rounded-md text-white p-2
+            ">
+                    <div
+                        class="step flex md:flex-row flex-row-reverse
+                     md:justify-center justify-around
+                         md:items-end items-center md:gap-2  transition-transform duration-500 ease-in-out hover:scale-105 hover:-translate-y-2">
+                        <div
+                            class="step-icon md:w-[80px] md:h-[80px] w-[70px] h-[70px]
+                       rounded-full shadow-lg shadow-red-100 bg-primary hover:bg-primary-hover flex items-center justify-center">
+                            <i class="fa-regular fa-credit-card text-white text-4xl"></i>
+                        </div>
+
+                          <div class="step-info flex md:flex-col flex-row md:gap-0 gap-2 
+                        md:items-center items-start w-[180px]">
+                            <span class="text-heading font-bold text-xl">4</span>
+                            <h3 class="text-lg text-heading font-bold text-center">أكد وادفع</h3>
+                            <p class="text-muted md:text-center hidden md:block">راجع تفاصيل الحجز وقم بإتمام الدفع بشكل آمن وسهل</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- fifth -->
+                <div class="right-origin md:left-origin bg-card-tint mb-2 md:mb-0 md:bg-transparent  md:absolute  md:top-[10%] md:left-[17%]  rounded-md text-white p-2 
+            ">
+                    <div
+                        class="step flex md:flex-row flex-row-reverse md:justify-center justify-around
+                         md:items-end items-center md:gap-2  transition-transform duration-500 ease-in-out hover:scale-105 hover:-translate-y-2">
+                        <div
+                            class="step-icon md:w-[80px] md:h-[80px] w-[70px] h-[70px]
+                       rounded-full shadow-lg shadow-red-100 bg-primary hover:bg-primary-hover flex items-center justify-center">
+                            <i class="fa-solid fa-face-smile-beam text-white text-4xl"></i>
+                        </div>
+
+                          <div class="step-info flex md:flex-col flex-row md:gap-0 gap-2 
+                        md:items-center items-start w-[180px]">
+                            <span class="text-heading font-bold text-xl">5</span>
+                            <h3 class="text-lg text-heading font-bold text-center">استمتع برحلتك</h3>
+                            <p class="text-muted md:text-center hidden md:block">استلم سيارتك وانطلق بثقة وراحة بال</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="img-side hidden md:flex  ">
+                <img class="w-100 h-100 object-cover  rounded-full shadow-lg shadow-red-100"
+                    src="../../dist/assets/images/working/c1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Steps Section End -->
+
+    <!-- Features Section Start -->
+    <section class="features py-10 bg-bg-main ">
+        <h2 class="text-center text-4xl font-bold text-heading mb-4">لماذا العملية سهلة؟</h2>
+
+        <div class="max-w-7xl mx-auto  bottom-origin grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 p-4">
+
+            <div class="box text-center p-6 mb-3.5 bg-needed-color text-seventh-color 
+            rounded-[10px] cursor-pointer
+            hover:translate-1 transition-all duration-500 ease-in-out"
+                style="box-shadow: 1px 1px 5px black, -1px -1px 5px brown;">
+                <i class="fa-solid fa-bolt text-text text-4xl mb-2"></i>
+                <h3 class="text-2xl font-bold text-text  mb-2.5">تأكيد فوري</h3>
+                <p class=" "> لا داعي للانتظار ستصلك رسالة تأكيد الحجز فوراً.</p>
+            </div>
+
+
+            <div class="box text-center p-6 mb-3.5 bg-needed-color text-seventh-color rounded-[10px] cursor-pointer
+            hover:translate-1 transition-all duration-500 ease-in-out"
+                style="box-shadow: 1px 1px 5px black, -1px -1px 5px brown;">
+                <div class="payment-icons text-text text-4xl mb-2">
+                    <i class="fas fa-credit-card"></i> / <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <h3 class="text-2xl font-bold  text-text mb-2.5">خيارات دفع متعددة</h3>
+                <p class=" ">ندعم الدفع الإلكتروني، بطاقات الائتمان، أو الدفع نقداً/بالبطاقة عند الاستلام.
+                </p>
+            </div>
+
+            <div class="box text-center p-6 mb-3.5 bg-needed-color text-seventh-color rounded-[10px] cursor-pointer
+            hover:translate-1 transition-all duration-500 ease-in-out"
+                style="box-shadow: 1px 1px 5px black, -1px -1px 5px brown;">
+                <i class="fa-solid fa-gauge-high text-text text-4xl mb-2"></i>
+                <h3 class="text-2xl font-bold text-text  mb-2.5">دعم فني على مدار الساعة (24/7)</h3>
+                <p class=" ">فريقنا متواجد دائماً لمساعدتك عبر الشات المباشر أو الهاتف في أي وقت.</p>
+            </div>
+
+            <div class="box text-center p-6 mb-3.5 bg-needed-color text-seventh-color rounded-[10px] cursor-pointer
+            hover:translate-1 transition-all duration-500 ease-in-out"
+                style="box-shadow: 1px 1px 5px black, -1px -1px 5px brown;">
+                <i class="fa-solid fa-calendar-xmark  text-text text-4xl mb-2"></i>
+                <h3 class="text-2xl font-bold  text-text mb-2.5">إلغاء مرن ومجاني</h3>
+                <p class=" ">إمكانية تعديل الحجز أو الإلغاء المجاني حتى 24/48 ساعة قبل موعد الاستلام.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section End -->
+
+    <!-- CTA Section Start -->
+    <section class="py-10">
+        <div class="main-cta max-w-7xl mx-auto grid md:grid-cols-2 grid-cols-1
+        items-center  p-7 md:p-0">
+            <div class=" cta-info right-origin flex flex-col gap-5 justify-around">
+                <h2 class="text-3xl md:text-4xl font-bold text-heading mb-4">هل تحتاج مساعدة في اختيار سيارتك؟</h2>
+
+                <div class="bg-card-tint p-5 rounded-[10px]">
+                    <h3 class="text-xl text-center font-bold pb-3 text-heading">لا تقلق، نحن هنا لمساعدتك!</h3>
+                    <p class="text-lg text-muted text-center">
+
+                        سواء كنت تخطط لرحلة عائلية مريحة، أو تبحث عن سيارة اقتصادية للتنقلات اليومية،
+                        أو ترغب في سيارة فاخرة لمناسبة خاصة، فريقنا جاهز لتقديم النصيحة
+                        واختيار المركبة المثالية التي تلبي احتياجاتك وميزانيتك.
+                        تواصل معنا الآن واجعل رحلتك تبدأ براحة بال. </p>
+                    <!-- <ul class="flex flex-col gap-4 text-xl ">
+                        <li>
+                            <i class="fa-solid fa-location-dot text-heading pe-1"></i>
+                            <span class="text-muted">حدد وجهتك: أخبرنا بطبيعة رحلتك (داخل المدينة، سفر طويل، أو رحلة
+                                عائلية).</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-calendar-days text-heading pe-1"></i>
+                            <span class="text-muted">اختر تاريخ بداية ونهاية الرحلة: حدد بدقة اوقات استلام وتسليم
+                                السيارة</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-car text-heading pe-1"></i>
+                            <span class="text-muted">اختر الفئـة: نساعدك في مقارنة السيارات الاقتصادية، والعائلية،
+                                والسيارات
+                                الفاخرة.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-car text-heading pe-1"></i>
+                            <span class="text-muted">اختر نوع السيارة: اختر من بين أنواع كثيرة من السيارات</span>
+                        </li>
+                    </ul> -->
+                </div>
+
+                <button class="bg-primary hover:bg-primary-hover cursor-pointer
+                          text-white text-lg px-5 py-2 mt-3 md:w-[18%] w-[100%] rounded-md">
+                    ابدأ الحجز</button>
+            </div>
+            <div class=" cta-img left-origin md:flex md:justify-end  hidden">
+                <img class="w-[90%] object-cover rounded-[10px]" src="../../dist/assets/images/working/cta.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <script src="../../dist/js/scrollreveal-animation.js"></script>
+    <script src="../../dist/js/script.js"></script>
+
+</body>
+
+</html>

@@ -5,6 +5,7 @@
 @source "../node_modules/flowbite";
 @custom-variant dark (&:where(.dark, .dark *));
 
+
 @theme {
   /* --- إعدادات الخطوط (Fonts) الصحيحة --- */
   --font-heading: 'Alexandria', sans-serif;
@@ -24,3 +25,24 @@
   --color-card-tint: #FFF1F1;      /* خلفية الكاردات الملونة أو التفعيل */
   --color-bg-main: #FAFAFA;        /* خلفية الموقع العامة */
 }
+
+
+
+/* Bushra Styles Start */
+
+
+/* Swiper Style Start */
+
+/* to let all cards have the same height */
+.swiper {
+  height: 100%;
+}
+
+.swiper-slide {
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column;
+}
+/* Swiper Style End */
+
+/* Bushra Styles End */
