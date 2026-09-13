@@ -108,7 +108,13 @@
             class="max-w-7xl mx-auto px-4 lg:px-8 py-3.5 flex items-center justify-between gap-4 border-b border-card-tint/50 dark:border-zinc-800/60">
 
             <a href="./index.html" class="flex items-center shrink-0">
-                <img src="./dist/assets/images/logo.png" alt="شعار وجهة" class="h-10 md:h-12 w-auto object-contain" />
+                <!-- الشعار في الوضع النهاري (يختفي في الوضع المظلم) -->
+                <img src="./dist/assets/images/logo.png" alt="شعار وجهة"
+                    class="block dark:hidden h-10 md:h-12 w-auto object-contain" />
+
+                <!-- الشعار في الوضع المظلم (يظهر فقط في الوضع المظلم) -->
+                <img src="./dist/assets/images/logowhite-dark.png" alt="شعار وجهة"
+                    class="hidden dark:block h-10 md:h-12 w-auto object-contain" />
             </a>
 
 
@@ -1032,7 +1038,7 @@
     </section>
 
     <!-- ================= Popular Cars Section ================= -->
-    <section class="py-16 bg-bg-main dark:bg-zinc-950 transition-colors font-heading overflow-hidden" >
+    <section class="py-16 bg-bg-main dark:bg-zinc-950 transition-colors font-heading overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 lg:px-8">
 
 
@@ -1228,7 +1234,7 @@
     <section class="py-16 bg-bg-main dark:bg-zinc-950 transition-colors font-heading overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 lg:px-8">
 
-           
+
             <div class="text-center max-w-xl mx-auto mb-16">
                 <h2 class="text-3xl sm:text-4xl font-black text-heading dark:text-white mb-3">كيف تعمل المنصة؟</h2>
                 <p class="text-sm sm:text-base text-muted dark:text-zinc-400">خطوات بسيطة لتبدأ قيادة سيارتك الأحلام</p>
@@ -1241,17 +1247,17 @@
                 <!-- شبكة الخطوات -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 mt-10 gap-8 relative z-10">
 
-              
+
                     <div class="flex flex-col items-center text-center group">
                         <div class="relative mb-6">
-                    
+
                             <div
                                 class="absolute inset-0 rounded-full border border-primary/20 scale-125 group-hover:scale-110 transition-transform duration-500">
                             </div>
-                     
+
                             <div
                                 class="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-emerald-700 text-white flex items-center justify-center shadow-lg shadow-primary/30 relative z-10 group-hover:scale-105 transition-transform duration-300">
-                              
+
                                 <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -1265,7 +1271,7 @@
                             تناسب احتياجاتك بدقة.</p>
                     </div>
 
-           
+
                     <div class="flex flex-col items-center text-center group">
                         <div class="relative mb-6">
                             <div
@@ -1273,7 +1279,7 @@
                             </div>
                             <div
                                 class="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-emerald-700 text-white flex items-center justify-center shadow-lg shadow-primary/30 relative z-10 group-hover:scale-105 transition-transform duration-300">
-                         
+
                                 <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -1290,7 +1296,7 @@
                             المثالية المفضلة.</p>
                     </div>
 
-                   
+
                     <div class="flex flex-col items-center text-center group">
                         <div class="relative mb-6">
                             <div
@@ -1298,7 +1304,7 @@
                             </div>
                             <div
                                 class="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-emerald-700 text-white flex items-center justify-center shadow-lg shadow-primary/30 relative z-10 group-hover:scale-105 transition-transform duration-300">
-                           
+
                                 <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -1313,7 +1319,7 @@
                             الاستلام المناسب.</p>
                     </div>
 
-             
+
                     <div class="flex flex-col items-center text-center group">
                         <div class="relative mb-6">
                             <div
@@ -1321,7 +1327,7 @@
                             </div>
                             <div
                                 class="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-emerald-700 text-white flex items-center justify-center shadow-lg shadow-primary/30 relative z-10 group-hover:scale-105 transition-transform duration-300">
-                        
+
                                 <svg class="v-8 h-8 w-8" fill="none" stroke="currentColor" stroke-width="2"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -1336,7 +1342,7 @@
                             سهولة وأمان تام.</p>
                     </div>
 
-                 
+
                     <div class="flex flex-col items-center text-center group">
                         <div class="relative mb-6">
                             <div
@@ -1344,7 +1350,7 @@
                             </div>
                             <div
                                 class="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-emerald-700 text-white flex items-center justify-center shadow-lg shadow-primary/30 relative z-10 group-hover:scale-105 transition-transform duration-300">
-                        
+
                                 <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -1364,8 +1370,6 @@
 
         </div>
     </section>
-
-    
 
 
 
@@ -1555,6 +1559,7 @@
     <script src="./dist/js/Darkmode.js"></script>
     <script src="./dist/js/mobile-sidebar.js"></script>
     <script src="./dist/js/Filter.js"></script>
+    <script src="./dist/js/testimonials.js"></script>
 </body>
 
 </html>
