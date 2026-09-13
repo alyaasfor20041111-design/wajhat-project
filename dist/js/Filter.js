@@ -1,39 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const filterButtons = document.querySelectorAll(".filter-btn");
-    const carCards = document.querySelectorAll(".car-card");
+    // دالة عامة لتعريف نظام الفلترة لأي قسم
+    function setupFilter(containerSelector, buttonSelector, cardSelector) {
+        const container = document.querySelector(containerSelector);
+        if (!container) return;
 
-    if (filterButtons.length === 0 || carCards.length === 0) return;
+        const filterButtons = container.querySelectorAll(buttonSelector);
+        const cards = container.querySelectorAll(cardSelector);
 
-    filterButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            // تبديل الأنماط النشطة وغير النشطة للأزرار
-            filterButtons.forEach(btn => {
-                btn.classList.remove("bg-primary", "text-white", "shadow-md");
-                btn.classList.add("bg-white", "dark:bg-zinc-900", "text-heading", "dark:text-white", "border", "border-card-tint", "dark:border-zinc-800", "shadow-sm");
-            });
+        if (filterButtons.length === 0 || cards.length === 0) return;
 
-            button.classList.remove("bg-white", "dark:bg-zinc-900", "text-heading", "dark:text-white", "border", "border-card-tint", "dark:border-zinc-800", "shadow-sm");
-            button.classList.add("bg-primary", "text-white", "shadow-md");
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                // تبديل الأنماط النشطة وغير النشطة للأزرار داخل نفس القسم فقط
+                filterButtons.forEach(btn => {
+                    btn.classList.remove("bg-primary", "text-white", "shadow-md");
+                    btn.classList.add("bg-white", "dark:bg-zinc-900", "text-heading", "dark:text-white", "border", "border-card-tint", "dark:border-zinc-800", "shadow-sm");
+                });
 
-            const filterValue = button.getAttribute("data-filter");
+                button.classList.remove("bg-white", "dark:bg-zinc-900", "text-heading", "dark:text-white", "border", "border-card-tint", "dark:border-zinc-800", "shadow-sm");
+                button.classList.add("bg-primary", "text-white", "shadow-md");
 
-            // إظهار أو إخفاء البطاقات حسب الفئة
-            carCards.forEach(card => {
-                const categories = card.getAttribute("data-category") || "";
+                const filterValue = button.getAttribute("data-filter");
 
-                if (filterValue === "all" || categories.includes(filterValue)) {
-                    card.style.display = "flex";
-                    card.style.opacity = "0";
-                    card.style.transform = "translateY(10px)";
-                    setTimeout(() => {
-                        card.style.transition = "all 0.4s ease";
-                        card.style.opacity = "1";
-                        card.style.transform = "translateY(0)";
-                    }, 50);
-                } else {
-                    card.style.display = "none";
-                }
+                // إظهار أو إخفاء البطاقات حسب الفئة مع تأثير حركي سلس
+                cards.forEach(card => {
+                    const categories = card.getAttribute("data-category") || "";
+
+                    if (filterValue === "all" || categories.includes(filterValue)) {
+                        card.style.display = "flex";
+                        card.style.opacity = "0";
+                        card.style.transform = "translateY(10px)";
+                        setTimeout(() => {
+                            card.style.transition = "all 0.4s ease";
+                            card.style.opacity = "1";
+                            card.style.transform = "translateY(0)";
+                        }, 50);
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
             });
         });
-    });
+    }
+
+    // تشغيل الدالة لقسم السيارات (تأكد أن الأ IDs أو الكلاسات تحيط بالقسم بالكامل)
+    // مثلاً لو كان لديك حاضنة رئيسية أو تمرر الكلاسات المباشرة:
+    setupFilter("body", "#car-filters .filter-btn", ".car-card");
+
+    // تشغيل الدالة لقسم أحدث الأخبار
+    setupFilter("body", "#news-filters .filter-btn", ".news-card");
 });
