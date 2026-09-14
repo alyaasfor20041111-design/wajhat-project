@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> إنشاء حساب | تأجير السيارات</title>
+
+    <link rel="stylesheet" href="../../dist/assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+
+
+<body class="min-h-screen bg-[#FAFAFA] flex items-center justify-center p-3 sm:p-5 font-sans">
+
+    <section dir="ltr"
+        class="relative w-full md:w-[90%] h-[1300px] md:h-[660px] gap-7 bg-white rounded-[30px] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+
+
+        <!-- Info Login -->
+
+        <div dir="rtl"
+            class="relative w-full lg:w-[49%] bg-[#fffdfc] p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center order-1 lg:order-2">
+
+
+
+
+            <div class="relative z-10 mt-2 md:mt-24">
+
+                <!-- input information -->
+                <div class="mb-7">
+
+                    <a href="../../index.html"
+                        class="absolute -top-[10px] right-0 md:-top-[10px] flex bg-[#F93A3A] w-fit text-white p-2 rounded">
+                        <i class="fa-solid fa-arrow-right mt-[5px] ml-1"></i>
+                        <p class="text-center justify-center ">تخطي</p>
+                    </a>
+
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-[#480707] mt-16 md:mt-12 text-center mb-3">
+                        أدخل معلوماتك
+                    </h1>
+
+                    <p class="text-gray-500 text-sm md:text-base leading-6 text-center">
+                        قم بإدخال بياناتك لإنشاء حساب جديد.
+                    </p>
+
+                </div>
+
+
+                <form id="loginForm" class="space-y-5 ">
+
+
+                    <!-- User Name -->
+
+                    <div class="flex flex-col md:flex-row gap-6">
+
+                        <div class="w-full">
+
+                            <label class="block text-sm font-bold text-text mb-2">
+                                الاسم الأول
+                                <span class="text-red-600"> *</span>
+                            </label>
+
+                            <div class="relative">
+
+                                <i class="fa-solid fa-user absolute right-4 top-1/2 -translate-y-1/2 text-[#F93A3A]">
+                                </i>
+
+                                <input type="text" id="firstName" placeholder=" الاسم الأول" class="w-full md:w-[250px] h-12 pr-11 pl-4 border placeholder-gray-400 border-text/25 shadow shadow-inner shadow-gray-200 rounded-xl bg-white outline-none transition
+                                    focus:border-text/40
+                                    focus:ring-2 focus:ring-[#800020]/10
+                                    text-sm md:text-base">
+
+                            </div>
+
+                            <p id="firstNameError" class="hidden text-red-600 text-xs mt-1"></p>
+
+                        </div>
+
+
+                        <div class="w-full">
+
+                            <label class="block text-sm font-bold text-text mb-2">
+                                الاسم الثاني
+                                <span class="text-red-600"> *</span>
+                            </label>
+
+                            <div class="relative">
+
+                                <i class="fa-solid fa-user absolute right-4 top-1/2 -translate-y-1/2 text-[#F93A3A]">
+                                </i>
+
+                                <input type="text" id="lastName" placeholder=" الاسم الثاني" class="w-full md:w-[250px] h-12 pr-11 pl-4 border placeholder-gray-400 border-text/25 shadow shadow-inner shadow-gray-200 rounded-xl bg-white outline-none transition
+                                    focus:border-text/40
+                                    focus:ring-2 focus:ring-[#800020]/10
+                                    text-sm">
+
+                            </div>
+
+                            <p id="lastNameError" class="hidden text-red-600 text-xs mt-1"></p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Phon and Email -->
+
+                    <div class="flex flex-col md:flex-row gap-6">
+
+                        <div class="w-full"><label class="block text-sm font-bold text-text mb-2">
+                                رقم الهاتف
+                                <span class="text-red-600"> *</span>
+                            </label>
+
+                            <div class="relative">
+
+                                <i class="fa-solid fa-phone absolute right-4 top-1/2 -translate-y-1/2 text-[#F93A3A]">
+                                </i>
+
+                                <input type="tel" id="phone" placeholder="+963.." class="w-full md:w-[250px] h-12 pr-11 pl-4 border placeholder-gray-400 border-text/25 shadow shadow-inner shadow-gray-200 rounded-xl bg-white outline-none transition
+                                    focus:border-text/40
+                                    focus:ring-2 focus:ring-[#800020]/10
+                                    text-sm md:text-base">
+
+                            </div>
+
+                            <p id="phoneError" class="hidden text-red-600 text-xs mt-1"></p>
+
+                        </div>
+
+
+                        <div class="w-full">
+
+                            <label class="block text-sm font-bold text-text mb-2">
+                                البريد الإلكتروني
+                                <span class="text-red-600"> *</span>
+                            </label>
+
+                            <div class="relative">
+
+                                <i
+                                    class="fa-solid fa-envelope absolute right-4 top-1/2 -translate-y-1/2 text-[#F93A3A]">
+                                </i>
+
+                                <input type="email" id="email" placeholder=" أدخل البريد الإلكتروني" class="w-full md:w-[250px] h-12 pr-11 pl-4 border placeholder-gray-400 border-text/25 shadow shadow-inner shadow-gray-200 rounded-xl bg-white outline-none transition
+                                    focus:border-text/40
+                                    focus:ring-2 focus:ring-[#800020]/10
+                                    text-sm">
+
+                            </div>
+
+                            <p id="emailError" class="hidden text-red-600 text-xs mt-1"></p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="flex flex-col md:flex-row gap-6">
+
+                        <div>
+
+                            <label class="block text-sm font-bold text-text mb-2">
+                                كلمة المرور
+                                <span class="text-red-600">
+                                    *
+                                </span>
+                            </label>
+
+                            <div class="relative">
+
+                                <i class="fa-solid fa-lock absolute right-4 top-1/2 -translate-y-1/2 text-[#F93A3A]">
+                                </i>
+
+                                <input type="password" id="password" placeholder="أدخل كلمة المرور" class="w-full md:w-[250px] h-12 pr-11 pl-11 border placeholder-gray-400 border-text/25 shadow shadow-inner shadow-gray-200 rounded-xl bg-white outline-none transition
+                                    focus:border-text/40
+                                    focus:ring-2 focus:ring-[#800020]/10
+                                    text-sm md:text-base">
+
+
+                                <!-- Password eye -->
+
+                                <button type="button" onclick="togglePassword()"
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#800020]">
+
+                                    <i id="eyeIcon" class="fa-solid fa-eye-slash">
+                                    </i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div><label class="block text-sm font-bold text-text mb-2">
+                                تأكيد كلمة المرور
+                                <span class="text-red-600">
+                                    *
+                                </span>
+                            </label>
+
+                            <div class="relative">
+
+                                <i class="fa-solid fa-lock absolute right-4 top-1/2 -translate-y-1/2 text-[#F93A3A]">
+                                </i>
+
+                                <input type="password" id="confirmPassword" placeholder="تأكيد كلمة المرور" class="w-full md:w-[250px] h-12 pr-11 pl-11 border placeholder-gray-400 border-text/25 shadow shadow-inner shadow-gray-200 rounded-xl bg-white outline-none transition
+                                    focus:border-text/40
+                                    focus:ring-2 focus:ring-[#800020]/10
+                                    text-sm md:text-base">
+
+
+                                <!-- Confirm password eye -->
+
+                                <button type="button" onclick="toggleConfirmPassword()"
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#800020]">
+
+                                    <i id="eyeIconConfirm" class="fa-solid fa-eye-slash">
+                                    </i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Error msg  -->
+
+                    <p id="errorMsg" class="hidden text-red-600 text-sm md:text-base bg-red-50 rounded-lg p-3">
+                    </p>
+
+
+                    <!-- Button Continue  -->
+
+                    <button type="submit" id="err"
+                        class="w-full  h-12 rounded-xl text-white text-sm md:text-base  font-bold bg-[#F93A3A] hover:bg-[#E61C1C] transition duration-300 shadow-lg shadow-[#800020]/20 hover:-translate-y-0.5">
+
+                        متابعة
+
+                        <i class="fa-solid fa-arrow-left mr-2"></i>
+
+                    </button>
+
+
+                </form>
+
+
+                <!-- Or -->
+
+                <div class="flex items-center gap-3 my-4">
+
+                    <div class="h-px bg-gray-200 flex-1">
+                    </div>
+
+                    <span class="text-gray-400 text-sm">
+                        أو
+                    </span>
+
+                    <div class="h-px bg-gray-200 flex-1">
+                    </div>
+
+                </div>
+
+
+                <div class="flex flex-row mt-5 md:mb-16 md:pb-5 gap-1 justify-center">
+
+                    <p>هل لديك حساب؟ </p>
+
+                    <a href="Login.html" class="text-[#851717] font-bold">
+                        تسجيل الدخول
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- Image Login -->
+
+        <div dir="rtl"
+            class="relative flex w-[320px] mx-auto md:mx-0 rounded-2xl mb-5 md:mb-1 lg:w-[53%] h-full overflow-hidden order-2 lg:order-1">
+
+
+            <img src="../../dist/assets/images/Login/img-login.jpg" alt=""
+                class="absolute inset-0 w-full h-full object-cover">
+
+
+            <div class="absolute inset-0 bg-gradient-to-t from-[#4b071b]/70 via-[#800020]/20 to-transparent">
+            </div>
+
+
+            <div class="absolute inset-0 flex flex-col justify-between p-6 sm:p-8 md:p-10 text-white">
+
+            </div>
+
+
+            <!-- style-bg -->
+
+            <div class="absolute top-0 -right-1 w-[70px] h-full bg-white hidden lg:block"
+                style="clip-path: ellipse(55% 60% at 100% 50%);">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="../../dist/js/signup.js"></script>
+    <script src="../../dist/js/script.js"></script>
+
+</body>
+
+</html>

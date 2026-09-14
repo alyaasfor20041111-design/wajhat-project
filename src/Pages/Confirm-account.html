@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> تأكيد الحساب | تأجير السيارات</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../dist/assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+
+<body class="min-h-screen  bg-[#FAFAFA] flex items-center justify-center p-3 sm:p-5 font-sans">
+
+
+    <section dir="ltr"
+        class="relative w-full md:w-[90%] h-[840px] md:h-[650px] gap-7 bg-white rounded-[30px] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+
+
+        <!-- Info Login -->
+
+
+        <div dir="rtl"
+            class="relative w-full lg:w-[42%] bg-[#fffdfc] p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center order-1 lg:order-2">
+
+
+          
+          
+
+
+            <div class="relative z-10">
+
+                <div class="mb-7 relative mt-10">
+
+                    <a href="signup-location.html"
+                        class="absolute -top-[65px] md:-top-[100px] right-0 flex bg-[#F93A3A] w-fit text-white p-2 rounded">
+                        <i class="fa-solid fa-arrow-right mt-[5px] ml-1"></i>
+                        <p class="text-center justify-center ">تخطي</p>
+                    </a>
+
+
+                    <h1 class="text-3xl md:text-4xl mb-4 font-extrabold text-center  mt-16 md:mt-3 text-[#480707]">
+                        تثبيت حسابك
+                    </h1>
+
+                    <p class="text-gray-500 text-sm md:text-base leading-6 text-center text-[15px]">
+                        أدخل رمز التحقق لتأكيد عملية إنشاء الحساب.
+                    </p>
+
+                </div>
+
+
+                <form id="confirmForm" class="space-y-5">
+
+                    <!-- Verification code -->
+
+                    <div class="w-full">
+
+                        <label class="block text-[16px] font-bold text-text mb-2 text-center">
+                            رمز التحقق
+                            <span class="text-red-600">*</span>
+                        </label>
+
+                        <p class="text-gray-500 text-sm md:text-base text-center mb-5">
+                            أدخل رمز التحقق المرسل إلى بريدك الإلكتروني
+                        </p>
+
+                        <div dir="ltr" class="flex justify-center gap-2 sm:gap-3">
+
+                            <input type="text" maxlength="1"
+                                class="code-input w-11 h-12 md:w-15 md:h-15 text-center text-lg font-bold border border-text/25 shadow shadow-inner shadow-gray-200 rounded-xl bg-white outline-none transition focus:border-[#F93A3A] focus:ring-2 focus:ring-[#800020]/10">
+
+                            <input type="text" maxlength="1"
+                                class="code-input w-11 h-12 md:w-15 md:h-15 text-center text-lg font-bold border border-text/25 shadow shadow-inner shadow-gray-200 rounded-xl bg-white outline-none transition focus:border-[#F93A3A] focus:ring-2 focus:ring-[#800020]/10">
+
+                            <input type="text" maxlength="1"
+                                class="code-input w-11 h-12 md:w-15 md:h-15 text-center text-lg font-bold border border-text/25 shadow shadow-inner shadow-gray-200 rounded-xl bg-white outline-none transition focus:border-[#F93A3A] focus:ring-2 focus:ring-[#800020]/10">
+
+                            <input type="text" maxlength="1"
+                                class="code-input w-11 h-12 md:w-15 md:h-15 text-center text-lg font-bold border border-text/25 shadow shadow-inner shadow-gray-200 rounded-xl bg-white outline-none transition focus:border-[#F93A3A] focus:ring-2 focus:ring-[#800020]/10">
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Resend code -->
+
+                    <div class="text-center pt-1">
+
+                        <p class="text-gray-500 text-xs mb-2">
+                            لم يصلك الرمز؟
+                        </p>
+
+                        <button type="button" id="resendCode"
+                            class="text-[#851717] text-sm font-bold hover:text-[#F93A3A] transition">
+                            إعادة إرسال الرمز
+                        </button>
+
+                    </div>
+
+
+                    <!-- Error message -->
+
+                    <p id="errorMsg" class="hidden text-red-600 text-sm bg-red-50 rounded-lg p-3 text-center">
+                    </p>
+
+
+
+
+                    <!-- Message Success Login-->
+                    <div id="successMessage" class="hidden fixed inset-0 z-50 flex items-center justify-center
+                       bg-black/20 backdrop-blur-[4px] px-4">
+
+                        <div id="successCard" class="relative w-full max-w-[410px] overflow-hidden
+               bg-white rounded-[30px] shadow-[0_25px_70px_rgba(0,0,0,0.18)]
+               px-7 py-3 text-center">
+                            <div class="absolute top-0 left-0 w-full h-[4px]
+                    bg-gradient-to-r from-transparent via-green-500 to-transparent">
+                            </div>
+
+
+                            <div class="relative mx-auto w-[105px] h-[105px] mb-6">
+
+
+                                <div id="successGlow" class="absolute inset-0 rounded-full bg-green-400/10 scale-75">
+                                </div>
+
+
+                                <div id="successCircle" class="absolute inset-[7px] rounded-full
+                       border-[3px] border-green-500/20
+                       flex items-center justify-center">
+
+
+                                    <div id="successInner" class="w-[76px] h-[76px] rounded-full
+                           bg-gradient-to-br from-green-400 to-green-600
+                           flex items-center justify-center
+                           shadow-[0_10px_30px_rgba(34,197,94,0.30)]">
+
+                                        <!-- Animated Check -->
+
+                                        <svg id="checkMark" class="w-[42px] h-[42px]" viewBox="0 0 52 52" fill="none">
+
+                                            <path id="checkPath" d="M12 27L22 37L40 17" stroke="white" stroke-width="5"
+                                                stroke-linecap="round" stroke-linejoin="round" pathLength="100"
+                                                stroke-dasharray="100" stroke-dashoffset="100">
+                                            </path>
+
+                                        </svg>
+
+                                    </div>
+                                </div>
+
+
+                                <span class="absolute top-[5px] right-[12px] w-[7px] h-[7px]
+                         bg-green-400 rounded-full animate-ping"></span>
+
+                                <span class="absolute bottom-[12px] left-[3px] w-[6px] h-[6px]
+                         bg-green-500 rounded-full animate-pulse"></span>
+
+                                <span class="absolute top-[35px] left-[-2px] w-[5px] h-[5px]
+                         bg-green-300 rounded-full animate-pulse"></span>
+
+                            </div>
+
+
+                            <!-- title -->
+                            <h2 id="successTitle" class="text-[26px] leading-tight font-bold text-black mb-3">
+                                تم إنشاء الحساب بنجاح
+                            </h2>
+
+
+                            <!-- text -->
+                            <p class="text-[16px] leading-8 text-gray-500">
+                                أصبح حسابك جاهزاُ , نتمنى لك تجربة مميزة مع <span
+                                    class="text-[#E53935] font-bold text-xl ">وجهة</span>
+
+                                <br>
+
+                            </p>
+
+
+
+                            <div class="mx-auto mt-6 w-[45px] h-[2px] bg-green-500/20 rounded-full"></div>
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- Button Account Verification-->
+
+                    <button type="submit" id="err"
+                        class="w-full  h-12 rounded-xl text-white  font-bold bg-[#F93A3A] hover:bg-[#E61C1C] transition duration-300 shadow-lg shadow-[#800020]/20 hover:-translate-y-0.5">
+
+                        تأكيد الحساب
+
+                        <i class="fa-solid fa-arrow-left mr-2"></i>
+
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+
+
+        <!-- Image Login -->
+
+
+        <div dir="rtl"
+            class="relative flex w-[320px] mx-auto md:mx-0 rounded-2xl mb-5 md:mb-1 lg:w-[50%] h-full overflow-hidden order-2 lg:order-1">
+
+
+            <img src="../../dist/assets/images/Login/img-login.jpg" alt=""
+                class="absolute inset-0 w-full h-full object-cover">
+
+
+            <div class="absolute inset-0 bg-gradient-to-t from-[#4b071b]/70 via-[#800020]/20 to-transparent">
+            </div>
+
+
+            <div class="absolute inset-0 flex flex-col justify-between p-6 sm:p-8 md:p-10 text-white">
+
+            </div>
+
+
+            <!-- style-bg -->
+
+
+            <div class="absolute top-0 -right-1 w-[70px] h-full bg-white hidden lg:block"
+                style="clip-path: ellipse(55% 60% at 100% 50%);">
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <script src="../../dist/js/signup.js"></script>
+    <script src="../../dist/js/script.js"></script>
+
+
+</body>
+
+</html>
