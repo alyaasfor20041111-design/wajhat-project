@@ -26,3 +26,12 @@
 }
 
 
+/* عندما تكون القائمة مطوية، يتم توسيط محتويات الروابط وإلغاء النصوص والحشو الداخلي */
+#admin-sidebar[data-collapsed="true"] .flex-1.overflow-y-auto a {
+    justify-content: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+#admin-sidebar[data-collapsed="true"] .sidebar-text {
+    display: none !important;
+}
