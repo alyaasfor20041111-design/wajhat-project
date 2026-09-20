@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل السيارة - وجهة</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../dist/assets/css/all.min.css">
+    <link rel="stylesheet" href="../../dist/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <link rel="icon" type="image/svg+xml" href="../../dist/assets/images/image.png">
+
+
+</head>
+
+<body>
+
+    <header class="w-full bg-card-bg border-b border-card-tint shadow-sm sticky top-0 z-50" dir="rtl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- 1. الشعار (Logo) -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="flex items-center">
+                        <img src="../../dist/assets/images/logo.png" alt="شعار وجهة" class="w-15 h-15  ">
+                    </a>
+                </div>
+
+                <!-- 2. روابط التنقل (Navigation Links) -->
+                <nav class="hidden md:flex items-center gap-8 font-sans">
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الرئيسية</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">من نحن</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الحجز</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">كيف نعمل</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">اتصل بنا</a>
+                </nav>
+
+                <!-- 3. أزرار الإجراءات (Actions & Auth) -->
+                <div class="flex items-center gap-4 font-sans">
+                    <!-- زر تسجيل الدخول -->
+                    <a href="#"
+                        class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-heading hover:text-primary transition-colors">
+                        تسجيل الدخول
+                    </a>
+
+                    <!-- زر إنشاء حساب -->
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold
+                         text-white bg-primary hover:bg-primary-hover rounded-xl shadow-sm transition-all duration-200">
+                        حساب جديد
+                    </a>
+
+                    <!-- زر القائمة للجوال (Mobile Menu Toggle) -->
+                    <button type="button"
+                        class="md:hidden p-2 rounded-lg text-heading hover:bg-card-tint focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Car Details Section Start -->
+    <section class="max-w-7xl mx-auto py-[30px]">
+        <!-- breadcrumb start -->
+        <nav class="flex my-7" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse text-xl">
+                <li class="inline-flex items-center">
+                    <a href="../../index.html" class="inline-flex items-center font-medium text-muted
+                                 hover:text-heading">
+                        <svg class="w-4 h-4 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5" />
+                        </svg>
+                        الرئيسية
+                    </a>
+                </li>
+                <li>
+                    <div class="flex items-center space-x-1.5">
+                        <svg class="w-3.5 h-3.5 rtl:rotate-180 text-muted" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m9 5 7 7-7 7" />
+                        </svg>
+                        <a href="#" class="inline-flex items-center font-medium
+                                     text-muted
+                                 hover:text-heading"> SUV </a>
+                    </div>
+                </li>
+                <li aria-current="page">
+                    <div class="flex items-center space-x-1.5">
+                        <svg class="w-3.5 h-3.5 rtl:rotate-180 text-body" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m9 5 7 7-7 7" />
+                        </svg>
+                        <span class="inline-flex items-center font-medium text-muted">
+                            Range Rover
+                        </span>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+        <!-- breadcrumb end -->
+
+        <div class="flex md:flex-row flex-col  justify-start md:gap-20 gap-30 items-center">
+            <!-- <div class="md:w-[5%] w-0"></div> -->
+            <div class="img md:w-[35%] w-[90%]">
+                <div id="default-carousel" class="relative w-full" data-carousel="">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-72 overflow-hidden rounded-base md:h-[500px]">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out " data-carousel-item>
+                            <img src="../../dist/assets/images/categories/cars/main/1.jpeg"
+                                class=" w-[100%] h-[100%] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="../../dist/assets/images/categories/cars/main/2.jpg" class="w-[100%] h-[100%] absolute block w-full -translate-x-1/2 -translate-y-1/2
+                                  top-1/2 left-1/2 " alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="../../dist/assets/images/categories/cars/main/3.jpeg" class="w-[100%] h-[100%] absolute block w-full
+                                 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="../../dist/assets/images/categories/cars/main/4.avif"
+                                class="w-[100%] h-[100%] absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute z-30 flex md:flex-col flex-row gap-5
+                     justify-around 
+                     md:top-[50%] md:-translate-y-1/2 md:right-[-30%] 
+                     md:left-auto md:translate-x-0
+                     md:bottom-auto bottom-[-30%]  ">
+
+                        <button type="button" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"
+                            class="group">
+                            <img src="../../dist/assets/images/categories/cars/main/1.jpeg" 
+                            class="md:h-[100px] md:w-[100px] w-[70px] h-[70px] cursor-pointer rounded transition-all duration-300
+                     opacity-70
+                     group-aria-[current=true]:opacity-100
+                      group-aria-[current=true]:scale-105
+                       group-aria-[current=true]:ring-2 group-aria-[current=true]:ring-heading" alt="...">
+                        </button>
+
+                        <button type="button" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"
+                            class="group">
+                            <img src="../../dist/assets/images/categories/cars/main/2.jpg" 
+                            class="md:h-[100px] md:w-[100px] w-[70px] h-[70px] cursor-pointer rounded transition-all duration-300
+                    opacity-70
+                     group-aria-[current=true]:opacity-100
+                      group-aria-[current=true]:scale-105
+                       group-aria-[current=true]:ring-2 group-aria-[current=true]:ring-heading" alt="...">
+                        </button>
+
+                        <button type="button" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"
+                            class="group">
+                            <img src="../../dist/assets/images/categories/cars/main/3.jpeg" class="md:h-[100px] md:w-[100px] w-[70px] h-[70px] cursor-pointer rounded transition-all duration-300
+                     opacity-70
+                     group-aria-[current=true]:opacity-100
+                      group-aria-[current=true]:scale-105
+                       group-aria-[current=true]:ring-2 group-aria-[current=true]:ring-heading" alt="...">
+                        </button>
+
+                        <button type="button" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"
+                            class="group">
+                            <img src="../../dist/assets/images/categories/cars/main/4.avif" class="md:h-[100px] md:w-[100px] w-[70px] h-[70px] cursor-pointer rounded transition-all duration-300
+                     opacity-70
+                     group-aria-[current=true]:opacity-100
+                      group-aria-[current=true]:scale-105
+                       group-aria-[current=true]:ring-2 group-aria-[current=true]:ring-heading" alt="...">
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="info md:w-[60%] w-[100%] md:block flex flex-col items-center md:py-0 py-[30px] ">
+                <img class="brand-img w-[35%] md:h-[140px] h-[100px] object-cover md:ms-0 ms-10"
+                    src="../../dist/assets/images/categories/honda.png" alt="">
+                <h1 class="md:text-4xl text-3xl text-heading font-bold md:my-4  
+                font-heading md:ps-[3rem]">CR-V</h1>
+                <div class="details text-2xl flex flex-col gap-4 md:text-start text-center">
+                    <div>
+                        <span class="font-bold">السعر:</span>
+                        <span>100$ باليوم</span>
+                    </div>
+                    <div>
+                        <span class="font-bold">سنة التصنيع: </span>
+                        <span>2023</span>
+                    </div>
+                    <div>
+                        <span class="font-bold">عدد المقاعد: </span>
+                        <span>5</span>
+                    </div>
+                    <div>
+                        <span class="font-bold">نوع الوقود: </span>
+                        <span>بنزين</span>
+                    </div>
+                    <div>
+                        <span class="font-bold">ناقل الحركة: </span>
+                        <span>CVT</span>
+                    </div>
+                    <div class="quick-reviews flex">
+                        <span class="font-bold">تقييمات المستخدمين: </span>
+                        <div class="stars text-yellow-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Car Details Section End -->
+
+    <!-- Similar Cars Section Start -->
+    <section class="bg-bg-main">
+        <div class="similar-cars max-w-7xl mx-auto right-origin py-[50px] relative px-8 ">
+            <h2 class=" text-3xl md:text-4xl font-bold mb-7 text-heading ">سيارات مشابهة</h2>
+            <div class="swiper similar-cars-swiper ">
+                <div class=" swiper-wrapper posts-8 h-full">
+                                        <!-- SUV Start -->
+                    <div class="car-card swiper-slide bg-white dark:bg-zinc-900 rounded-3xl 
+                p-4 shadow-lg border border-card-tint dark:border-zinc-800 
+                flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+                        data-category="suv" data-fuel="gasoline" data-transmission="automatic" data-seats="5"
+                        data-price="100" data-brand="bm" data-year="2015">
+                        <span class="absolute top-6 left-6 bg-primary text-white
+
+                        font-bold px-3 py-1 rounded-full shadow z-10">SUV</span>
+                        <div>
+                            <div
+                                class="w-full h-40 bg-zinc-100 dark:bg-zinc-800 rounded-2xl overflow-hidden mb-4 flex items-center justify-center">
+                                <img src="../../dist/assets/images/categories/cars/suv1.jpg" alt="BMW X5"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <h3 class="text-lg font-bold text-heading dark:text-white mb-1">BMW X5</h3>
+                            <p class="text-lg text-muted dark:text-zinc-400 mb-4">الشركة المصنعة: BM</p>
+
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-card-tint
+                             dark:border-zinc-800 mb-4 text-center">
+                                <div class="text-[13px] text-muted dark:text-zinc-400 font-medium">أوتوماتيك</div>
+                                <div
+                                    class="text-[13px] text-muted dark:text-zinc-400 font-medium border-x border-card-tint dark:border-zinc-800">
+                                    بنزين</div>
+                                <div class="text-[13px] text-muted dark:text-zinc-400 font-medium">موديل 2015</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-black text-primary">$100</span>
+                                <span class="text-muted dark:text-zinc-400"> / يوم</span>
+                            </div>
+                            <div class="flex items-center gap-1  font-bold
+                         text-heading dark:text-white">
+                                <span class="text-amber-400">★</span> 4.8 <span
+                                    class="text-[10px] text-muted dark:text-zinc-400 font-normal"></span>
+                            </div>
+                        </div>
+
+                        <a href="car-details.html" class="flex justify-center bg-primary hover:bg-primary-hover
+                             text-white  
+                             md:text-xl text-lg px-5 md:py-3 py-1 mt-3 w-full rounded-2xl">التفاصيل</a>
+                    </div>
+
+                    <!-- second -->
+                    <div class="car-card swiper-slide bg-white dark:bg-zinc-900 rounded-3xl 
+                p-4 shadow-lg border border-card-tint dark:border-zinc-800 
+                flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+                        data-category="suv" data-fuel="gasoline" data-transmission="automatic" data-seats="5"
+                        data-price="60" data-brand="lamborghini" data-year="2015">
+                        <span class="absolute top-6 left-6 bg-primary text-white
+
+                        font-bold px-3 py-1 rounded-full shadow z-10">SUV</span>
+                        <div>
+                            <div
+                                class="w-full h-40 bg-zinc-100 dark:bg-zinc-800 rounded-2xl overflow-hidden mb-4 flex items-center justify-center">
+                                <img src="../../dist/assets/images/categories/cars/suv2.jfif" alt="BMW X5"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <h3 class="text-lg font-bold text-heading dark:text-white mb-1">Lamborghini Urus
+                            </h3>
+                            <p class="text-lg text-muted dark:text-zinc-400 mb-4">الشركة المصنعة: Lamborgini</p>
+
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-card-tint
+                             dark:border-zinc-800 mb-4 text-center">
+                                <div class="text-[13px] text-muted dark:text-zinc-400 font-medium">أوتوماتيك</div>
+                                <div
+                                    class="text-[13px] text-muted dark:text-zinc-400 font-medium border-x border-card-tint dark:border-zinc-800">
+                                    بنزين</div>
+                                <div class="text-[13px] text-muted dark:text-zinc-400 font-medium">موديل 2015</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-black text-primary">$60</span>
+                                <span class="text-muted dark:text-zinc-400"> / يوم</span>
+                            </div>
+                            <div class="flex items-center gap-1  font-bold
+                         text-heading dark:text-white">
+                                <span class="text-amber-400">★</span> 4.3 <span
+                                    class="text-[10px] text-muted dark:text-zinc-400 font-normal"></span>
+                            </div>
+                        </div>
+
+                        <a href="car-details.html" class="flex justify-center bg-primary hover:bg-primary-hover
+                             text-white  
+                             md:text-xl text-lg px-5 md:py-3 py-1 mt-3 w-full rounded-2xl">التفاصيل</a>
+                    </div>
+
+
+                    <!-- third -->
+                    <div class="car-card swiper-slide bg-white dark:bg-zinc-900 rounded-3xl 
+                p-4 shadow-lg border border-card-tint dark:border-zinc-800 
+                flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+                        data-category="suv" data-fuel="gasoline" data-transmission="automatic" data-seats="5"
+                        data-price="220" data-brand="landRover" data-year="2023">
+                        <span class="absolute top-6 left-6 bg-primary text-white
+
+                        font-bold px-3 py-1 rounded-full shadow z-10">SUV</span>
+                        <div>
+                            <div
+                                class="w-full h-40 bg-zinc-100 dark:bg-zinc-800 rounded-2xl overflow-hidden mb-4 flex items-center justify-center">
+                                <img src="../../dist/assets/images/categories/cars/suv3.jfif" alt="BMW X5"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <h3 class="text-lg font-bold text-heading dark:text-white mb-1">Range Rover
+                            </h3>
+                            <p class="text-lg text-muted dark:text-zinc-400 mb-4">الشركة المصنعة: Land Rover</p>
+
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-card-tint
+                             dark:border-zinc-800 mb-4 text-center">
+                                <div class="text-[13px] text-muted dark:text-zinc-400 font-medium">أوتوماتيك</div>
+                                <div
+                                    class="text-[13px] text-muted dark:text-zinc-400 font-medium border-x border-card-tint dark:border-zinc-800">
+                                    بنزين</div>
+                                <div class="text-[13px] text-muted dark:text-zinc-400 font-medium">موديل 2023</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-black text-primary">$220</span>
+                                <span class="text-muted dark:text-zinc-400"> / يوم</span>
+                            </div>
+                            <div class="flex items-center gap-1  font-bold
+                         text-heading dark:text-white">
+                                <span class="text-amber-400">★</span> 4.9 <span
+                                    class="text-[10px] text-muted dark:text-zinc-400 font-normal"></span>
+                            </div>
+                        </div>
+
+                        <a href="car-details.html" class="flex justify-center bg-primary hover:bg-primary-hover
+                             text-white  
+                             md:text-xl text-lg px-5 md:py-3 py-1 mt-3 w-full rounded-2xl">التفاصيل</a>
+                    </div>
+
+                    <!-- fourth -->
+                    <div class="car-card swiper-slide bg-white dark:bg-zinc-900 rounded-3xl 
+                p-4 shadow-lg border border-card-tint dark:border-zinc-800 
+                flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+                        data-category="suv" data-fuel="gasoline" data-transmission="automatic" data-seats="5"
+                        data-price="50" data-brand="honda" data-year="2023">
+                        <span class="absolute top-6 left-6 bg-primary text-white
+
+                        font-bold px-3 py-1 rounded-full shadow z-10">SUV</span>
+                        <div>
+                            <div
+                                class="w-full h-40 bg-zinc-100 dark:bg-zinc-800 rounded-2xl overflow-hidden mb-4 flex items-center justify-center">
+                                <img src="../../dist/assets/images/categories/cars/suv4.jfif" alt="BMW X5"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <h3 class="text-lg font-bold text-heading dark:text-white mb-1">CR-V
+                            </h3>
+                            <p class="text-lg text-muted dark:text-zinc-400 mb-4">الشركة المصنعة: Honda</p>
+
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-card-tint
+                             dark:border-zinc-800 mb-4 text-center">
+                                <div class="text-[13px] text-muted dark:text-zinc-400 font-medium">أوتوماتيك</div>
+                                <div
+                                    class="text-[13px] text-muted dark:text-zinc-400 font-medium border-x border-card-tint dark:border-zinc-800">
+                                    بنزين</div>
+                                <div class="text-[13px] text-muted dark:text-zinc-400 font-medium">موديل 2023</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-black text-primary">$50</span>
+                                <span class="text-muted dark:text-zinc-400"> / يوم</span>
+                            </div>
+                            <div class="flex items-center gap-1  font-bold
+                         text-heading dark:text-white">
+                                <span class="text-amber-400">★</span> 4.9 <span
+                                    class="text-[10px] text-muted dark:text-zinc-400 font-normal"></span>
+                            </div>
+                        </div>
+
+                        <a href="car-details.html" class="flex justify-center bg-primary hover:bg-primary-hover
+                             text-white  
+                             md:text-xl text-lg px-5 md:py-3 py-1 mt-3 w-full rounded-2xl">التفاصيل</a>
+                    </div>
+
+                    <!-- fifth -->
+                    <div class="car-card swiper-slide bg-white dark:bg-zinc-900 rounded-3xl 
+                p-4 shadow-lg border border-card-tint dark:border-zinc-800 
+                flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+                        data-category="suv" data-fuel="gasoline" data-transmission="CVT" data-seats="5" data-price="100"
+                        data-brand="honda" data-year="2018">
+                        <span class="absolute top-6 left-6 bg-primary text-white
+
+                        font-bold px-3 py-1 rounded-full shadow z-10">SUV</span>
+                        <div>
+                            <div
+                                class="w-full h-40 bg-zinc-100 dark:bg-zinc-800 rounded-2xl overflow-hidden mb-4 flex items-center justify-center">
+                                <img src="../../dist/assets/images/categories/cars/suv5.jpeg" alt="BMW X5"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <h3 class="text-lg font-bold text-heading dark:text-white mb-1">CR-V
+                            </h3>
+                            <p class="text-lg text-muted dark:text-zinc-400 mb-4">الشركة المصنعة: Honda</p>
+
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-card-tint
+                             dark:border-zinc-800 mb-4 text-center">
+                                <div class="text-[13px] text-muted dark:text-zinc-400 font-medium">CVT</div>
+                                <div
+                                    class="text-[13px] text-muted dark:text-zinc-400 font-medium border-x border-card-tint dark:border-zinc-800">
+                                    بنزين</div>
+                                <div class="text-[13px] text-muted dark:text-zinc-400 font-medium">موديل 2018</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-black text-primary">$100</span>
+                                <span class="text-muted dark:text-zinc-400"> / يوم</span>
+                            </div>
+                            <div class="flex items-center gap-1  font-bold
+                         text-heading dark:text-white">
+                                <span class="text-amber-400">★</span> 4.9 <span
+                                    class="text-[10px] text-muted dark:text-zinc-400 font-normal"></span>
+                            </div>
+                        </div>
+
+                        <a href="car-details.html" class="flex justify-center bg-primary hover:bg-primary-hover
+                             text-white  
+                             md:text-xl text-lg px-5 md:py-3 py-1 mt-3 w-full rounded-2xl">التفاصيل</a>
+                    </div>
+
+                    <!-- sixth -->
+                    <div class="car-card swiper-slide bg-white dark:bg-zinc-900 rounded-3xl 
+                p-4 shadow-lg border border-card-tint dark:border-zinc-800 
+                flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+                        data-category="suv" data-fuel="gasoline" data-transmission="automatic" data-seats="5"
+                        data-price="130" data-brand="nissan" data-year="2018">
+                        <span class="absolute top-6 left-6 bg-primary text-white
+
+                        font-bold px-3 py-1 rounded-full shadow z-10">SUV</span>
+                        <div>
+                            <div
+                                class="w-full h-40 bg-zinc-100 dark:bg-zinc-800 rounded-2xl overflow-hidden mb-4 flex items-center justify-center">
+                                <img src="../../dist/assets/images/categories/cars/suv6.webp" alt="BMW X5"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <h3 class="text-lg font-bold text-heading dark:text-white mb-1">Patrol
+                            </h3>
+                            <p class="text-lg text-muted dark:text-zinc-400 mb-4">الشركة المصنعة: Nissan</p>
+
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-card-tint
+                             dark:border-zinc-800 mb-4 text-center">
+                                <div class="text-[13px] text-muted dark:text-zinc-400 font-medium">أوتوماتيك</div>
+                                <div
+                                    class="text-[13px] text-muted dark:text-zinc-400 font-medium border-x border-card-tint dark:border-zinc-800">
+                                    بنزين</div>
+                                <div class="text-[13px] text-muted dark:text-zinc-400 font-medium">موديل 2018</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-black text-primary">$130</span>
+                                <span class="text-muted dark:text-zinc-400"> / يوم</span>
+                            </div>
+                            <div class="flex items-center gap-1  font-bold
+                         text-heading dark:text-white">
+                                <span class="text-amber-400">★</span> 4.1 <span
+                                    class="text-[10px] text-muted dark:text-zinc-400 font-normal"></span>
+                            </div>
+                        </div>
+
+                        <a href="car-details.html" class="flex justify-center bg-primary hover:bg-primary-hover
+                             text-white  
+                             md:text-xl text-lg px-5 md:py-3 py-1 mt-3 w-full rounded-2xl">التفاصيل</a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="btn-prev md:w-[60px] md:h-[60px] w-[30px] h-[30px] absolute 
+            top-[50%] translate-y-1/2 md:right-[-6%] right-[0]
+
+              z-40
+                           rounded-full bg-primary hover:bg-primary-hover
+                             flex items-center justify-center cursor-pointer">
+                <i class="fas fa-play text-white md:text-2xl text-xl mt-[3px] ml-[3px]"></i>
+            </div>
+            <div
+                class="btn-next md:w-[60px] md:h-[60px] w-[30px] h-[30px] absolute
+            top-[50%] translate-y-1/2 md:left-[-6%] left-[0]
+                           rounded-full bg-primary hover:bg-primary-hover flex items-center justify-center cursor-pointer">
+                <i class="fas fa-play fa-flip-horizontal text-white md:text-2xl text-xl mr-[3px] mr-[3px]"></i>
+            </div>
+        </div>
+    </section>
+    <!-- Similar Cars Section End -->
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../../dist/js/swiper.js"></script>
+
+    <script src="../../dist/js/scrollreveal-animation.js"></script>
+    <script src="../../dist/js/script.js"></script>
+
+</body>
+
+</html>
