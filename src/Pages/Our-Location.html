@@ -1,0 +1,2040 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> مواقعنا | تأجير سيارات</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../dist/assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="./dist/assets/images/image.png">
+
+
+    <style>
+
+        /* Swiper-Branch */
+
+        .branches-swiper {
+
+            width: 100%;
+
+            padding: 25px 15px 70px !important;
+
+            overflow: visible !important;
+
+        }
+
+
+        .branches-swiper .swiper-wrapper {
+
+            align-items: center;
+
+        }
+
+
+        .branches-swiper .swiper-slide {
+
+            height: auto;
+
+            transition:
+                transform 0.45s ease,
+                opacity 0.45s ease;
+
+        }
+
+
+
+        .branches-swiper .swiper-slide-prev {
+
+            transform: rotate(2deg) scale(0.96);
+
+        }
+
+
+        .branches-swiper .swiper-slide-next {
+
+            transform: rotate(-2deg) scale(0.96);
+
+        }
+
+
+
+        .branches-swiper .swiper-slide-active {
+
+            transform: rotate(0deg) scale(1);
+
+            z-index: 5;
+
+        }
+
+
+        /* Cards Branch */
+
+        .branch-card {
+
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease;
+
+        }
+
+
+        .branch-card:hover {
+
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 20px 45px rgba(200, 16, 46, 0.14);
+
+        }
+
+
+
+        .branch-prev::after,
+        .branch-next::after {
+
+            font-size: 18px !important;
+
+            font-weight: 900;
+
+            color: #ffffff;
+
+        }
+
+
+        .branch-prev:hover::after,
+        .branch-next:hover::after {
+
+            color: white;
+
+        }
+
+
+
+
+        .branch-prev {
+
+            left: -35px !important;
+
+            right: auto !important;
+
+        }
+
+
+        .branch-next {
+
+            right: -10px !important;
+            left: auto !important;
+
+        }
+
+
+
+        .branches-pagination .swiper-pagination-bullet {
+
+            width: 8px;
+
+            height: 8px;
+
+            background: #ddd;
+
+            opacity: 1;
+
+            transition: all 0.3s ease;
+
+        }
+
+
+        .branches-pagination .swiper-pagination-bullet-active {
+
+            width: 27px;
+
+            border-radius: 20px;
+
+            background: #c8102e;
+
+        }
+
+
+
+        #map-section {
+
+            scroll-margin-top: 40px;
+
+        }
+        .map-container {
+
+            position: relative;
+
+            overflow: hidden;
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.10);
+
+            border: 1px solid #eee;
+
+        }
+        .map-container iframe {
+
+            width: 100%;
+
+            height: 470px;
+
+            border: 0;
+
+            display: block;
+
+        }
+        .map-branch-label {
+
+            position: absolute;
+
+            top: 20px;
+
+            right: 20px;
+
+            z-index: 5;
+
+            background: white;
+
+            border-radius: 18px;
+
+            padding: 12px 18px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.12);
+
+            border-right: 4px solid #c8102e;
+
+        }
+
+
+      /* Filter Button */
+
+        .filter-btn {
+
+            transition: all 0.3s ease;
+
+        }
+        .filter-btn:hover {
+
+            transform: translateY(-2px);
+
+        }
+
+        .filter-btn.active {
+
+            background: #F93A3A;
+
+            color: white;
+
+            border-color: #c8102e;
+
+            box-shadow:
+                0 8px 20px rgba(200, 16, 46, 0.18);
+
+        }
+
+
+        /* Cards Car */
+
+        .car-card {
+
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease;
+
+        }
+
+
+        .car-card:hover {
+
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 20px 45px rgba(200, 16, 46, 0.13);
+
+        }
+
+        .car-card img {
+
+            transition: transform 0.5s ease;
+
+        }
+
+        .car-card:hover img {
+
+            transform: scale(1.04);
+
+        }
+
+
+        
+
+        @media (max-width: 767px) {
+
+            /* كارد واحد فقط على الموبايل */
+            .branches-swiper .swiper-slide {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+
+            /* إخفاء أي جزء من الكاردات المجاورة */
+            .branches-swiper {
+                width: 100% !important;
+
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+
+                overflow: hidden !important;
+            }
+
+
+            .branches-swiper .swiper-wrapper {
+                width: 100% !important;
+            }
+
+
+            /* إلغاء ميلان الكاردات الجانبية بالموبايل */
+            .branches-swiper .swiper-slide-prev,
+            .branches-swiper .swiper-slide-next {
+                transform: rotate(0deg) scale(1) !important;
+            }
+
+
+            /* =================================================
+       أزرار التنقل بالموبايل
+    ================================================= */
+
+            .branch-prev,
+            .branch-next {
+
+                width: 44px !important;
+
+                height: 44px !important;
+
+                margin-top: -22px !important;
+
+            }
+
+
+            .branch-prev {
+
+                right: -5px !important;
+
+                left: auto !important;
+
+            }
+
+
+            .branch-next {
+
+                left: -5px !important;
+
+                right: auto !important;
+
+            }
+
+
+            .branch-prev::after,
+            .branch-next::after {
+
+                font-size: 15px !important;
+
+            }
+
+
+            /* =================================================
+       منع السحب/التمدد الأفقي خارج القسم
+    ================================================= */
+
+            .branches-swiper,
+            .branches-swiper .swiper-wrapper,
+            .branches-swiper .swiper-slide {
+
+                box-sizing: border-box;
+
+            }
+
+
+            /* =================================================
+       MAP
+    ================================================= */
+
+            .map-container iframe {
+
+                height: 400px;
+
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body class="bg-[#FAFAFA] text-[#A01414] pb-20 font-sans">
+
+
+    <header class="w-full bg-card-bg border-b border-card-tint shadow-sm sticky top-0 z-50" dir="rtl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- 1. الشعار (Logo) -->
+                <div class="flex items-center gap-3">
+
+                    <a href="#" class="flex items-center">
+                        <img src="../../dist/assets/images/logo.png" alt="شعار وجهة" class="w-10 h-10  ">
+                    </a>
+                </div>
+
+                <!-- 2. روابط التنقل (Navigation Links) -->
+                <nav class="hidden md:flex items-center gap-8 font-sans">
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الرئيسية</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">من نحن</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الحجز</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">كيف نعمل</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">اتصل بنا</a>
+                </nav>
+
+                <!-- 3. أزرار الإجراءات (Actions & Auth) -->
+                <div class="flex items-center gap-4 font-sans">
+                    <!-- زر تسجيل الدخول -->
+                    <a href="Login.html"
+                        class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-heading hover:text-primary transition-colors">
+                        تسجيل الدخول
+                    </a>
+
+                    <!-- زر إنشاء حساب -->
+                    <a href="signup.html"
+                        class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-primary hover:bg-primary-hover rounded-xl shadow-sm transition-all duration-200">
+                        حساب جديد
+                    </a>
+
+                    <!-- زر القائمة للجوال (Mobile Menu Toggle) -->
+                    <button type="button"
+                        class="md:hidden p-2 rounded-lg text-heading hover:bg-card-tint focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Title -->
+
+    <section class="relative  isolate overflow-hidden bg-[#0b0d10] py-12 md:py-[140px]">
+        <!-- Background image -->
+        <div class="absolute inset-0 -z-20 bg-center bg-cover "
+            style="background-image: url('../../dist/assets/images/Our-Locations/bg-title.jpg'); ">
+        </div>
+
+
+        <!-- Premium dark overlay -->
+        <div class="absolute inset-0 -z-10 bg-black/15"></div>
+
+
+        <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/60 via-red-900/30 to-black/60"></div>
+
+        <!-- Decorative glow -->
+        <div
+            class="absolute left-1/2 top-1/2 -z-10 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/10 blur-[120px]">
+        </div>
+
+
+        <div class="mx-auto flex max-w-7xl items-center justify-center px-5 sm:px-8">
+            <div class="text-center">
+
+
+                <h2 class="text-3xl md:text-5xl font-bold font-heading  tracking-tight text-[#480707]  drop-shadow-2xl
+            ">
+                    مواقعنا
+                </h2>
+
+                <div class="mx-auto mt-6 flex items-center justify-center gap-3">
+                    <span class="h-px w-10 bg-white/40"></span>
+
+                    <span class="h-2 w-2 rounded-full bg-white"></span>
+
+                    <span class="h-px w-10 bg-white/40"></span>
+                </div>
+
+                <p
+                    class="hidden md:flex mx-auto mt-6 max-w-md text-sm md:text-base font-semibold font-heading leading-7 text-[#851717] ">
+                    تواجدنا بالقرب منك، اختر موقعك وانطلق معنا
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Bottom fade -->
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0b0d10] to-transparent"></div>
+    </section>
+
+
+
+    <!-- Branchs And Locations -->
+
+    <section class="max-w-[330px]  md:max-w-5xl mx-auto  mt-10 px-0 md:px-8 pt-10 md:pt-16 pb-10">
+
+        <div class="text-center mb-8 md:mb-10">
+
+            <h2 class="text-2xl md:text-4xl font-black font-heading text-[#480707] mb-3">
+                الفروع والمواقع
+            </h2>
+
+            <p class="text-[#A01414] text-[13px] md:text-[16px] mt-5 md:mt-8 mx-auto leading-7 px-2 md:px-0">
+                "نحن أقرب إليك، أينما كانت وجهتك. اكتشف فروعنا واختر الموقع
+                الأنسب لاستلام سيارتك بكل سهولة."
+            </p>
+
+        </div>
+
+
+        <!-- Swiper -->
+
+        <div class="relative px-1 md:px-12">
+
+            <div class="swiper branches-swiper text-[16px] ">
+
+                <div class="swiper-wrapper">
+
+
+                    <!-- Branch 1 -->
+
+                    <div class="swiper-slide">
+
+                        <div
+                            class="branch-card bg-white rounded-3xl overflow-hidden border-2 border-primaryRed shadow-xl relative">
+
+                            <div
+                                class="absolute top-3 -translate-x-1/2 bg-[#F93A3A] text-white text-[9px] md:text-[10px] font-bold px-4 md:px-5 py-1.5 rounded-full z-10 tracking-wider">
+
+                                الفرع الرئيسي
+
+                            </div>
+
+
+                            <div class="relative h-52 md:h-64">
+
+                                <img src="../../dist/assets/images/Our-Locations/img-branch3.jpg" alt="دبي"
+                                    class="w-full h-full object-cover">
+
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent">
+                                </div>
+
+                                <div class="absolute bottom-5 right-5 text-white">
+
+                                    <div class="flex items-center gap-2">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="p-5 md:p-6 relative">
+
+                                <div
+                                    class="absolute -top-7 right-5 md:right-6 bg-[#F93A3A] text-white w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-md border-2 border-white">
+
+                                    <i class="fa-solid fa-location-dot text-base md:text-lg"></i>
+
+                                </div>
+
+
+                                <h3 class="text-lg md:text-xl font-bold font-heading text-[#480707] mb-4 mt-2">
+
+                                    فرع دبي الرئيسي
+
+                                </h3>
+
+
+                                <ul class="space-y-2.5 text-sm text-[#A01414] mb-6">
+
+                                    <li class="flex items-start gap-2">
+
+                                        <i class="fa-solid fa-city text-[#F93A3A] w-4 mt-0.5"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b
+                                                class="text-[#851717] text-[13px] md:text-[14px] font-semibold">المدينة:</b>
+                                            دبي
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-start gap-2">
+
+                                        <i class="fa-solid fa-map-pin text-[#F93A3A] w-4 mt-0.5"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b
+                                                class="text-[#851717] text-[13px] md:text-[14px] font-semibold">العنوان:</b>
+                                            شارع الشيخ زايد، دبي، الإمارات
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-phone text-[#F93A3A] w-4"></i><span
+                                            class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b class="text-[#851717] text-[13px] md:text-[14px] font-semibold">رقم
+                                                الهاتف:</b>
+                                            +971 4 123 4567
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-clock text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b class="text-[#851717] text-[13px] md:text-[14px] font-semibold">ساعات
+                                                العمل:</b>
+                                            السبت-الخميس، 8:00 صباحاً - 8:00 مساءً
+                                        </span>
+
+                                    </li>
+
+                                </ul>
+
+
+                                <button onclick="showBranchMap('فرع دبي الرئيسي','دبي، شارع الشيخ زايد')"
+                                    class="w-full bg-[#F93A3A] hover:bg-[#E61C1C] text-white py-3 rounded-2xl text-[13px] md:text-sm font-bold transition-colors flex items-center justify-center gap-2 shadow-md shadow-primaryRed/20">
+
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    عرض الموقع على الخريطة
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Branch 2 -->
+
+                    <div class="swiper-slide">
+
+                        <div
+                            class="branch-card bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-lg relative">
+
+                            <div class="relative h-52 md:h-64">
+
+                                <img src="../../dist/assets/images/Our-Locations/img-branch4.jpg" alt="أبوظبي"
+                                    class="w-full h-full object-cover">
+
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent">
+                                </div>
+
+
+                                <div
+                                    class="absolute top-4 right-4 bg-white/95 text-emerald-600 text-xs md:text-sm font-bold px-3 py-2 rounded-full flex items-center gap-1.5 shadow-md">
+
+                                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+
+                                    مفتوح الآن
+
+                                </div>
+
+
+                                <div class="absolute bottom-5 left-5 text-white">
+
+                                    <div class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-location-dot text-[#F93A3A]"></i>
+
+                                        <span class="font-bold">
+                                            أبوظبي
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="p-5 md:p-6 relative">
+
+                                <div
+                                    class="absolute -top-7 right-5 md:right-6 bg-[#F93A3A] text-white w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-md border-2 border-white">
+
+                                    <i class="fa-solid fa-location-dot text-base md:text-lg"></i>
+
+                                </div>
+
+
+                                <h3 class="text-lg md:text-xl font-bold font-heading text-[#480707] mb-4 mt-2">
+
+                                    فرع الكورنيش-أبوظبي
+
+                                </h3>
+
+
+                                <ul class="space-y-2.5 text-sm text-[#A01414] mb-6">
+
+                                    <li class="flex items-start gap-2">
+
+                                        <i class="fa-solid fa-city text-[#F93A3A] w-4 mt-0.5"></i><span
+                                            class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b
+                                                class="text-[#851717] text-[13px] md:text-[14px] font-semibold">المدينة:</b>
+                                            أبوظبي
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-start gap-2">
+
+                                        <i class="fa-solid fa-map-pin text-[#F93A3A] w-4 mt-0.5"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b
+                                                class="text-[#851717] text-[13px] md:text-[14px] font-semibold">العنوان:</b>
+                                            المارينا، شارع الكورنيش
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-phone text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b class="text-[#851717] text-[13px] md:text-[14px] font-semibold">رقم
+                                                الهاتف:</b>
+                                            +971 2 987 6543
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-clock text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b class="text-[#851717] text-[13px] md:text-[14px] font-semibold">ساعات
+                                                العمل:</b>
+                                            يومياً، 9:00 صباحاً - 10:00 مساءً
+                                        </span>
+
+                                    </li>
+
+                                </ul>
+
+
+                                <button onclick="showBranchMap('فرع الكورنيش - أبوظبي','أبوظبي، شارع الكورنيش')"
+                                    class="w-full bg-[#F93A3A] hover:bg-[#E61C1C] text-white py-3 rounded-2xl text-[13px] md:text-sm font-bold transition-colors flex items-center justify-center gap-2 shadow-md shadow-primaryRed/20">
+
+                                    <i class="fa-solid fa-map-location-dot"></i>
+
+                                    عرض الموقع على الخريطة
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Branch 3 -->
+
+                    <div class="swiper-slide">
+
+                        <div
+                            class="branch-card bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-lg relative">
+
+                            <div class="relative h-52 md:h-64">
+
+                                <img src="../../dist/assets/images/Our-Locations/img-branch5.jpg" alt="الشارقة"
+                                    class="w-full h-full object-cover">
+
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent">
+                                </div>
+
+
+                                <div
+                                    class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm text-emerald-600 text-xs md:text-sm font-bold px-3 py-2 rounded-full flex items-center gap-1.5 shadow-md">
+
+                                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+
+                                    مفتوح الآن
+
+                                </div>
+
+
+                                <div class="absolute bottom-5 left-5 text-white">
+
+                                    <div class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-location-dot text-[#F93A3A]"></i>
+
+                                        <span class="font-bold">
+                                            الشارقة
+                                        </span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="p-5 md:p-6 relative">
+
+                                <div
+                                    class="absolute -top-7 right-5 md:right-6 bg-[#F93A3A] text-white w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-md border-2 border-white">
+
+                                    <i class="fa-solid fa-location-dot text-base md:text-lg"></i>
+
+                                </div>
+
+
+                                <h3 class="text-lg md:text-xl font-bold font-heading text-[#480707] mb-4 mt-2">
+
+                                    فرع المجاز - الشارقة
+
+                                </h3>
+
+
+                                <ul class="space-y-2.5 text-sm text-[#A01414] mb-6">
+
+                                    <li class="flex items-start gap-2">
+
+                                        <i class="fa-solid fa-city text-[#F93A3A] w-4 mt-0.5"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b
+                                                class="text-[#851717] text-[13px] md:text-[14px] font-semibold">المدينة:</b>
+                                            الشارقة
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-start gap-2">
+
+                                        <i class="fa-solid fa-map-pin text-[#F93A3A] w-4 mt-0.5"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b
+                                                class="text-[#851717] text-[13px] md:text-[14px] font-semibold">العنوان:</b>
+                                            شارع جمال عبد الناصر
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-phone text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b class="text-[#851717] text-[13px] md:text-[14px] font-semibold">رقم
+                                                الهاتف:</b>
+                                            +971 6 555 7890
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-clock text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b class="text-[#851717] text-[13px] md:text-[14px] font-semibold">ساعات
+                                                العمل:</b>
+                                            السبت - الخميس، 8:30 صباحاً - 9:00 مساءً
+                                        </span>
+
+                                    </li>
+
+                                </ul>
+
+
+                                <button onclick="showBranchMap('فرع المجاز - الشارقة','الشارقة، شارع جمال عبد الناصر')"
+                                    class="w-full bg-[#F93A3A] hover:bg-[#E61C1C] text-white py-3 rounded-2xl text-[13px] md:text-sm font-bold transition-colors flex items-center justify-center gap-2 shadow-md shadow-primaryRed/20">
+
+                                    <i class="fa-solid fa-map-location-dot"></i>
+
+                                    عرض الموقع على الخريطة
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Branch 4 -->
+
+                    <div class="swiper-slide">
+
+                        <div
+                            class="branch-card bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-lg relative">
+
+                            <div class="relative h-52 md:h-64">
+
+                                <img src="../../dist/assets/images/Our-Locations/img-branch6.jpg" alt="جميرا"
+                                    class="w-full h-full object-cover">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent">
+                                </div>
+
+
+                                <div
+                                    class="absolute top-4 right-4 bg-white/95 text-emerald-600 text-xs md:text-sm font-bold px-3 py-2 rounded-full flex items-center gap-1.5 shadow-md">
+
+                                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+
+                                    مفتوح الآن
+
+                                </div>
+
+
+                                <div class="absolute bottom-5 left-5 text-white">
+
+                                    <div class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-location-dot text-[#F93A3A]"></i>
+
+                                        <span class="font-bold">
+                                            دبي
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="p-5 md:p-6 relative">
+
+                                <div
+                                    class="absolute -top-7 right-5 md:right-6 bg-[#F93A3A] text-white w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-md border-2 border-white">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                </div>
+
+
+                                <h3 class="text-lg md:text-xl font-bold font-heading text-[#480707] mb-4 mt-2">
+
+                                    فرع جميرا - دبي
+
+                                </h3>
+
+
+                                <ul class="space-y-2.5 text-sm text-[#A01414] mb-6">
+
+                                    <li class="flex items-start gap-2">
+
+                                        <i class="fa-solid fa-city text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b
+                                                class="text-[#851717] text-[13px] md:text-[14px] font-semibold">المدينة:</b>
+                                            دبي
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-start gap-2">
+
+                                        <i class="fa-solid fa-map-pin text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b
+                                                class="text-[#851717] text-[13px] md:text-[14px] font-semibold">العنوان:</b>
+                                            شارع جميرا، دبي
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-phone text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b class="text-[#851717] text-[13px] md:text-[14px] font-semibold">رقم
+                                                الهاتف:</b>
+                                            +971 4 222 3456
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-clock text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b class="text-[#851717] text-[13px] md:text-[14px] font-semibold">ساعات
+                                                العمل:</b>
+                                            يومياً، 9:00 صباحاً - 10:00 مساءً
+                                        </span>
+
+                                    </li>
+
+                                </ul><button onclick="showBranchMap('فرع جميرا - دبي','دبي، شارع جميرا')"
+                                    class="w-full bg-[#F93A3A] hover:bg-[#E61C1C] text-white py-3 rounded-2xl text-[13px] md:text-sm font-bold transition-colors flex items-center justify-center gap-2">
+
+                                    <i class="fa-solid fa-map-location-dot"></i>
+
+                                    عرض الموقع على الخريطة
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Branch 5 -->
+
+                    <div class="swiper-slide">
+
+                        <div
+                            class="branch-card bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-lg relative">
+
+                            <div class="relative h-52 md:h-64">
+
+                                <img src="../../dist/assets/images/Our-Locations/img-branch1.jpg" alt="العين"
+                                    class="w-full h-full object-cover">
+
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent">
+                                </div>
+
+
+                                <div
+                                    class="absolute top-4 right-4 bg-white/95 text-emerald-600 text-xs md:text-sm font-bold px-3 py-2 rounded-full flex items-center gap-1.5 shadow-md">
+
+                                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+
+                                    مفتوح الآن
+
+                                </div>
+
+
+                                <div class="absolute bottom-5 left-5 text-white">
+
+                                    <div class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-location-dot text-[#F93A3A]"></i>
+
+                                        <span class="font-bold">
+                                            العين
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="p-5 md:p-6 relative">
+
+                                <div
+                                    class="absolute -top-7 right-5 md:right-6 bg-[#F93A3A] text-white w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-md border-2 border-white">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                </div>
+
+
+                                <h3 class="text-lg md:text-xl font-bold font-heading text-[#480707] mb-4 mt-2">
+
+                                    فرع المدينة - العين
+
+                                </h3>
+
+
+                                <ul class="space-y-2.5 text-sm text-[#A01414] mb-6">
+
+                                    <li class="flex items-start gap-2">
+
+                                        <i class="fa-solid fa-city text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b
+                                                class="text-[#851717] text-[13px] md:text-[14px] font-semibold">المدينة:</b>
+                                            العين
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-start gap-2">
+
+                                        <i class="fa-solid fa-map-pin text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b
+                                                class="text-[#851717] text-[13px] md:text-[14px] font-semibold">العنوان:</b>
+                                            وسط مدينة العين
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-phone text-[#F93A3A] w-4"></i><span
+                                            class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b class="text-[#851717] text-[13px] md:text-[14px] font-semibold">رقم
+                                                الهاتف:</b>
+                                            +971 3 345 6789
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-clock text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b class="text-[#851717] text-[13px] md:text-[14px] font-semibold">ساعات
+                                                العمل:</b>
+                                            يومياً، 8:00 صباحاً - 10:00 مساءً
+                                        </span>
+
+                                    </li>
+
+                                </ul>
+
+
+                                <button onclick="showBranchMap('فرع وسط المدينة - العين','العين، الإمارات')"
+                                    class="w-full bg-[#F93A3A] hover:bg-[#E61C1C] text-white py-3 rounded-2xl text-[13px] md:text-sm font-bold transition-colors flex items-center justify-center gap-2">
+
+                                    <i class="fa-solid fa-map-location-dot"></i>
+
+                                    عرض الموقع على الخريطة
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Branch 6 -->
+
+                    <div class="swiper-slide">
+
+                        <div
+                            class="branch-card bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-lg relative">
+
+                            <div class="relative h-52 md:h-64">
+
+                                <img src="../../dist/assets/images/Our-Locations/img-branch2.jpg" alt="النهدة"
+                                    class="w-full h-full object-cover">
+
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent">
+                                </div>
+
+
+                                <div
+                                    class="absolute top-4 right-4 bg-white/95 text-emerald-600 text-xs md:text-sm font-bold px-3 py-2 rounded-full flex items-center gap-1.5 shadow-md">
+
+                                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+
+                                    مفتوح الآن
+
+                                </div>
+
+
+                                <div class="absolute bottom-5 left-5 text-white">
+
+                                    <div class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-location-dot text-[#F93A3A]"></i>
+
+                                        <span class="font-bold">
+                                            الشارقة
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="p-5 md:p-6 relative">
+
+                                <div
+                                    class="absolute -top-7 right-5 md:right-6 bg-[#F93A3A] text-white w-11 h-11 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-md border-2 border-white">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                </div>
+
+
+                                <h3 class="text-lg md:text-xl font-bold font-heading text-[#480707] mb-4 mt-2">
+
+                                    فرع النهدة - الشارقة
+
+                                </h3>
+
+
+                                <ul class="space-y-2.5 text-sm text-[#A01414] mb-6">
+
+                                    <li class="flex items-start gap-2">
+
+                                        <i class="fa-solid fa-city text-[#F93A3A] w-4"></i><span
+                                            class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b
+                                                class="text-[#851717] text-[13px] md:text-[14px] font-semibold">المدينة:</b>
+                                            الشارقة
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-start gap-2">
+
+                                        <i class="fa-solid fa-map-pin text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b
+                                                class="text-[#851717] text-[13px] md:text-[14px] font-semibold">العنوان:</b>
+                                            منطقة النهدة، الشارقة
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-phone text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b class="text-[#851717] text-[13px] md:text-[14px] font-semibold">رقم
+                                                الهاتف:</b>
+                                            +971 6 444 5678
+                                        </span>
+
+                                    </li>
+
+
+                                    <li class="flex items-center gap-2">
+
+                                        <i class="fa-solid fa-clock text-[#F93A3A] w-4"></i>
+
+                                        <span class="text-[13px] md:text-[14px] text-[#A01414]">
+                                            <b class="text-[#851717] text-[13px] md:text-[14px] font-semibold">ساعات
+                                                العمل:</b>
+                                            يومياً، 8:30 صباحاً - 9:30 مساءً
+                                        </span>
+
+                                    </li>
+
+                                </ul>
+
+
+                                <button onclick="showBranchMap('فرع النهدة - الشارقة','الشارقة، منطقة النهدة')"
+                                    class="w-full bg-[#F93A3A] hover:bg-[#E61C1C] text-white py-3 rounded-2xl text-[13px] md:text-sm font-bold transition-colors flex items-center justify-center gap-2">
+
+                                    <i class="fa-solid fa-map-location-dot"></i>
+
+                                    عرض الموقع على الخريطة
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- PAGINATION -->
+
+                <div class="swiper-pagination branches-pagination"></div>
+
+
+            </div>
+
+
+            <!-- ARROWS -->
+
+            <div class="swiper-button-prev branch-prev"></div>
+
+            <div class="swiper-button-next branch-next"></div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Maps -->
+
+    <section id="map-section" class="max-w-[330px] md:max-w-7xl  mx-auto px-1 pt-8 pb-20">
+
+
+        <div class="text-center mb-8">
+
+
+            <h2 class="text-3xl lg:text-4xl font-heading font-black text-[#480707] mb-3">
+
+                مواقع فروعنا
+
+            </h2>
+
+
+            <p class="text-[#A01414] text-[14px] md:text-[16px] mt-5">
+
+                تعرف على مواقع فروعنا من خلال الخريطة , واختر الفرع الأقرب إليك.
+            </p>
+
+        </div>
+
+
+
+        <div class="map-container">
+
+
+            <div class="map-branch-label">
+
+                <div class="flex items-center gap-2">
+
+                    <i class="fa-solid fa-location-dot text-[#F93A3A]">
+                    </i>
+
+                    <div>
+
+                        <p id="map-branch-name" class="text-sm font-extrabold font-heading text-[#851717]">
+
+                            فرع دبي الرئيسي
+
+                        </p>
+
+                        <p id="map-branch-address" class="text-sm mt-2 text-[#A01414]">
+
+                            دبي، شارع الشيخ زايد
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Map -->
+
+            <iframe id="branch-map" src="https://www.google.com/maps?q=Sheikh%20Zayed%20Road%20Dubai&output=embed"
+                loading="lazy" allowfullscreen>
+            </iframe>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Car Types -->
+
+    <section class="max-w-[340px] md:max-w-6xl mt-12   mx-auto  pt-8 pb-20">
+
+
+        <div class="text-center mb-8">
+
+
+            <h2 class="text-2xl lg:text-4xl font-heading font-black text-[#480707] mb-3">
+
+                السيارات المتوفرة في كل موقع
+
+            </h2>
+
+
+            <p class="text-[#A01414]  text-[14px] md:text-[16px] mt-8">
+
+                " اختر الموقع لعرض السيارات المتوفرة في الفرع"
+
+            </p>
+
+        </div>
+
+
+
+        <!-- Car-Filters -->
+
+        <div class="flex flex-wrap items-center justify-center gap-3 mb-10">
+
+
+            <!-- ALL -->
+
+            <button onclick="filterCars('all')" id="btn-all"
+                class="filter-btn active px-6 py-2.5 rounded-full text-sm font-bold border border-primaryRed">
+
+                <i class="fa-solid fa-globe ml-1.5"></i>
+
+                الكل
+
+            </button>
+
+
+            <!-- DUBAI -->
+
+            <button onclick="filterCars('dubai')" id="btn-dubai"
+                class="filter-btn px-6 py-2.5 rounded-full text-sm font-bold bg-white text-[#A01414] border border-gray-200">
+
+                <i class="fa-solid fa-location-dot ml-1.5 text-[#F93A3A]">
+                </i>
+
+                فرع دبي الرئيسي
+
+            </button>
+
+
+            <!-- ABU DHABI -->
+            <button onclick="filterCars('abu-dhabi')" id="btn-abu-dhabi"
+                class="filter-btn px-6 py-2.5 rounded-full text-sm font-bold bg-white text-[#A01414] border border-gray-200">
+
+                <i class="fa-solid fa-location-dot ml-1.5 text-[#F93A3A]">
+                </i>
+
+                فرع أبوظبي
+
+            </button>
+
+
+            <!-- SHAREKAH -->
+
+            <button onclick="filterCars('sharjah')" id="btn-sharjah"
+                class="filter-btn px-6 py-2.5 rounded-full text-sm font-bold bg-white text-[#A01414] border border-gray-200">
+
+                <i class="fa-solid fa-location-dot ml-1.5 text-[#F93A3A]">
+                </i>
+
+                فرع الشارقة
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- Cards cars by branch -->
+
+        <div id="cars-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+            <!-- Card 1 -->
+            <div class="car-card bg-white rounded-3xl p-4 shadow-lg border border-gray-100
+                flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+                data-branch="dubai">
+
+                <div>
+
+                    <span class="absolute top-6 left-6 bg-[#F93A3A] text-white text-[11px]
+                font-bold px-3 py-1 rounded-full shadow z-10 flex items-center gap-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        فرع دبي
+                    </span>
+
+                    <div
+                        class="w-full h-48 bg-gray-100 rounded-2xl overflow-hidden mb-4 flex items-center justify-center">
+                        <img src="../../dist/assets/images/Our-Locations/img-card1.jpg" alt="مرسيدس بنز"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <h3 class="text-lg font-bold text-[#851717] mb-1">
+                        مرسيدس بنز C-Class 2023
+                    </h3>
+
+                    <p class="text-sm text-[#A01414] leading-relaxed mb-4">
+                        سيارة فاخرة مناسبة للرحلات داخل المدينة والاجتماعات.
+                    </p>
+
+                    <div class="grid grid-cols-4 gap-1 py-3 border-y border-gray-100 mb-4 text-center">
+
+                        <div class="text-[11px] text-[#A01414] font-medium">
+                            <i class="fa-solid fa-user-group block text-[#F93A3A] mb-1"></i>
+                            4 مقاعد
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium border-x border-gray-100">
+                            <i class="fa-solid fa-gears block text-[#F93A3A] mb-1"></i>
+                            يدوي
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium border-r border-gray-100">
+                            <i class="fa-solid fa-gas-pump block text-[#F93A3A] mb-1"></i>
+                            كهرباء
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium">
+                            <i class="fa-solid fa-shield-halved block text-[#F93A3A] mb-1"></i>
+                            متاحة
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="flex items-center justify-between pt-1 mb-3">
+
+                        <div>
+
+
+                            <span class="font-black text-[#F93A3A] text-lg">
+                                $100
+                                <span class="text-[#A01414] -mr-1">/يوم</span>
+                            </span>
+                        </div>
+
+
+                        <div class="flex items-center gap-1 font-bold text-[#851717]">
+                            <span class="text-amber-400 text-lg">★</span>
+                            <span>3.7</span>
+                        </div>
+
+                    </div>
+
+                    <button class="flex justify-center items-center gap-2
+                bg-[#F93A3A] hover:bg-[#E61C1C]
+                text-white font-bold text-sm
+                px-5 py-3 w-full rounded-2xl transition-all duration-300">
+
+                        <i class="fa-solid fa-car-side"></i>
+                        احجز السيارة
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="car-card bg-white rounded-3xl p-4 shadow-lg border border-gray-100
+                flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+                data-branch="dubai">
+
+                <div>
+
+                    <span class="absolute top-6 left-6 bg-[#F93A3A] text-white text-[11px]
+                font-bold px-3 py-1 rounded-full shadow z-10 flex items-center gap-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        فرع دبي
+                    </span>
+                    <div
+                        class="w-full h-48 bg-gray-100 rounded-2xl overflow-hidden mb-4 flex items-center justify-center">
+                        <img src="../../dist/assets/images/Our-Locations/img-card2.jpg" alt="BMW 5 Series"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <h3 class="text-lg font-bold text-[#851717] mb-1">
+                        BMW 8 Series
+                    </h3>
+
+                    <p class="text-sm text-[#A01414] leading-relaxed mb-4">
+                        سيارة تنفيذية تجمع بين الأداء والراحة والتصميم الفاخر.
+                    </p>
+
+                    <div class="grid grid-cols-4 gap-1 py-3 border-y border-gray-100 mb-4 text-center">
+
+                        <div class="text-[11px] text-[#A01414] font-medium">
+                            <i class="fa-solid fa-user-group block text-[#F93A3A] mb-1"></i>
+                            4 مقاعد
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium border-x border-gray-100">
+                            <i class="fa-solid fa-gears block text-[#F93A3A] mb-1"></i>
+                            أوتوماتيك
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium border-r border-gray-100">
+                            <i class="fa-solid fa-gas-pump block text-[#F93A3A] mb-1"></i>
+                            بنزين
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium">
+                            <i class="fa-solid fa-shield-halved block text-[#F93A3A] mb-1"></i>
+                            متاحة
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="flex items-center justify-between pt-1 mb-3">
+
+                        <div>
+
+
+                            <span class="font-black text-[#F93A3A] text-lg">
+                                $150
+                                <span class="text-[#A01414] -mr-1">/يوم</span>
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1 font-bold text-[#851717]">
+                            <span class="text-amber-400 text-lg">★</span>
+                            <span>4.8</span>
+                        </div>
+
+                    </div>
+
+                    <button class="flex justify-center items-center gap-2
+                bg-[#F93A3A] hover:bg-[#E61C1C]
+                text-white font-bold text-sm
+                px-5 py-3 w-full rounded-2xl transition-all duration-300">
+
+                        <i class="fa-solid fa-car-side"></i>
+                        احجز السيارة
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="car-card bg-white rounded-3xl p-4 shadow-lg border border-gray-100
+                flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+                data-branch="abu-dhabi">
+
+                <div>
+
+                    <span class="absolute top-6 left-6 bg-[#F93A3A] text-white text-[11px]
+                font-bold px-3 py-1 rounded-full shadow z-10 flex items-center gap-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        فرع أبوظبي
+                    </span>
+
+                    <div
+                        class="w-full h-48 bg-gray-100 rounded-2xl overflow-hidden mb-4 flex items-center justify-center">
+                        <img src="../../dist/assets/images/Our-Locations/img-card3.jpg" alt="Range Rover Sport"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <h3 class="text-lg font-bold text-[#851717] mb-1">
+                        Range Rover Sport
+                    </h3>
+
+                    <p class="text-sm text-[#A01414] leading-relaxed mb-4">
+                        سيارة دفع رباعي فاخرة بسيادية واسعة وتجهيزات متقدمة.
+                    </p>
+
+                    <div class="grid grid-cols-4 gap-1 py-3 border-y border-gray-100 mb-4 text-center">
+                        <div class="text-[11px] text-[#A01414] font-medium">
+                            <i class="fa-solid fa-user-group block text-[#F93A3A] mb-1"></i>
+                            6 مقاعد
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium border-x border-gray-100">
+                            <i class="fa-solid fa-gears block text-[#F93A3A] mb-1"></i>
+                            أوتوماتيك
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium border-r border-gray-100">
+                            <i class="fa-solid fa-gas-pump block text-[#F93A3A] mb-1"></i>
+                            هجين
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium">
+                            <i class="fa-solid fa-shield-halved block text-[#F93A3A] mb-1"></i>
+                            متاحة
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="flex items-center justify-between pt-1 mb-3">
+
+                        <div>
+
+
+                            <span class="font-black text-[#F93A3A] text-lg">
+                                $200
+                                <span class="text-[#A01414] -mr-1">/يوم</span>
+                            </span>
+                        </div>
+
+
+                        <div class="flex items-center gap-1 font-bold text-[#851717]">
+                            <span class="text-amber-400 text-lg">★</span>
+                            <span>8.2</span>
+                        </div>
+
+                    </div>
+
+                    <button class="flex justify-center items-center gap-2
+                bg-[#F93A3A] hover:bg-[#E61C1C]
+                text-white font-bold text-sm
+                px-5 py-3 w-full rounded-2xl transition-all duration-300">
+
+                        <i class="fa-solid fa-car-side"></i>
+                        احجز السيارة
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="car-card bg-white rounded-3xl p-4 shadow-lg border border-gray-100
+                flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+                data-branch="sharjah">
+
+                <div>
+
+                    <span class="absolute top-6 left-6 bg-[#F93A3A] text-white text-[11px]
+                font-bold px-3 py-1 rounded-full shadow z-10 flex items-center gap-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        فرع الشارقة
+                    </span>
+
+                    <div
+                        class="w-full h-48 bg-gray-100 rounded-2xl overflow-hidden mb-4 flex items-center justify-center">
+                        <img src="../../dist/assets/images/Our-Locations/Car-branch1.jpg" alt="Nissan Patrol"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <h3 class="text-lg font-bold text-[#851717] mb-1">
+                        Nissan Patrol V8
+                    </h3>
+
+                    <p class="text-sm text-[#A01414] leading-relaxed mb-4">
+                        قوة وراحة مطلقة للرحلات العائلية في كافة الطرقات.
+                    </p>
+
+                    <div class="grid grid-cols-4 gap-1 py-3 border-y border-gray-100 mb-4 text-center">
+
+                        <div class="text-[11px] text-[#A01414] font-medium">
+                            <i class="fa-solid fa-user-group block text-[#F93A3A] mb-1"></i>
+                            4 مقاعد
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium border-x border-gray-100">
+                            <i class="fa-solid fa-gears block text-[#F93A3A] mb-1"></i>
+                            يدوي
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium border-r border-gray-100">
+                            <i class="fa-solid fa-gas-pump block text-[#F93A3A] mb-1"></i>
+                            ديزل
+                        </div>
+                        <div class="text-[11px] text-[#A01414] font-medium">
+                            <i class="fa-solid fa-shield-halved block text-[#F93A3A] mb-1"></i>
+                            متاحة
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="flex items-center justify-between pt-1 mb-3">
+
+                        <div>
+
+
+                            <span class="font-black text-[#F93A3A] text-lg">
+                                $95
+                                <span class="text-[#A01414] -mr-1">/يوم</span>
+                            </span>
+                        </div>
+
+
+                        <div class="flex items-center gap-1 font-bold text-[#851717]">
+                            <span class="text-amber-400 text-lg">★</span>
+                            <span>5.0</span>
+                        </div>
+
+                    </div>
+
+                    <button class="flex justify-center items-center gap-2
+                bg-[#F93A3A] hover:bg-[#E61C1C]
+                text-white font-bold text-sm
+                px-5 py-3 w-full rounded-2xl transition-all duration-300">
+
+                        <i class="fa-solid fa-car-side"></i>
+                        احجز السيارة
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="car-card bg-white rounded-3xl p-4 shadow-lg border border-gray-100
+                flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+                data-branch="sharjah">
+
+                <div>
+
+                    <span class="absolute top-6 left-6 bg-[#F93A3A] text-white text-[11px]
+                font-bold px-3 py-1 rounded-full shadow z-10 flex items-center gap-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        فرع الشارقة
+                    </span>
+
+                    <div
+                        class="w-full h-48 bg-gray-100 rounded-2xl overflow-hidden mb-4 flex items-center justify-center">
+                        <img src="../../dist/assets/images/Our-Locations/img-card5.jpg" alt="سيارة عائلية"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <h3 class="text-lg font-bold text-[#851717] mb-1">
+                        Audi RS Q3
+                    </h3>
+
+                    <p class="text-sm text-[#A01414] leading-relaxed mb-4">
+                        سيارة مريحة تناسب الرحلات اليومية والتنقلات العائلية.
+                    </p>
+
+                    <div class="grid grid-cols-4 gap-1 py-3 border-y border-gray-100 mb-4 text-center">
+
+                        <div class="text-[11px] text-[#A01414] font-medium">
+                            <i class="fa-solid fa-user-group block text-[#F93A3A] mb-1"></i>
+                            5 مقاعد
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium border-x border-gray-100">
+                            <i class="fa-solid fa-gears block text-[#F93A3A] mb-1"></i>
+                            أوتوماتيك
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium border-r border-gray-100">
+                            <i class="fa-solid fa-gas-pump block text-[#F93A3A] mb-1"></i>
+                            بنزين
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium">
+                            <i class="fa-solid fa-shield-halved block text-[#F93A3A] mb-1"></i>
+                            متاحة
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="flex items-center justify-between pt-1 mb-3">
+
+                        <div>
+
+
+                            <span class="font-black text-[#F93A3A] text-lg">
+                                $70
+                                <span class="text-[#A01414] -mr-1">/يوم</span>
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-1 font-bold text-[#851717]">
+                            <span class="text-amber-400 text-lg">★</span>
+                            <span>3.6</span>
+                        </div>
+
+                    </div>
+
+                    <button class="flex justify-center items-center gap-2
+                bg-[#F93A3A] hover:bg-[#E61C1C]
+                text-white font-bold text-sm
+                px-5 py-3 w-full rounded-2xl transition-all duration-300">
+
+                        <i class="fa-solid fa-car-side"></i>
+                        احجز السيارة
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="car-card bg-white rounded-3xl p-4 shadow-lg border border-gray-100
+                flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+                data-branch="sharjah">
+
+                <div>
+
+                    <span class="absolute top-6 left-6 bg-[#F93A3A] text-white text-[11px]
+                font-bold px-3 py-1 rounded-full shadow z-10 flex items-center gap-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        فرع الشارقة
+                    </span>
+
+                    <div
+                        class="w-full h-48 bg-gray-100 rounded-2xl overflow-hidden mb-4 flex items-center justify-center">
+                        <img src="../../dist/assets/images/Our-Locations/img-card6.jpg" alt="سيارة تيسلا"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <h3 class="text-lg font-bold text-[#851717] mb-1">
+                        TESLA
+                    </h3>
+
+                    <p class="text-sm text-[#A01414] leading-relaxed mb-4">
+                        خيار عملي واقتصادي للتنقل داخل المدينة بكل سهولة .
+                    </p>
+
+                    <div class="grid grid-cols-4 gap-1 py-3 border-y border-gray-100 mb-4 text-center">
+
+                        <div class="text-[11px] text-[#A01414] font-medium">
+                            <i class="fa-solid fa-user-group block text-[#F93A3A] mb-1"></i>
+                            4 مقاعد
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium border-x border-gray-100">
+                            <i class="fa-solid fa-gears block text-[#F93A3A] mb-1"></i>
+                            أوتوماتيك
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium border-r border-gray-100">
+                            <i class="fa-solid fa-gas-pump block text-[#F93A3A] mb-1"></i>
+                            هجين
+                        </div>
+
+                        <div class="text-[11px] text-[#A01414] font-medium">
+                            <i class="fa-solid fa-shield-halved block text-[#F93A3A] mb-1"></i>
+                            متاحة
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="flex items-center justify-between pt-1 mb-3">
+
+                        <div>
+
+
+                            <span class="font-black text-[#F93A3A] text-lg">
+                                $175
+                                <span class="text-[#A01414] -mr-1">/يوم</span>
+                            </span>
+                        </div>
+
+
+                        <div class="flex items-center gap-1 font-bold text-[#851717]">
+                            <span class="text-amber-400 text-lg">★</span>
+                            <span>6.7</span>
+                        </div>
+
+                    </div>
+
+                    <button class="flex justify-center items-center gap-2
+                bg-[#F93A3A] hover:bg-[#E61C1C]
+                text-white font-bold text-sm
+                px-5 py-3 w-full rounded-2xl transition-all duration-300">
+
+                        <i class="fa-solid fa-car-side"></i>
+                        احجز السيارة
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="../../dist/js/Our-Location.js"></script>
+
+
+</body>
+
+</html>
