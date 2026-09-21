@@ -276,6 +276,7 @@
     --spacing-8xl: 90rem;
     --leading-9: 36px;
     --leading-6: 24px;
+    --leading-none: 1;
     --radius-base: 12px;
     --color-body: var(--color-gray-600);
     --color-heading: #480707;
@@ -886,6 +887,9 @@
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
+  .mt-auto {
+    margin-top: auto;
+  }
   .apexcharts-canvas .apexcharts-tooltip {
     background-color: primary !important;
     color: var(--color-body) !important;
@@ -1285,6 +1289,9 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+  .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -1329,6 +1336,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .h-screen {
+    height: 100vh;
   }
   .max-h-full {
     max-height: 100%;
@@ -1414,6 +1424,9 @@
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
+  }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
@@ -1799,6 +1812,9 @@
       background-color: var(--color-neutral-secondary-medium);
     }
   }
+  .bg-\[\#365C4A\] {
+    background-color: #365C4A;
+  }
   .bg-\[\#E8DED8\] {
     background-color: #E8DED8;
   }
@@ -1864,6 +1880,18 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-white\/10 {
+    background-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .bg-white\/15 {
+    background-color: color-mix(in srgb, #fff 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+    }
   }
   .bg-white\/50 {
     background-color: color-mix(in srgb, #fff 50%, transparent);
@@ -2125,6 +2153,10 @@
     --tw-leading: var(--leading-9);
     line-height: var(--leading-9);
   }
+  .leading-none {
+    --tw-leading: var(--leading-none);
+    line-height: var(--leading-none);
+  }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
     line-height: var(--leading-relaxed);
@@ -2136,6 +2168,10 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -2351,6 +2387,12 @@
       --tw-translate-y: calc(var(--spacing) * -1);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
+    .hover\:scale-110:hover {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
     .hover\:border-default:hover {
       border-color: var(--color-default);
     }
@@ -2470,6 +2512,9 @@
     .md\:inset-0 {
       inset: 0px;
     }
+    .md\:block {
+      display: block;
+    }
     .md\:flex {
       display: flex;
     }
@@ -2484,6 +2529,12 @@
     }
     .md\:grid-cols-\[1\.1fr_1fr\] {
       grid-template-columns: 1.1fr 1fr;
+    }
+    .md\:grid-cols-\[1fr_180px\] {
+      grid-template-columns: 1fr 180px;
+    }
+    .md\:text-center {
+      text-align: center;
     }
   }
   @media (width >= 64rem) {
