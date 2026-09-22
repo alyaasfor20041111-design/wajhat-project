@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>احجز الآن - وجهة</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../dist/assets/css/all.min.css">
+    <link rel="stylesheet" href="../../dist/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="icon" type="image/svg+xml" href="../../dist/assets/images/image.png">
+
+
+    <link rel="stylesheet" href="https://unpkg.com" />
+    <script src="https://unpkg.com"></script>
+
+</head>
+
+<body class="bg-bg-main" style="height: 8000px;">
+
+    <header class="w-full bg-card-bg border-b border-card-tint shadow-sm sticky top-0 z-50" dir="rtl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- 1. الشعار (Logo) -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="flex items-center">
+                        <img src="../../dist/assets/images/logo.png" alt="شعار وجهة" class="w-15 h-15  ">
+                    </a>
+                </div>
+
+                <!-- 2. روابط التنقل (Navigation Links) -->
+                <nav class="hidden md:flex items-center gap-8 font-sans">
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الرئيسية</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">من نحن</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الحجز</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">كيف نعمل</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">اتصل بنا</a>
+                </nav>
+
+                <!-- 3. أزرار الإجراءات (Actions & Auth) -->
+                <div class="flex items-center gap-4 font-sans">
+                    <!-- زر تسجيل الدخول -->
+                    <a href="#"
+                        class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-heading hover:text-primary transition-colors">
+                        تسجيل الدخول
+                    </a>
+
+                    <!-- زر إنشاء حساب -->
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold
+                         text-white bg-primary hover:bg-primary-hover rounded-xl shadow-sm transition-all duration-200">
+                        حساب جديد
+                    </a>
+
+                    <!-- زر القائمة للجوال (Mobile Menu Toggle) -->
+                    <button type="button"
+                        class="md:hidden p-2 rounded-lg text-heading hover:bg-card-tint focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <h1>إتمام الحجز</h1>
+    <!-- Reservation Page Header Start -->
+    <section class="py-[30px] md:py-0">
+        <div class="max-w-7xl mx-auto reservation-header  border border-card-tint
+        bg-card-bg flex md:flex-row flex-col justify-between items-center px-8 rounded-[10px]">
+            <div class="reservation-header-info right-origin flex flex-col md:justify-between 
+                justify-end text-center w-[90%] md:text-start md:w-[60%]  ">
+                <h1 class="text-heading text-4xl font-bold  mb-20 ">Honda CR-V</h1>
+
+                <div class="flex md:flex-row flex-col justify-between text-text text-2xl">
+                    <div class="flex gap-2 items-center">
+                        <!-- <i class="fas fa-calendar-alt"></i> -->
+                        <span>موديل 2018</span>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>CVT</span>
+                    </div>
+
+
+                    <div class="flex gap-2 items-center">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <span>بنزين</span>
+                    </div>
+
+
+                    <div class="flex gap-2 items-center">
+                        <i class="fa-solid fa-users"></i>
+                        <span>مقاعد</span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="reservation-header-img left-origin md:w-[35%] flex items-center justify-center">
+                <img class="w-[90%] md:w-full " src="../../dist/assets/images/reservation/hero2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Reservation Page Header End -->
+
+    <!-- Reservation Data Section Start -->
+    <section class="py-[30px] md:py-0 mt-10">
+
+
+
+        <div class="max-w-7xl mx-auto reservation-header  border border-card-tint
+        bg-card-bg  p-6 rounded-[10px]">
+            <div class="flex gap-2 text-heading">
+                <div class="w-[45px] h-[45px] rounded-full bg-primary relative">
+                    <div class="absolute top-[50%] -translate-y-1/2  left-[50%] -translate-x-1/2 font-bold text-xl">1
+                    </div>
+                </div>
+                <h2 class="md:text-3xl text-2xl font-bold mb-4 ">بيانات الحجز</h2>
+            </div>
+            <div class="flex md:flex-row flex-col justify-center gap-20 items-center">
+                <div class="receipt-info w-[45%] flex flex-col gap-3">
+                    <!-- <h3 class="text-lg font-semibold text-heading flex items-center gap-2">
+                     معلومات الاستلام
+                 </h3> -->
+
+                    <div class="flex flex-col gap-3">
+                        <div>
+                            <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>تاريخ الاستلام</span>
+                            </label>
+                            <input type="date" class="block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted cursor-pointer
+                                  ">
+                        </div>
+
+                        <div>
+                            <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>وقت الاستلام</span>
+                            </label>
+                            <input type="time" class="block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted cursor-pointer">
+                        </div>
+                        <div>
+                            <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>مكان الاستلام</span>
+                            </label>
+
+                            <div class="flex justify-between w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md ">
+                                <div id="receipt-selected-location"> اختر مكان استلام السيارة</div>
+
+                                <a data-modal-target="location-modal-1" data-modal-toggle="location-modal-1"
+                                    class="cursor-pointer"> <i class="far fa-edit text-black-50 "></i>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="receive-info w-[45%] flex flex-col gap-3">
+                    <!-- <h3 class="text-lg font-semibold text-heading flex items-center gap-2">
+                     معلومات التسليم
+                 </h3> -->
+
+                    <div class="flex flex-col gap-3">
+                        <div>
+                            <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>تاريخ التسليم</span>
+                            </label>
+                            <input type="date" class="block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted cursor-pointer
+                                  ">
+                        </div>
+
+                        <div>
+                            <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>وقت التسليم</span>
+                            </label>
+                            <input type="time" class="block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted cursor-pointer">
+                        </div>
+                        <div>
+                            <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>مكان التسليم</span>
+                            </label>
+                            <input class="cursor-pointer block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted" data-modal-target="location-modal-2"
+                                data-modal-toggle="location-modal-2" placeholder="اختر مكان تسليم السيارة">
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Reservation Data Section End -->
+
+
+
+    <!-- Modal toggle -->
+
+
+    <!-- location modal -->
+    <div id="location-modal-1" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between border-b border-default pb-4 md:pb-5">
+                    <h3 class="text-lg font-medium text-heading">
+                        مكان الاستلام
+                    </h3>
+                    <button type="button" class="text-primary bg-transparent
+                             hover:bg-neutral-tertiary hover:text-primary-hover
+                              rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="location-modal-1">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18 17.94 6M18 18 6.06 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="mt-5 text-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53228.253559541714!2d36.32409491587292!3d33.50746868172158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e6dc413cc6a7%3A0x6b9f66ebd1e394f2!2z2K_Zhdi02YLYjCDYs9mI2LHZitin!5e0!3m2!1sar!2s!4v1783610016589!5m2!1sar!2s"
+                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center border-t border-default space-x-4 pt-4 md:pt-5">
+                    <button data-modal-hide="location-modal-1" type="button"
+                        class="text-white bg-primary box-border border border-transparent
+                             hover:bg-primary-hover focus:ring-4 focus:ring-brand-medium shadow-xs
+                              font-medium leading-5 w-[100%] rounded-[10px] text-sm px-4 py-2.5 focus:outline-none">اختيار</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- location modal -->
+    <div id="location-modal-2" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-neutral-primary-soft border border-default rounded-base shadow-sm p-4 md:p-6">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between border-b border-default pb-4 md:pb-5">
+                    <h3 class="text-lg font-medium text-heading">
+                        مكان التسليم
+                    </h3>
+                    <button type="button" class="text-primary bg-transparent
+                             hover:bg-neutral-tertiary hover:text-primary-hover
+                              rounded-base text-sm w-9 h-9 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="location-modal-2">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18 17.94 6M18 18 6.06 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="mt-5 text-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53228.253559541714!2d36.32409491587292!3d33.50746868172158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e6dc413cc6a7%3A0x6b9f66ebd1e394f2!2z2K_Zhdi02YLYjCDYs9mI2LHZitin!5e0!3m2!1sar!2s!4v1783610016589!5m2!1sar!2s"
+                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center border-t border-default space-x-4 pt-4 md:pt-5">
+                    <button data-modal-hide="location-modal-2" type="button"
+                        class="text-white bg-primary box-border border border-transparent
+                             hover:bg-primary-hover focus:ring-4 focus:ring-brand-medium shadow-xs
+                              font-medium leading-5 w-[100%] rounded-[10px] text-sm px-4 py-2.5 focus:outline-none">اختيار</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../../dist/js/swiper.js"></script>
+    <script src="../../dist/js/scrollreveal-animation.js"></script>
+    <script src="../../dist/js/script.js"></script>
+
+</body>
+
+</html>

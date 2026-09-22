@@ -83,17 +83,12 @@ function filterCarsExecutive() {
 
     if (visibleCount === 0) {
         if (noResults) noResults.classList.remove('hidden');
-        if (categoryTitleDiv) {
-            categoryTitleDiv.classList.remove('flex');
-            categoryTitleDiv.classList.add('hidden');
-        } 
-
+        // if (categoryTitleDiv) categoryTitleDiv.classList.add('hidden');
+        // if (categoryTitleDiv) categoryTitleDiv.classList.remove('flex');
     } else {
         if (noResults) noResults.classList.add('hidden');
-        if (categoryTitleDiv) {
-            categoryTitleDiv.classList.remove('hidden');
-             categoryTitleDiv.classList.add('flex');
-        }
+        // if (categoryTitleDiv) categoryTitleDiv.classList.remove('hidden');
+        // if (categoryTitleDiv) categoryTitleDiv.classList.add('flex');
     }
 
     // document.getElementById('visibleCount').innerText = visibleCount;

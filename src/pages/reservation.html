@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>احجز الآن - وجهة</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../dist/assets/css/all.min.css">
+    <link rel="stylesheet" href="../../dist/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="icon" type="image/svg+xml" href="../../dist/assets/images/image.png">
+
+
+    <link rel="stylesheet" href="../../dist/assets/css/leaflet.css">
+</head>
+
+<body class="">
+
+    <header class="w-full bg-card-bg border-b border-card-tint shadow-sm sticky top-0 z-50" dir="rtl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- 1. الشعار (Logo) -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="flex items-center">
+                        <img src="../../dist/assets/images/logo.png" alt="شعار وجهة" class="w-15 h-15  ">
+                    </a>
+                </div>
+
+                <!-- 2. روابط التنقل (Navigation Links) -->
+                <nav class="hidden md:flex items-center gap-8 font-sans">
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الرئيسية</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">من نحن</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الحجز</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">كيف نعمل</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">اتصل بنا</a>
+                </nav>
+
+                <!-- 3. أزرار الإجراءات (Actions & Auth) -->
+                <div class="flex items-center gap-4 font-sans">
+                    <!-- زر تسجيل الدخول -->
+                    <a href="#"
+                        class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-heading hover:text-primary transition-colors">
+                        تسجيل الدخول
+                    </a>
+
+                    <!-- زر إنشاء حساب -->
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold
+                         text-white bg-primary hover:bg-primary-hover rounded-xl shadow-sm transition-all duration-200">
+                        حساب جديد
+                    </a>
+
+                    <!-- زر القائمة للجوال (Mobile Menu Toggle) -->
+                    <button type="button"
+                        class="md:hidden p-2 rounded-lg text-heading hover:bg-card-tint focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <h1>إتمام الحجز</h1>
+    <!-- Reservation Page Header Start -->
+    <section class="py-[30px] md:py-0">
+        <div class="max-w-7xl mx-auto reservation-header  border border-card-tint
+        bg-bg-main flex md:flex-row flex-col justify-between items-center px-8 rounded-base">
+            <div class="reservation-header-info right-origin flex flex-col md:justify-between 
+                justify-end text-center w-[90%] md:text-start md:w-[60%]  ">
+                <h1 class="text-heading text-4xl font-bold  mb-20 ">Honda CR-V</h1>
+
+                <div class="flex md:flex-row flex-col justify-between text-text text-2xl">
+                    <div class="flex gap-2 items-center">
+                        <!-- <i class="fas fa-calendar-alt"></i> -->
+                        <span>موديل 2018</span>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>CVT</span>
+                    </div>
+
+
+                    <div class="flex gap-2 items-center">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <span>بنزين</span>
+                    </div>
+
+
+                    <div class="flex gap-2 items-center">
+                        <i class="fa-solid fa-users"></i>
+                        <span>مقاعد</span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="reservation-header-img left-origin md:w-[35%] flex items-center justify-center">
+                <img class="w-[90%] md:w-full " src="../../dist/assets/images/reservation/hero2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Reservation Page Header End -->
+
+    <!-- Reservation Data Section Start -->
+    <section class="py-[30px] md:py-0 mt-10">
+        <div class="max-w-7xl mx-auto reservation-header  border border-card-tint
+        bg-bg-main  p-6 rounded-base">
+            <div class="flex gap-2 items-top mb-4">
+                <div class="w-[45px] h-[45px] rounded-full bg-primary text-white relative">
+                    <div class="absolute top-[50%] -translate-y-1/2  left-[50%] -translate-x-1/2 font-bold text-xl">1
+                    </div>
+                </div>
+                <h2 class="md:text-3xl text-2xl font-bold mb-4 text-heading">بيانات الحجز</h2>
+            </div>
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-x-20 gap-y-3 items-center px-6">
+
+                <div>
+                    <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>تاريخ الاستلام</span>
+                    </label>
+                    <input type="date" class="block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted cursor-pointer
+                                  ">
+                </div>
+                <div>
+                    <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>تاريخ التسليم</span>
+                    </label>
+                    <input type="date" class="block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted cursor-pointer
+                                  ">
+                </div>
+
+                <div>
+                    <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>وقت الاستلام</span>
+                    </label>
+                    <input type="time" class="block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted cursor-pointer">
+                </div>
+                <div>
+                    <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>وقت التسليم</span>
+                    </label>
+                    <input type="time" class="block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted cursor-pointer">
+                </div>
+                <div>
+                    <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>مكان الاستلام</span>
+                    </label>
+
+                    <div
+                        class="flex justify-between w-full py-2.5 bg-white border border-default-medium text-heading text-sm rounded-base focus:ring-heading focus:border-heading px-3 shadow-md">
+                        <!-- أضفنا معرف id هنا ونص افتراضي -->
+                        <div id="receipt-selected-location" class="text-muted">اختر مكان استلام السيارة</div>
+
+                        <!-- زر يفتح المودال (تأكد أن الـ data attributes تطابق مكتبتك مثل Flowbite) -->
+                        <a data-modal-target="location-modal-1" data-modal-toggle="location-modal-1"
+                            class="cursor-pointer" onclick="initMap(1)">
+                            <i class="far fa-edit text-black-50"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <div>
+                    <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>مكان التسليم</span>
+                    </label>
+
+                    <div
+                        class="flex justify-between w-full py-2.5 bg-white border border-default-medium text-heading text-sm rounded-base focus:ring-heading focus:border-heading px-3 shadow-md">
+                        <!-- أضفنا معرف id هنا ونص افتراضي -->
+                        <div id="return-selected-location" class="text-muted">اختر مكان تسليم السيارة</div>
+
+                        <!-- زر يفتح المودال (تأكد أن الـ data attributes تطابق مكتبتك مثل Flowbite) -->
+                        <a data-modal-target="location-modal-2" data-modal-toggle="location-modal-2"
+                            class="cursor-pointer" onclick="initMap(2)">
+                            <i class="far fa-edit text-black-50"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+        </div>
+    </section>
+    <!-- Reservation Data Section End -->
+
+    <!-- Your Data Section Start -->
+    <section class="py-[30px] md:py-0 mt-10">
+        <div class="max-w-7xl mx-auto reservation-header  border border-card-tint
+        bg-bg-main  p-6 rounded-base">
+            <div class="flex gap-2 items-top mb-4">
+                <div class="w-[45px] h-[45px] rounded-full bg-primary text-white relative">
+                    <div class="absolute top-[50%] -translate-y-1/2  left-[50%] -translate-x-1/2
+                     font-bold text-xl">2
+                    </div>
+                </div>
+                <h2 class="md:text-3xl text-2xl font-bold mb-4 text-heading">بياناتك</h2>
+            </div>
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-x-20 gap-y-3 items-center px-6">
+                <div>
+                    <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                        <i class="fa-solid fa-user"></i>
+                        <span>الاسم الكامل</span>
+                    </label>
+                    <input type="text" class="block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted cursor-pointer
+                                  ">
+                </div>
+                <div>
+                    <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                        <i class="fa-regular fas fa-phone"></i>
+                        <span>الهاتف</span>
+                    </label>
+                    <input type="tel" class="block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted cursor-pointer
+                                  ">
+                </div>
+                <div>
+                    <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                        <i class="fa-regular far fa-envelope"></i>
+                        <span>البريد الإلكتروني</span>
+                    </label>
+                    <input type="email" class="block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted cursor-pointer
+                                  ">
+                </div>
+                <div>
+                    <label class="text-md font-bold text-heading mb-2 flex gap-2 items-center ps-1">
+                        <i class="fas fa-id-card"></i>
+                        <span>رقم رخصة القيادة</span>
+                    </label>
+                    <input type="text" class="block w-full  py-2.5 bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                               focus:ring-heading focus:border-heading px-3 py-2.5 shadow-md
+                                placeholder:text-muted cursor-pointer
+                                  ">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Your Data Section End -->
+
+    <!-- Additional Services Section Start -->
+    <section class="py-[30px] md:py-0 mt-10">
+        <div class="max-w-7xl mx-auto reservation-header  border border-card-tint
+        bg-bg-main  p-6 rounded-base">
+            <div class="flex gap-2 items-top mb-4">
+                <div class="w-[45px] h-[45px] rounded-full bg-primary text-white relative">
+                    <div class="absolute top-[50%] -translate-y-1/2  left-[50%] -translate-x-1/2
+                     font-bold text-xl">3
+                    </div>
+                </div>
+                <h2 class="md:text-3xl text-2xl font-bold mb-4 text-heading">خدمات إضافية</h2>
+            </div>
+            <div class="grid md:grid-cols-5 grid-cols-1 gap-x-5 gap-y-3 items-center px-6">
+
+                <label class="group max-w-sm cursor-pointer select-none">
+
+                    <input type="checkbox" class="sr-only peer" />
+                    <div class="relative 
+                    bg-white border
+                              border-default-medium text-heading text-sm rounded-base 
+                                px-3 py-7 shadow-md                      
+             peer-checked:ring-2 peer-checked:ring-primary peer-checked:bg-card-tint
+              peer-checked:[&_.check-icon]:opacity-100 peer-checked:[&_.check-icon]:scale-100">
+
+                        <div class="absolute top-[5%] left-[5%] check-icon text-primary
+                            opacity-0 scale-75 transition-all duration-200">
+                            <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                                stroke="currentColor" class="w-6 h-6 rounded-full bg-red-100 p-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fa-solid fas fa-chair text-text text-5xl mb-2"></i>
+                            <h3 class="text-xl font-bold text-text  mb-2.5">مقعد أطفال</h3>
+                            <p class=" "> $10/ يوم </p>
+                        </div>
+                    </div>
+                </label>
+                <label class="group max-w-sm cursor-pointer select-none">
+
+                    <input type="checkbox" class="sr-only peer" />
+                    <div class="relative 
+                    bg-white border
+                              border-default-medium text-heading rounded-base 
+                                px-3 py-7 shadow-md                      
+             peer-checked:ring-2 peer-checked:ring-heading peer-checked:bg-card-tint
+              peer-checked:[&_.check-icon]:opacity-100 peer-checked:[&_.check-icon]:scale-100">
+
+                        <div class="absolute top-[5%] left-[5%] check-icon text-heading
+                            opacity-0 scale-75 transition-all duration-200">
+                            <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                                stroke="currentColor" class="w-6 h-6 rounded-full bg-red-100 p-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fa-regular fa-user text-text text-5xl mb-2"></i>
+                            <h3 class="text-xl font-bold text-text  mb-2.5">سائق إضافي</h3>
+                            <p class=" "> $15/ يوم </p>
+                        </div>
+                    </div>
+                </label>
+                <label class="group max-w-sm cursor-pointer select-none">
+
+                    <input type="checkbox" class="sr-only peer" />
+                    <div class="relative 
+                    bg-white border
+                              border-default-medium text-heading rounded-base 
+                                px-3 py-7 shadow-md                      
+             peer-checked:ring-2 peer-checked:ring-heading peer-checked:bg-card-tint
+              peer-checked:[&_.check-icon]:opacity-100 peer-checked:[&_.check-icon]:scale-100">
+
+                        <div class="absolute top-[5%] left-[5%] check-icon text-heading
+                            opacity-0 scale-75 transition-all duration-200">
+                            <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                                stroke="currentColor" class="w-6 h-6 rounded-full bg-red-100 p-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fa-solid fa-shield-halved text-text text-5xl mb-2"></i>
+                            <h3 class="text-xl font-bold text-text  mb-2.5">تأمين إضافي</h3>
+                            <p class=" "> $20/ يوم </p>
+                        </div>
+                    </div>
+                </label>
+                <label class="group max-w-sm cursor-pointer select-none">
+
+                    <input type="checkbox" class="sr-only peer" />
+                    <div class="relative 
+                    bg-white border
+                              border-default-medium text-heading rounded-base 
+                                px-3 py-7 shadow-md                      
+             peer-checked:ring-2 peer-checked:ring-heading peer-checked:bg-card-tint
+              peer-checked:[&_.check-icon]:opacity-100 peer-checked:[&_.check-icon]:scale-100">
+
+                        <div class="absolute top-[5%] left-[5%] check-icon text-heading
+                            opacity-0 scale-75 transition-all duration-200">
+                            <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                                stroke="currentColor" class="w-6 h-6 rounded-full bg-red-100 p-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fa-regular fas fa-map-marked-alt text-text text-5xl mb-2"></i>
+                            <h3 class="text-xl font-bold text-text  mb-2.5">تسليم في موقع مختلف</h3>
+                            <p class=" "> $15/ يوم </p>
+                        </div>
+                    </div>
+                </label>
+
+
+                <label class="group max-w-sm cursor-pointer select-none">
+
+                    <input type="checkbox" class="sr-only peer" />
+                    <div class="relative 
+                    bg-white border
+                              border-default-medium text-heading rounded-base 
+                                px-3 py-7 shadow-md                      
+             peer-checked:ring-2 peer-checked:ring-heading peer-checked:bg-card-tint
+              peer-checked:[&_.check-icon]:opacity-100 peer-checked:[&_.check-icon]:scale-100">
+
+                        <div class="absolute top-[5%] left-[5%] check-icon text-heading
+                            opacity-0 scale-75 transition-all duration-200">
+                            <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                                stroke="currentColor" class="w-6 h-6 rounded-full bg-red-100 p-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <i class="fa-solid fa-location-dot text-text text-5xl mb-2"></i>
+                            <h3 class="text-xl font-bold text-text  mb-2.5">GPS</h3>
+                            <p class=" "> $8/ يوم </p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </section>
+    <!-- Additional Services Section End -->
+
+    <!-- Totoal Price Section Start -->
+    <section class="py-[30px] md:py-0 mt-10">
+        <div class="max-w-7xl mx-auto reservation-header  border border-card-tint
+        bg-bg-main  p-6 rounded-base">
+            <div class="flex gap-2 items-top mb-4">
+                <div class="w-[45px] h-[45px] rounded-full bg-primary text-white relative">
+                    <div class="absolute top-[50%] -translate-y-1/2  left-[50%] -translate-x-1/2
+                     font-bold text-xl">4
+                    </div>
+                </div>
+                <h2 class="md:text-3xl text-2xl font-bold mb-4 text-heading">ملخص السعر</h2>
+            </div>
+            <div class="w-full bg-white borderborder-default-medium text-heading 
+             rounded-base  px-10 py-2.5 shadow-md cursor-pointer flex flex-col ">
+
+                <div class="flex justify-between">
+                    <h2 class="md:text-2xl text-xl font-bold mb-4 text-heading">honda CR-V</h2>
+                    <div class="flex gap-15 md:text-2xl text-xl mb-4 text-muted">
+                        <span>$100 * 3 أيام</span>
+                        <span>300$</span>
+                    </div>
+                </div>
+                <div class="flex justify-between">
+                    <p class="text-lg">مقعد اطفال</p>
+                    <p class="text-muted">10$</p>
+                </div>
+
+                <div class="flex justify-between">
+                    <p class="text-lg">تأمين إضافي</p>
+                    <p class="text-muted">20$</p>
+                </div>
+
+                <hr class="my-3">
+                <div class="flex justify-between">
+                    <p class="md:text-2xl text-xl font-bold mb-4 text-heading">المجموع</p>
+                    <p class="md:text-2xl text-xl mb-4 text-muted">330$</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Total Price Section End -->
+
+    <!-- Payment Method Section Start -->
+    <section class="py-[30px] md:py-0 mt-10">
+        <div class="max-w-7xl mx-auto reservation-header  border border-card-tint
+        bg-bg-main  p-6 rounded-base">
+            <div class="flex gap-2 items-top mb-4">
+                <div class="w-[45px] h-[45px] rounded-full bg-primary text-white relative">
+                    <div class="absolute top-[50%] -translate-y-1/2  left-[50%] -translate-x-1/2
+                     font-bold text-xl">5
+                    </div>
+                </div>
+                <h2 class="md:text-3xl text-2xl font-bold mb-4 text-heading">طريقة الدفع</h2>
+            </div>
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-x-15 gap-y-3 items-center px-6">
+
+                <label class="group max-w-sm cursor-pointer select-none">
+                    <input type="radio" name="payment-method" class="sr-only peer" />
+
+                    <div class="relative bg-white border border-default-medium text-heading
+     text-sm rounded-base px-8 py-3 shadow-md                      
+        peer-checked:ring-2 peer-checked:ring-primary peer-checked:bg-card-tint
+        peer-checked:[&_.radio-border]:border-primary
+        peer-checked:[&_.radio-dot]:opacity-100 peer-checked:[&_.radio-dot]:scale-100">
+
+                        <div
+                            class="absolute top-[5%] left-[1%] w-5 h-5 rounded-full border-2 border-gray-300 flex items-center justify-center transition-all duration-200 radio-border">
+                            <div
+                                class="w-2.5 h-2.5 rounded-full bg-primary opacity-0 scale-50 transition-all duration-200 radio-dot">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="">
+                                <h3 class="text-xl font-bold text-text mb-1">الدفع عند الاستلام</h3>
+                                <p class=""> الدفع عند استلام السيارة </p>
+                            </div>
+                            <i class="fas fa-money-bill-wave text-text text-4xl mb-2"></i>
+                        </div>
+                    </div>
+                </label>
+                <label class="group max-w-sm cursor-pointer select-none">
+                    <input type="radio" name="payment-method" class="sr-only peer" />
+
+                    <div class="relative bg-white border border-default-medium text-heading
+     text-sm rounded-base px-8 py-3 shadow-md                      
+        peer-checked:ring-2 peer-checked:ring-primary peer-checked:bg-card-tint
+        peer-checked:[&_.radio-border]:border-primary
+        peer-checked:[&_.radio-dot]:opacity-100 peer-checked:[&_.radio-dot]:scale-100">
+
+                        <div
+                            class="absolute top-[5%] left-[1%] w-5 h-5 rounded-full border-2 border-gray-300 flex items-center justify-center transition-all duration-200 radio-border">
+                            <div
+                                class="w-2.5 h-2.5 rounded-full bg-primary opacity-0 scale-50 transition-all duration-200 radio-dot">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="">
+                                <h3 class="text-xl font-bold text-text mb-1">بطاقة بنكية</h3>
+                                <p class=""> Visa / MasterCard </p>
+                            </div>
+                            <i class="fas fa-credit-card text-text text-4xl mb-2"></i>
+                        </div>
+                    </div>
+                </label>
+                <label class="group max-w-sm cursor-pointer select-none">
+                    <input type="radio" name="payment-method" class="sr-only peer" />
+
+                    <div class="relative bg-white border border-default-medium text-heading
+     text-sm rounded-base px-8 py-3 shadow-md                      
+        peer-checked:ring-2 peer-checked:ring-primary peer-checked:bg-card-tint
+        peer-checked:[&_.radio-border]:border-primary
+        peer-checked:[&_.radio-dot]:opacity-100 peer-checked:[&_.radio-dot]:scale-100">
+
+                        <div
+                            class="absolute top-[5%] left-[1%] w-5 h-5 rounded-full border-2 border-gray-300 flex items-center justify-center transition-all duration-200 radio-border">
+                            <div
+                                class="w-2.5 h-2.5 rounded-full bg-primary opacity-0 scale-50 transition-all duration-200 radio-dot">
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="">
+                                <h3 class="text-xl font-bold text-text mb-1">دفع الكتروني</h3>
+                                <p class=""> Apple Pay / PayPal </p>
+                            </div>
+                            <i class="fa-regular fas fa-mobile-alt text-text text-4xl mb-2"></i>
+                        </div>
+                    </div>
+                </label>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Payment Method Section End -->
+
+    <!-- Reservation Conditions Start -->
+
+    <section class="py-[30px] md:py-0 mt-10">
+        <div class="max-w-7xl mx-auto flex items-center gap-3">
+            <div class="flex gap-2 items-center">
+                <input type="checkbox" name="conditions">
+                <label for="conditions">أوافق على جميع شروط تأجير السيارة.</label>
+            </div>
+            <a href="#" class="text-blue-900">عرض الشروط والأحكام</a>
+        </div>
+    </section>
+    <!-- Reservation Conditions End -->
+
+    <!-- confirm Button Start -->
+    <section class="py-[30px] md:py-0 mt-4 my-10">
+        <div class="max-w-7xl mx-auto">
+            <a href="reservation_success.html" class="flex justify-center bg-primary hover:bg-primary-hover
+                             text-white  
+                             md:text-xl text-lg px-5 md:py-3 py-1 mt-3 w-full rounded-md">تأكيد الحجز</a>            
+        </div>
+    </section>
+    <!-- confirm Button End -->
+
+    <!-- Modal Start -->
+    <!-- location modal-1 -->
+    <div id="location-modal-1"
+        class="hidden fixed inset-0 z-50 bg-gray-600 bg-opacity-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-xl max-w-lg w-full p-6 text-right">
+            <h3 class="text-lg font-bold text-heading mb-4">موقع الاستلام</h3>
+
+            <!-- استبدلنا الـ iframe بـ div فارغ وحجزنا له طولاً مناسباً -->
+            <div id="map-parent-1" class="w-full h-72 rounded-lg">
+                <!-- الخريطة سيتم حقنها هنا تلقائياً عند فتح هذا المودال -->
+                <div id="map-container" class="w-full h-full"></div>
+            </div>
+
+            <!-- حقل لعرض الإحداثيات المحددة حالياً للمستخدم كإشعار مرئي -->
+            <p class="text-xs text-gray-500 mt-2" id="coords-preview-1">الموقع الحالي: لم يتم التحديد بعد</p>
+
+
+            <!-- الحقل النصي اليدوي الاحتياطي (الجديد) -->
+            <div class="mt-4">
+                <label class="block text-xs font-bold text-heading mb-1">تفاصيل العنوان:</label>
+                <input type="text" id="manual-address-input-1" placeholder="اكتب اسم الحي أو تفاصيل إضافية هنا..."
+                    class="w-full border border-gray-300 rounded-base px-3 py-2 text-sm focus:outline-none focus:border-heading focus:ring-1 focus:ring-heading transition-all">
+            </div>
+
+            <!-- أزرار التحكم -->
+            <div class="mt-4 flex justify-end gap-2">
+                <button type="button" onclick="confirmLocation()"
+                    class="bg-primary hover:bg-primary-hover text-white text-sm font-bold px-4 py-2 rounded-base">
+                    تأكيد الموقع
+                </button>
+                <button type="button" onclick="closeModal()" data-modal-hide="location-modal-1"
+                    class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-bold px-4 py-2 rounded-base">
+                    إلغاء
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- location-modal-2 -->
+    <div id="location-modal-2"
+        class="hidden fixed inset-0 z-50 bg-gray-600 bg-opacity-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-xl max-w-lg w-full p-6 text-right">
+            <h3 class="text-lg font-bold text-heading mb-4">موقع التسليم</h3>
+
+            <!-- استبدلنا الـ iframe بـ div فارغ وحجزنا له طولاً مناسباً -->
+            <div id="map-parent-2" class="w-full h-72 rounded-lg">
+                <!-- الخريطة سيتم حقنها هنا تلقائياً عند فتح هذا المودال -->
+            </div>
+
+            <!-- حقل لعرض الإحداثيات المحددة حالياً للمستخدم كإشعار مرئي -->
+            <p class="text-xs text-gray-500 mt-2" id="coords-preview-2">الموقع الحالي: لم يتم التحديد بعد</p>
+
+
+            <!-- الحقل النصي اليدوي الاحتياطي (الجديد) -->
+            <div class="mt-4">
+                <label class="block text-xs font-bold text-heading mb-1">تفاصيل العنوان:</label>
+                <input type="text" id="manual-address-input-2" placeholder="اكتب اسم الحي أو تفاصيل إضافية هنا..."
+                    class="w-full border border-gray-300 rounded-base px-3 py-2 text-sm focus:outline-none focus:border-heading focus:ring-1 focus:ring-heading transition-all">
+            </div>
+
+            <!-- أزرار التحكم -->
+            <div class="mt-4 flex justify-end gap-2">
+                <button type="button" onclick="confirmLocation()"
+                    class="bg-primary hover:bg-primary-hover text-white text-sm font-bold px-4 py-2 rounded-base">
+                    تأكيد الموقع
+                </button>
+                <button type="button" onclick="closeModal()" data-modal-hide="location-modal-1"
+                    class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-bold px-4 py-2 rounded-base">
+                    إلغاء
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
+
+
+
+    <script src="../../dist/js/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../../dist/js/swiper.js"></script>
+    <script src="../../dist/js/scrollreveal-animation.js"></script>
+    <script src="../../dist/js/script.js"></script>
+    <script src="../../dist/js/map.js"></script>
+
+
+</body>
+
+</html>
