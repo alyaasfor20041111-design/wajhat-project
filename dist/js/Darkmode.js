@@ -47,3 +47,11 @@ themeToggleBtn.addEventListener('click', function() {
 });
 
 
+<<<<<<< HEAD:dist/js/script.js
+=======
+
+
+
+
+
+>>>>>>> main:dist/js/Darkmode.js
