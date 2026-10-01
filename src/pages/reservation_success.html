@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نجاح الحجز - وجهة</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../dist/assets/css/all.min.css">
+    <link rel="stylesheet" href="../../dist/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="icon" type="image/svg+xml" href="../../dist/assets/images/image.png">
+
+    <style>
+        html,
+        body {
+            overflow-x: visible !important;
+        }
+    </style>
+
+</head>
+
+<body class="">
+
+    <header class="w-full bg-card-bg border-b border-card-tint shadow-sm sticky top-0 z-50" dir="rtl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- 1. الشعار (Logo) -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="flex items-center">
+                        <img src="../../dist/assets/images/logo.png" alt="شعار وجهة" class="w-15 h-15  ">
+                    </a>
+                </div>
+
+                <!-- 2. روابط التنقل (Navigation Links) -->
+                <nav class="hidden md:flex items-center gap-8 font-sans">
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الرئيسية</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">من نحن</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الحجز</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">كيف نعمل</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">اتصل بنا</a>
+                </nav>
+
+                <!-- 3. أزرار الإجراءات (Actions & Auth) -->
+                <div class="flex items-center gap-4 font-sans">
+                    <!-- زر تسجيل الدخول -->
+                    <a href="#"
+                        class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-heading hover:text-primary transition-colors">
+                        تسجيل الدخول
+                    </a>
+
+                    <!-- زر إنشاء حساب -->
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold
+                         text-white bg-primary hover:bg-primary-hover rounded-xl shadow-sm transition-all duration-200">
+                        حساب جديد
+                    </a>
+
+                    <!-- زر القائمة للجوال (Mobile Menu Toggle) -->
+                    <button type="button"
+                        class="md:hidden p-2 rounded-lg text-heading hover:bg-card-tint focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <section class="max-w-7xl mx-auto pt-[40px]">
+        <div class="text-center">
+            <i class="fa-solid fa-check-circle text-9xl mb-4 text-primary  hover:text-primary-hover "></i>
+            <h1 class="md:text-4xl text-3xl font-bold mb-4 text-heading">تم الحجز بنجاح</h1>
+            <h2 class="text-text text-lg px-3">شكراً لك: تم استلام طلبك بنجاح وستتم مراجعته من قبل فريقنا</h2>
+        </div>
+
+        <div class="border border-card-tint bg-bg-main my-[20px] p-[20px] rounded-base text-center">
+            <h3 class="md:text-4xl text-3xl font-bold mb-4 text-heading">رقم الحجز</h3>
+            <div class="md:text-3xl text-2xl mb-4 text-heading">
+                <span>#WJ-1025</span>
+                <a href="" onclick="alert('تم نسخ كود الحجز')"><i class="far fa-copy"></i></a>
+            </div>
+        </div>
+
+        <!-- تم تغيير items-end إلى items-stretch لضمان تمدد جميع العناصر بالداخل لعرض الشاشة -->
+        <div class="details w-full border border-card-tint bg-bg-main px-8 rounded-base flex flex-col items-stretch"
+            dir="rtl">
+
+            <!-- قسم معلومات السيارة -->
+            <div class="car-info right-origin flex md:justify-between items-center justify-end text-center md:text-start py-5 w-full">
+                <div class="flex flex-col md:items-start gap-3 justify-end w-[100%] items-center">
+                    <h2 class="text-heading text-2xl md:text-3xl font-bold hidden md:block ">السيارة</h2>
+                    <h2 class="text-heading text-3xl md:text-3xl font-bold">Honda CR-V</h2>
+                    <div>
+                        <span class="font-bold">السعر الإجمالي:</span>
+                        <span>330$</span>
+                    </div>
+                    <div>
+                        <span class="font-bold">حالة الحجز:</span>
+                        <span>قيد المراجعة</span>
+                    </div>
+                </div>
+                <div class="left-origin hidden md:w-[25%] md:flex items-center justify-center">
+                    <img class="w-[90%] md:w-full" src="../../dist/assets/images/reservation/reservation-header.png"
+                        alt="Honda CR-V">
+                </div>
+            </div>
+
+            <hr class="text-card-tint mb-5 w-full">
+
+            <div class="w-full min-w-full block">
+                <table class="w-full min-w-full text-right table-fixed border-collapse">
+                    <tbody>
+                        <tr>
+                            <td class="pb-5 align-top w-1/3 text-center">
+                                <div class="flex flex-col">
+                                    <h2 class="font-bold text-lg text-heading mb-1">تاريخ الاستلام</h2>
+                                    <p>20/10/2026</p>
+                                </div>
+                            </td>
+                            <td class="pb-5 align-top w-1/3 text-center">
+                                <div class="flex flex-col ">
+                                    <h2 class="font-bold text-lg text-heading mb-1">وقت الاستلام</h2>
+                                    <p>9.00 ص</p>
+                                </div>
+                            </td>
+                            <td class="pb-5 align-top w-1/3 text-center">
+                                <div class="flex flex-col">
+                                    <h2 class="font-bold text-lg text-heading mb-1">مكان الاستلام</h2>
+                                    <p class="whitespace-nowrap">مطار دبي الدولي</p>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3" class="py-2">
+                                <hr class="text-card-tint w-full">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="pt-5 pb-5 align-top  text-center">
+                                <div class="flex flex-col">
+                                    <h2 class="font-bold text-lg text-heading mb-1">تاريخ التسليم</h2>
+                                    <p>23/10/2026</p>
+                                </div>
+                            </td>
+                            <td class="pt-5 pb-5 align-top text-center">
+                                <div class="flex flex-col">
+                                    <h2 class="font-bold text-lg text-heading mb-1">وقت التسليم</h2>
+                                    <p>9.00 ص</p>
+                                </div>
+                            </td>
+                            <td class="pt-5 pb-5 align-top text-center">
+                                <div class="flex flex-col">
+                                    <h2 class="font-bold text-lg text-heading mb-1">مكان التسليم</h2>
+                                    <p class="whitespace-nowrap">دبي، جميرا2</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+        <div class="mx-7 md:mx-0 my-5">
+            <a href="reservation-details.html" class=" bg-primary
+             hover:bg-primary-hover transition-all duration-500
+                             text-white   text-sm
+                               md:w-[15%] w-[20%] p-3 me-4 rounded-base">عرض تفاصيل الحجز</a>
+
+            <a href="../../index.html" class="bg-white
+             hover:bg-primary-hover hover:text-white border border-primary
+                             text-primary text-sm  transition-all duration-500
+                             md:w-[15%] w-[20%] p-3 rounded-base">العودة الى الرئيسية</a>
+
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <script src="../../dist/js/Bushra/scrollreveal-animation.js"></script>
+    <script src="../../dist/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - وجهة</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../dist/assets/css/all.min.css">
+    <link rel="stylesheet" href="../../dist/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="icon" type="image/svg+xml" href="../../dist/assets/images/image.png">
+    <style>
+        html,
+        body {
+            overflow-x: visible !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="w-full bg-card-bg border-b border-card-tint shadow-sm sticky top-0 z-50" dir="rtl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- 1. الشعار (Logo) -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="flex items-center">
+                        <img src="../../dist/assets/images/logo.png" alt="شعار وجهة" class="w-15 h-15  ">
+                    </a>
+                </div>
+
+                <!-- 2. روابط التنقل (Navigation Links) -->
+                <nav class="hidden md:flex items-center gap-8 font-sans">
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الرئيسية</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">من نحن</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الخدمات</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">الحجز</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">كيف نعمل</a>
+                    <a href="#" class="text-text font-medium hover:text-primary transition-colors">اتصل بنا</a>
+                </nav>
+
+                <!-- 3. أزرار الإجراءات (Actions & Auth) -->
+                <div class="flex items-center gap-4 font-sans">
+                    <!-- زر تسجيل الدخول -->
+                    <a href="#"
+                        class="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold text-heading hover:text-primary transition-colors">
+                        تسجيل الدخول
+                    </a>
+
+                    <!-- زر إنشاء حساب -->
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold
+                         text-white bg-primary hover:bg-primary-hover rounded-xl shadow-sm transition-all duration-200">
+                        حساب جديد
+                    </a>
+
+                    <!-- زر القائمة للجوال (Mobile Menu Toggle) -->
+                    <button type="button"
+                        class="md:hidden p-2 rounded-lg text-heading hover:bg-card-tint focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- who Page Header Start -->
+    <section class="py-[30px]">
+        <div class="max-w-7xl mx-auto who-header flex md:flex-row flex-col justify-between items-center
+         md:gap-0 gap-5">
+            <div
+                class="who-header-info right-origin flex flex-col md:justify-center justify-end text-center w-[90%] md:text-start md:w-[60%]  ">
+                <h1 class="text-heading text-4xl font-bold mb-5 ">من نحن ؟</h1>
+
+                <div class="w-[95%] flex justify-center md:justify-start text-xl text-muted leading-9">
+                    مرحباً بكم في وجهة، شريككم الموثوق لتأجير السيارات في دولة الإمارات العربية المتحدة. نحن هنا لنضمن
+                    لكم حرية التنقل براحة وأمان في كافة أنحاء الدولة من خلال توفير أسطول حديث ومتنوع من المركبات التي
+                    تناسب جميع الاحتياجات والأذواق.
+
+                </div>
+            </div>
+            <div class="who-header-img left-origin  md:w-[40%] flex items-center justify-center">
+                <img class="w-[90%] md:w-full rounded-base shadow-md shadow-gray-50 "
+                    src="../../dist/assets/images/who/who-hero.jfif" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- who Page Header End -->
+
+    <!-- story Section Start -->
+    <section class="bg-bg-main md:py-[30px] pb-0 pt-[20px]">
+        <h2 class="text-3xl md:text-4xl text-heading text-center font-bold  md:mb-2">قصتنا</h2>
+        <p class="text-center text-xl text-heading md:block md:text-center hidden">في قلب دولة الإمارات العربية المتحدة،
+            حيث تتسارع خطى التطور وتلتقي
+            الثقافات من كل أنحاء العالم، ولدت فكرة وجهة
+        <div class="max-w-7xl mx-auto  md:mt-12 flex md:flex-row flex-col justify-between items-center gap-7">
+            </p>
+            <div class="right-origin">
+                <div class="company-start flex flex-col justify-between items-center 
+                px-2 hover:bg-card-tint hover:scale-[1.02] transition-all duration-500 rounded-base py-4 
+                md:bg-transparent bg-card-tint">
+                    <i class="fa-solid fa-rocket text-text text-4xl mb-3"></i>
+
+                    <h3 class="text-center text-xl text-heading font-bold mb-4">بداية الشركة</h3>
+                    <p class="text-center text-muted w-[90%] leading-7">بدأت رحلتنا بأسطول محدود من السيارات وشغف كبير
+                        بتقديم خدمة
+                        مختلفة في
+                        السوق الإماراتي، ركزنا على تقديم معادلة تجمع بين الجودة العالية والأسعار التنافسية التي تناسب
+                        الأفراد والشركات على حد سواء. فنجحنا في بناء قاعدة قوية من العملاء المخلصين الذين وثقوا بنا
+                        وجعلوا
+                        منا شريكهم الأول في التنقل.</p>
+                </div>
+            </div>
+            <div class="bottom-origin ">
+                <div class="company-progress flex flex-col justify-between items-center 
+                 px-2 hover:bg-card-tint hover:scale-[1.02] transition-all duration-500 rounded-base py-4">
+                    <i class="fa-solid fa-arrow-trend-up text-text text-4xl mb-3"></i>
+                    <h3 class="text-center text-xl text-heading font-bold mb-4">تطور الشركة</h3>
+                    <p class="text-center text-muted w-[90%] leading-7">
+                        مع نمو أعمالنا، شهدت "وجهة" تطوراً متسارعاً؛ حيث قمنا بتوسيع أسطولنا ليضم أحدث السيارات
+                        الاقتصادية،
+                        العائلية، والفاخرة. كما استثمرنا في الحلول الرقمية لتسهيل الحجز الفوري، وتوسيع نطاق خدماتنا
+                        لتغطية
+                        أهم المناطق الحيوية في دولة الإمارات، مع الحفاظ دائماً على تقديم أفضل قيمة وأقل تكلفة لعملائنا.
+                    </p>
+                </div>
+            </div>
+            <div class="left-origin">
+                <div
+                    class=" our-experience flex flex-col justify-between items-center 
+                    px-2 hover:bg-card-tint hover:scale-[1.02] transition-all duration-500 rounded-base py-4 md:bg-transparent bg-card-tint">
+                    <i class="fa-solid  fa-certificate text-text text-4xl mb-3"></i>
+                    <h3 class=" text-center text-xl text-heading font-bold mb-4">خبرتنا</h3>
+                    <p class="text-center text-muted w-[90%] leading-7">
+                        اكتسبنا عبر السنوات خبرة عميقة وفهماً شاملاً لمتطلبات السوق الإماراتي وعملائنا من مختلف
+                        الجنسيات.
+                        نحن نطبق أعلى معايير الصيانة والسلامة لضمان جاهزية أسطولنا، ويفخر فريقنا بتقديم دعم فوري وحلول
+                        مرنة
+                        على مدار الساعة تضمن لك رحلة مريحة وخالية من المتاعب.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- story Section End -->
+
+    <!-- tasks Section Start -->
+    <section class="py-[30px]">
+        <h2 class="text-3xl md:text-4xl text-heading text-center font-bold  md:mb-2 ">مهمتنا ورؤيتنا</h2>
+        <p class="text-center text-xl text-heading md:block md:text-center hidden">نؤمن بأن التنقل ليس مجرد رحلة، بل
+            تجربة تستحق أن تكون أفضل</p>
+        <div class="main-tasks max-w-7xl mx-auto grid md:grid-cols-2 grid-cols-1
+        items-top  md:p-7 p-[11px] md:p-0 md:mt-10">
+            <div class=" tasks-info right-origin flex flex-col gap-5 justify-around pt-5">
+                <div class="bg-card-tint p-5 rounded-base hover:scale-[1.02] transition-all duration-500">
+                    <h3 class="text-xl font-bold pb-3 text-heading md:text-start text-center">ماذا نريد أن نحقق ؟</h3>
+                    <p class="text-lg text-muted md:text-start text-center w-[95%]">
+                        أن نكون المنصة الرقمية الرائدة
+
+                        والأكثر ابتكاراً في قطاع تأجير السيارات على مستوى دولة الإمارات،
+                        مواكبين للتحول الرقمي السريع
+                        والذكاء الاصطناعي، لنقدم تجربة تنقل استثنائية تفوق تطلعات سكان
+                        الدولة وزوارها من جميع أنحاء العالم. </p>
+
+                </div>
+
+                <div class="bg-card-tint p-5 rounded-base hover:scale-[1.02] transition-all duration-500">
+                    <h3 class="text-xl font-bold pb-3 text-heading md:text-start text-center ">ماذا نقدم لعملائنا ؟</h3>
+                    <p class="text-lg text-muted md:text-start text-center w-[95%]">
+                        مهمتنا هي تمكينك من الانطلاق بحرية وأمان
+                        من خلال تقديم تجربة تأجير سيارات سلسة وموثوقة. نحن نسعى
+                        جاهدين لتبسيط رحلاتك اليومية
+                        والسياحية عبر توفير حلول تنقل ذكية تجمع بين الجودة العالية
+                        والأسعار التنافسية لنكون خيارك الأول في كل
+                        طريق تسلكه.
+                    </p>
+                </div>
+
+
+            </div>
+            <div class=" tasks-img left-origin md:flex md:justify-end items-start  hidden">
+                <img class="w-[80%] h-[450px] object-cover rounded-base" src="../../dist/assets/images/who/task.jpg"
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <!-- tasks Section End -->
+
+    <!-- <div class="flex items-center justify-center min-h-screen bg-gray-100">
+        <span id="counter" class="text-6xl font-bold text-blue-600 transition-all duration-300">0</span>
+    </div> -->
+
+  
+
+
+    <!-- Numbers Section Start -->
+    <section class="">
+        <div class="relative our-numbers" style="background-image: url('../../dist/assets/images/who/numbers.jpg'); 
+        background-position:center;
+         background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;">
+            <div class="overlay z-10 absolute w-full h-full bg-[#010307b9]"></div>
+            <div class="max-w-7xl mx-auto z-20 relative gap-4
+                 py-[40px] flex flex-col md:flex-row justify-between items-center">
+                <div class="md:w-[20%] w-[92%] flex flex-col  items-center justify-around rounded-base p-12
+               cursor-pointer transition-all duration-300 bg-light-white-color
+               shadow-md border border-gray-100
+               hover:shadow-md hover:bg-card-bg hover:scale-105">
+                    <h3 class="counter text-2xl font-bold text-text mb-2" data-target="1500">0</h3>
+                    <p class="text-2xl font-bold text-text">سيارة</p>
+                </div>
+                <div class="md:w-[20%] w-[92%] flex flex-col  items-center justify-around rounded-base p-12
+               cursor-pointer transition-all duration-300 bg-light-white-color
+               shadow-md border border-gray-100
+               hover:shadow-md hover:bg-card-bg hover:scale-105">
+                    <h3 class="counter text-2xl font-bold text-text mb-2" data-target="115000">0</h3>
+                    <p class="text-2xl font-bold text-text ">عميل سعيد</p>
+                </div>
+                <div class="md:w-[20%] w-[92%] flex flex-col  items-center justify-around rounded-base p-12
+               cursor-pointer transition-all duration-300 bg-light-white-color
+               shadow-md border border-gray-100
+               hover:shadow-md hover:bg-card-bg hover:scale-105">
+                    <h3 class="counter text-2xl font-bold text-text mb-2" data-target="730000">0</h3>
+                    <p class="text-2xl font-bold text-text ">عملية حجز</p>
+                </div>
+                <div class="md:w-[20%] w-[92%] flex flex-col  items-center justify-around rounded-base p-12
+               cursor-pointer transition-all duration-300 bg-light-white-color
+               shadow-md border border-gray-100
+               hover:shadow-md hover:bg-card-bg hover:scale-105">
+                    <h3 class="counter text-2xl font-bold text-text mb-2" data-target="10">0</h3>
+                    <p class="text-2xl font-bold text-text ">سنوات خبرة</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Numbers Section End -->
+
+
+    <!-- Features Section Start -->
+    <section class="features py-10 ">
+        <h2 class="text-center md:text-4xl text-3xl font-bold text-heading mb-4">لماذا نحن ؟</h2>
+
+        <div class="max-w-7xl mx-auto  bottom-origin 
+        grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 p-4">
+
+            <div class="box text-center p-6 mb-3.5  
+            rounded-base cursor-pointer
+            hover:translate-1 transition-all duration-500 ease-in-out"
+                style="box-shadow: 1px 1px 5px black, -1px -1px 5px brown;">
+                <i class="fa-solid fa-lock text-text text-5xl mb-2"></i>
+                <h3 class="text-2xl font-bold text-text  mb-2.5">الثقة</h3>
+                <p class=" "> نلتزم بالشفافية والجودة في تعاملاتنا</p>
+            </div>
+
+
+            <div class="box text-center p-6 mb-3.5 bg-needed-color text-seventh-color rounded-base cursor-pointer
+            hover:translate-1 transition-all duration-500 ease-in-out"
+                style="box-shadow: 1px 1px 5px black, -1px -1px 5px brown;">
+                <i class="fa-solid fa-circle-check text-text text-5xl mb-2"></i>
+                <h3 class="text-2xl font-bold  text-text mb-2.5">الجودة</h3>
+                <p class=" ">سيارات حديثة ومجهزة بأعلى معايير السلامة
+                </p>
+            </div>
+
+            <div class="box text-center p-6 mb-3.5 bg-needed-color text-seventh-color rounded-base cursor-pointer
+            hover:translate-1 transition-all duration-500 ease-in-out"
+                style="box-shadow: 1px 1px 5px black, -1px -1px 5px brown;">
+                <i class="fa-solid fa-tag text-text text-5xl mb-2"></i>
+                <h3 class="text-2xl font-bold text-text  mb-2.5">الأسعار</h3>
+                <p class=" ">أسعار تنافسية مع قيمة حقيقية</p>
+            </div>
+
+            <div class="box text-center p-6 mb-3.5 bg-needed-color text-seventh-color rounded-base cursor-pointer
+            hover:translate-1 transition-all duration-500 ease-in-out"
+                style="box-shadow: 1px 1px 5px black, -1px -1px 5px brown;">
+                <i class="fa-solid fa-gauge-high text-text text-5xl mb-2"></i>
+                <h3 class="text-2xl font-bold  text-text mb-2.5">الخدمة</h3>
+                <p class=" ">دعم متواصل على مدار الساعة قبل وأثناء وبعد الحجز</p>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section End -->
+
+    <!-- team Section Start -->
+    <section class="team py-10 bg-bg-main ">
+        <h2 class="text-center md:text-4xl text-3xl font-bold text-heading mb-4">فريقنا المتميز</h2>
+
+        <div class="max-w-7xl mx-auto  bottom-origin 
+        grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 p-4">
+              <div class="box flex flex-col justify-around mb-3.5  
+            rounded-base cursor-pointer
+            hover:translate-1 transition-all duration-500 ease-in-out
+            overflow-hidden" style="box-shadow: 1px 1px 5px black, -1px -1px 5px brown;">
+
+                <div class="img-social flex justify-around items-center  h-[320px]">
+                    <div class="social flex flex-col justify-center items-center h-[80%] gap-4">
+                        <!-- فيسبوك -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-facebook text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- انستغرام -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-instagram text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- يوتيوب -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-youtube text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- لينكد إن -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-linkedin text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- واتساب -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-whatsapp text-[18px] leading-none"></i>
+                        </a>
+                    </div>
+
+
+                    <img class="w-[80%] h-[300px] object-cover object-top rounded-base"
+                        src="../../dist/assets/images/who/team/5.jpg">
+                </div>
+
+                <div class="info flex flex-col items-center pb-4">
+                    <h3 class="text-xl font-bold text-text mb-2.5">عصام الحلبي</h3>
+                    <p class="text-xl text-muted">المدير العام</p>
+                </div>
+            </div>
+            <div class="box flex flex-col justify-around mb-3.5  
+            rounded-base cursor-pointer
+            hover:translate-1 transition-all duration-500 ease-in-out
+            overflow-hidden" style="box-shadow: 1px 1px 5px black, -1px -1px 5px brown;">
+
+                <div class="img-social flex justify-around items-center  h-[320px]">
+                    <div class="social flex flex-col justify-center items-center h-[80%] gap-4">
+                        <!-- فيسبوك -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-facebook text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- انستغرام -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-instagram text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- يوتيوب -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-youtube text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- لينكد إن -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-linkedin text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- واتساب -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-whatsapp text-[18px] leading-none"></i>
+                        </a>
+                    </div>
+
+
+                    <img class="w-[80%] h-[300px] object-cover object-top rounded-base"
+                        src="../../dist/assets/images/who/team/1.jpg">
+                </div>
+
+                <div class="info flex flex-col items-center pb-4">
+                    <h3 class="text-xl font-bold text-text mb-2.5">أحمد عبجي</h3>
+                    <p class="text-xl text-muted">مدير خدمة العملاء</p>
+                </div>
+            </div>
+            <div class="box flex flex-col justify-around mb-3.5  
+            rounded-base cursor-pointer
+            hover:translate-1 transition-all duration-500 ease-in-out
+            overflow-hidden" style="box-shadow: 1px 1px 5px black, -1px -1px 5px brown;">
+
+                <div class="img-social flex justify-around items-center  h-[320px]">
+                    <div class="social flex flex-col justify-center items-center h-[80%] gap-4">
+                        <!-- فيسبوك -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-facebook text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- انستغرام -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-instagram text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- يوتيوب -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-youtube text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- لينكد إن -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-linkedin text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- واتساب -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-whatsapp text-[18px] leading-none"></i>
+                        </a>
+                    </div>
+
+
+                    <img class="w-[80%] h-[300px] object-cover object-top rounded-base"
+                        src="../../dist/assets/images/who/team/2.jpg">
+                </div>
+
+                <div class="info flex flex-col items-center pb-4">
+                    <h3 class="text-xl font-bold text-text mb-2.5">رائد الأحمد</h3>
+                    <p class="text-xl text-muted">مدير العمليات</p>
+                </div>
+            </div>
+            <div class="box flex flex-col justify-around mb-3.5  
+            rounded-base cursor-pointer
+            hover:translate-1 transition-all duration-500 ease-in-out
+            overflow-hidden" style="box-shadow: 1px 1px 5px black, -1px -1px 5px brown;">
+
+                <div class="img-social flex justify-around items-center  h-[320px]">
+                    <div class="social flex flex-col justify-center items-center h-[80%] gap-4">
+                        <!-- فيسبوك -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-facebook text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- انستغرام -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-instagram text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- يوتيوب -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-youtube text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- لينكد إن -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-linkedin text-[18px] leading-none"></i>
+                        </a>
+
+                        <!-- واتساب -->
+                        <a href="#"
+                            class="w-[36px] h-[36px] flex justify-center items-center bg-primary text-white rounded-full hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-whatsapp text-[18px] leading-none"></i>
+                        </a>
+                    </div>
+
+
+                    <img class="w-[80%] h-[300px] object-cover object-top rounded-base"
+                        src="../../dist/assets/images/who/team/3.jpg">
+                </div>
+
+                <div class="info flex flex-col items-center pb-4">
+                    <h3 class="text-xl font-bold text-text mb-2.5">دانية حبيب</h3>
+                    <p class="text-xl text-muted">مسؤولة الحجوزات</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- team Section End -->
+
+
+    <!-- Brands Section Start -->
+    <section class=" py-[30px]">
+        <h2 class="text-3xl md:text-4xl text-heading text-center font-bold  md:mb-2">شركاؤنا</h2>
+        <p class="text-center text-xl text-heading md:block md:text-center hidden">
+            نفخر بأسطولنا المتنوع من كافة الماركات العالمية
+        <div class="max-w-7xl mx-auto bottom-origin">
+            <img src="../../dist/assets/images/who/brands.jfif" alt="">
+
+        </div>
+    </section>
+    <!-- Brands Section End -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <script src="../../dist/js/Bushra/scrollreveal-animation.js"></script>
+    <script src="../../dist/js/Bushra/counter.js"></script>
+    <script src="../../dist/js/script.js"></script>
+    
+
+</body>
+
+</html>
