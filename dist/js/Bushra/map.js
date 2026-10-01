@@ -5,45 +5,37 @@ let activeModalId = null; // متغير يحفظ رقم المودال النش�
 
 // قمنا بإضافة بارامتر (modalNum) لمعرفة أي زر قام بفتح الخريطة
 function initMap(modalNum) {
-    activeModalId = modalNum; // تثبيت رقم المودال النشط
+     activeModalId = modalNum; 
 
-    // استهداف المودال بناءً على رقمه تلقائياً
     const modal = document.getElementById('location-modal-' + modalNum);
     if (modal) {
         modal.classList.remove('hidden');
         modal.removeAttribute('aria-hidden');
     }
 
-    if (typeof L === 'undefined') {
-        return;
-    }
+    if (typeof L === 'undefined') return;
 
-    // إذا كانت الخريطة مبنية مسبقاً، لا نبنيها مجدداً بل ننقلها للحاوية (div) الجديدة
     if (map) {
-        // سحر الخرائط: نقل حاوية الخريطة برمجياً إلى المودال الحالي الذي تم فتحه
         const mapContainer = document.getElementById('map-container');
         document.getElementById('map-parent-' + modalNum).appendChild(mapContainer);
         
-        // مسح الدبوس القديم إذا قام بالفتح دون اختيار لتجنب التضارب
         if (marker) {
             map.removeLayer(marker);
             marker = null;
         }
         selectedLatLng = null;
-
         setTimeout(() => { map.invalidateSize(); }, 300);
         return;
     }
 
-    // بناء حاوية الخريطة لأول مرة داخل العنصر المشترك والتركيز على دمشق
-    map = L.map('map-container').setView([33.5074, 36.3240], 13);
+    // ⚡ السطر المحدث والمصحح لمدينة دبي (مع جعل الزووم 11 لرؤية أشمل للمدينة) ⚡
+    map = L.map('map-container').setView([25.2048, 55.2708], 11);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
     setTimeout(() => { map.invalidateSize(); }, 300);
-
     // حدث النقر الحصري والمشترك
     map.on('click', function(e) {
         selectedLatLng = e.latlng;

@@ -155,7 +155,7 @@ function showCategoryTitle(category) {
     if (!categoryTitle) return;
 
     const arabicTitles = {
-        'all': 'الكل',
+        'all': ' ',
         'suv': 'سيارات SUV',
         'sedan': 'سيارات Sedan',
         'crossover': 'سيارات كروس أوفر',

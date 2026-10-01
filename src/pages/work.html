@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" class="sm:overflow-x-hidden">
+<html lang="ar" dir="rtl" >
 
 <head>
     <meta charset="UTF-8">
@@ -21,11 +21,16 @@
     <link rel="stylesheet" href="../../dist/assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="icon" type="image/svg+xml" href="../../dist/assets/images/image.png">
-
+ <style>
+        html,
+        body {
+            overflow-x: visible !important;
+        }
+    </style>
 
 </head>
 
-<body class="sm:overflow-x-hidden">
+<body>
 
     <header class="w-full bg-card-bg border-b border-card-tint shadow-sm sticky top-0 z-50" dir="rtl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -103,8 +108,8 @@
                 class="absolute inset-0 w-full h-full object-cover opacity-50 md:hidden" alt="">
             <div>
                 <div
-                    class=" bg-card-tint mb-2 mt-2  md:mt-0 md:mb-0  md:bg-transparent 
-                     right-origin md:absolute md:top-0 md:right-[19%]  rounded-md text-white p-2">
+                    class="bg-card-tint mb-2 mt-2  md:mt-0 md:mb-0  md:bg-transparent 
+                     right-origin md:absolute md:top-0 md:right-[18%]  rounded-md text-white p-2">
                     <div
                         class="step flex flex-row-reverse md:justify-center justify-around
                          md:items-end items-center
@@ -119,7 +124,7 @@
                         <div class="step-info flex md:flex-col flex-row md:gap-0 gap-2 
                         md:items-center items-start w-[180px]">
                             <span class="text-heading font-bold text-xl">1</span>
-                            <h3 class="md:text-lg text-xl text-heading font-bold text-center">اختر الخدمة</h3>
+                            <h3 class="md:text-lg text-heading font-bold text-center">اختر الخدمة</h3>
                             <p class="text-muted md:text-center hidden md:block">تصفح خدماتنا واختر نوع التأجير الذي يناسب احتياجاتك</p>
                         </div>
                     </div>
@@ -141,7 +146,7 @@
                           <div class="step-info flex md:flex-col flex-row md:gap-0 gap-2 
                         md:items-center items-start w-[180px]">
                             <span class="text-heading font-bold text-xl">2</span>
-                            <h3 class="text-lg text-heading font-bold text-center">اختر السيارة</h3>
+                            <h3 class="md:text-lg text-heading font-bold text-center">اختر السيارة</h3>
                             <p class="text-muted md:text-center hidden md:block">اختر من مجموعة واسعة من السيارات المناسبة لك</p>
                         </div>
                     </div>
@@ -166,7 +171,7 @@
                           <div class="step-info flex md:flex-col flex-row md:gap-0 gap-2 
                         md:items-center items-start w-[180px]">
                             <span class="text-heading font-bold text-xl">3</span>
-                            <h3 class="text-lg text-heading font-bold text-center">حدد التاريخ والموقع</h3>
+                            <h3 class="md:text-lg text-heading font-bold text-center">حدد التاريخ والموقع</h3>
                             <p class="text-muted md:text-center hidden md:block">أدخل تاريخ الاستلام والتسليم والموقع المناسب لك</p>
                         </div>
                     </div>
@@ -191,7 +196,7 @@
                           <div class="step-info flex md:flex-col flex-row md:gap-0 gap-2 
                         md:items-center items-start w-[180px]">
                             <span class="text-heading font-bold text-xl">4</span>
-                            <h3 class="text-lg text-heading font-bold text-center">أكد وادفع</h3>
+                            <h3 class="md:text-lg text-heading font-bold text-center">أكد وادفع</h3>
                             <p class="text-muted md:text-center hidden md:block">راجع تفاصيل الحجز وقم بإتمام الدفع بشكل آمن وسهل</p>
                         </div>
                     </div>
@@ -213,7 +218,7 @@
                           <div class="step-info flex md:flex-col flex-row md:gap-0 gap-2 
                         md:items-center items-start w-[180px]">
                             <span class="text-heading font-bold text-xl">5</span>
-                            <h3 class="text-lg text-heading font-bold text-center">استمتع برحلتك</h3>
+                            <h3 class="md:text-lg text-heading font-bold text-center">استمتع برحلتك</h3>
                             <p class="text-muted md:text-center hidden md:block">استلم سيارتك وانطلق بثقة وراحة بال</p>
                         </div>
                     </div>
@@ -231,7 +236,7 @@
 
     <!-- Features Section Start -->
     <section class="features py-10 bg-bg-main ">
-        <h2 class="text-center text-4xl font-bold text-heading mb-4">لماذا العملية سهلة؟</h2>
+        <h2 class="text-center md:text-4xl text-3xl font-bold text-heading mb-4">لماذا العملية سهلة؟</h2>
 
         <div class="max-w-7xl mx-auto  bottom-origin grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 p-4">
 
@@ -283,8 +288,8 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-heading mb-4">هل تحتاج مساعدة في اختيار سيارتك؟</h2>
 
                 <div class="bg-card-tint p-5 rounded-[10px]">
-                    <h3 class="text-xl text-center font-bold pb-3 text-heading">لا تقلق، نحن هنا لمساعدتك!</h3>
-                    <p class="text-lg text-muted text-center">
+                    <h3 class="text-xl font-bold pb-3 text-heading">لا تقلق، نحن هنا لمساعدتك!</h3>
+                    <p class="text-lg text-muted">
 
                         سواء كنت تخطط لرحلة عائلية مريحة، أو تبحث عن سيارة اقتصادية للتنقلات اليومية،
                         أو ترغب في سيارة فاخرة لمناسبة خاصة، فريقنا جاهز لتقديم النصيحة
@@ -314,9 +319,9 @@
                     </ul> -->
                 </div>
 
-                <button class="bg-primary hover:bg-primary-hover cursor-pointer
-                          text-white text-lg px-5 py-2 mt-3 md:w-[18%] w-[100%] rounded-md">
-                    ابدأ الحجز</button>
+                <a href="categories.html" class="bg-primary hover:bg-primary-hover cursor-pointer
+                          text-white text-lg  text-center px-5 py-2 mt-3 md:w-[18%] w-[100%] rounded-md">
+                    ابدأ الحجز</a>
             </div>
             <div class=" cta-img left-origin md:flex md:justify-end  hidden">
                 <img class="w-[90%] object-cover rounded-[10px]" src="../../dist/assets/images/working/cta.jpeg" alt="">
@@ -329,11 +334,9 @@
 
 
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
 
-    <script src="../../dist/js/scrollreveal-animation.js"></script>
+    <script src="../../dist/js/Bushra/scrollreveal-animation.js"></script>
     <script src="../../dist/js/script.js"></script>
 
 </body>
